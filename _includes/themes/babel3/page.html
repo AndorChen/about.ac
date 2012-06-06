@@ -1,0 +1,8 @@
+<article class="hentry entry page {% if page.slug %}page-{{ page.slug }} {% endif %}box">
+  <header class="entry-data box-top">
+    <h1 class="entry-title"><a rel="bookmark" href="{{ page.url }}" title="{{ page.title | escape }}">{{ page.title }}</a></h1>
+  </header>
+  <div class="entry-content box-inner">
+    {{ content }}
+  </div>
+</article>

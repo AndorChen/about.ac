@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% include JB/setup %}
+
+{% assign index = true %}
+
+{% for post in paginator.posts %}
+<article class="hentry entry post box">
+  <header class="entry-data box-top">
+    <h1 class="entry-title"><a rel="bookmark" href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a></h1>
+    <p class="entry-meta">{{ site.author.name }} 发布于 {{ post.date | date: '%Y年%-m月%-d日' }}</p>
+  </header>
+  <div class="entry-content box-inner">
+    {{ post.content }}
+  </div>
+  {% unless post.tags == empty %}
+    <ul class="entry-tags">
+      {% assign tags_list = post.tags %}
+      {% include JB/tags_list %}
+    </ul>
+  {% endunless %}
+</article>
+{% endfor %}
+
+{% if paginator.previous_page or paginator.next_page %}
+<div class="navigation box">
+  <div class="prev">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a rel="prev" href="{{ BASE_PATH }}/" title="{{ '上一页' | escape }}">&laquo; 上一页</a>
+      {% else %}
+        <a rel="prev" href="{{ BASE_PATH }}/page{{ paginator.previous_page }}" title="{{ '上一页' | escape }}">&laquo; 上一页</a>
+      {% endif %}
+    {% endif %}
+  </div>
+
+  <div class="next">
+    {% if paginator.next_page %}
+      <a rel="next" href="{{ BASE_PATH }}/page{{paginator.next_page}}" title="{{ '下一页' | escape }}">下一页 &raquo;</a>
+    {% endif %}
+  </div>
+
+  <p class="stats"><b>{{ paginator.page }}/{{ paginator.total_pages }}</b> - {{paginator.total_posts}} 篇文章</p>
+</div>
+{% endif %}
