@@ -219,6 +219,10 @@ a.logo:active {
   border-bottom: 1px solid #e2e2e2;
   padding: 10px;
 }
+.box-title {
+  font-size: 20px;
+  font-weight: normal;
+}
 .box-inner {
   padding: 10px;
 }
@@ -231,6 +235,18 @@ a.logo:active {
 .main {
   float: left;
   width: 670px;
+}
+
+.recent ul {
+  color: #888;
+  margin: 10px 0 10px 30px;
+}
+.recent li {
+  margin: 0 0 5px 0;
+}
+.recent li span {
+  color: #bbb;
+  font-family: Menlo, "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, "Hiragino Sans GB", STHeiti;
 }
 
 .entry-data {
@@ -331,10 +347,6 @@ a.logo:active {
 }
 .page-archive .entry-content ul {
   margin-left: 50px;
-}
-.page-archive .entry-content li span {
-  color: #bbb;
-  font-family: Menlo, "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, "Hiragino Sans GB", STHeiti;
 }
 .entry-tags {
   list-style-type: none;
