@@ -3,9 +3,9 @@ layout: default
 ---
 {{ include JB/setup }}
 
-<div class="box recent">
+<section class="box recent">
   <header class="box-top">
-    <h2 class="box-title">最新文章</h2>
+    <h1 class="box-title">最新文章</h1>
   </header>
   <div class="box-inner">
     <ul>
@@ -14,4 +14,7 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-</div>
+  <footer class="box-bottom">
+    <p class="more"><a href="{{ BASE_PATH }}/archive.html" title="文章归档">&raquo; 更多文章</a></p>
+  </footer>
+</section>

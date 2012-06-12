@@ -248,8 +248,12 @@ a.logo:active {
   color: #bbb;
   font-family: Menlo, "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, "Hiragino Sans GB", STHeiti;
 }
+.recent .more {
+  font-size: 12px;
+  text-align: right;
+}
 
-.entry-data {
+.main .box-top, .entry-data {
   background: transparent url("../img/bg-entry-data.png") repeat-x left bottom;
 }
 .entry-title {
