@@ -6,16 +6,6 @@
   <meta name="author" content="{{ site.author.full_name }}" />
   <link href="{{ ASSET_PATH }}/css/style.css" media="screen" type="text/css" rel="stylesheet" />
   {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-  <script type="text/javascript">
-    jQuery(function($){
-      $("img").lazyload({
-        failurelimit : 10,
-        effect : "fadeIn"
-      });
-      $("a[rel*=external]").attr("target","_blank");
-    });
-  </script>
 </head>
 <body>
   <header id="banner" class="header">
