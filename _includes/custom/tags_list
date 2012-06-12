@@ -19,11 +19,11 @@ Usage:
 
 {% if tags_list.first[0] == null %}
   {% for tag in tags_list %}
-    <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a></li>
+    <a class="item-note" href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" title="{{ tag | escape }}">{{ tag }}</a>
   {% endfor %}
 {% else %}
   {% for tag in tags_list %}
-    <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }}</a></li>
+    <a class="item-node" href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref" title="{{ tag[0] | escape }}">{{ tag[0] }}</a>
   {% endfor %}
 {% endif %}
 {% assign tags_list = nil %}

@@ -441,8 +441,8 @@ a.rss {
   padding: 2px 0 2px 20px;
 }
 
-a.item_node:link,
-a.item_node:visited {
+a.item-node:link,
+a.item-node:visited {
   font-size: 12px;
 	line-height: 12px;
   display: inline-block;
@@ -466,8 +466,8 @@ a.item_node:visited {
 	        border-radius: 4px;
 }
 
-a.item_node:hover,
-a.item_node:active {
+a.item-node:hover,
+a.item-node:active {
   text-decoration: none;
   border-color: #ccc;
   color: #333;
