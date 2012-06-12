@@ -1,7 +1,7 @@
 _site/*
 _theme_packages/*
 _plugins/*
-debug.html
+pages/debug.html
 
 Thumbs.db
 .DS_Store
