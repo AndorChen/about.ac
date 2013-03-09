@@ -381,6 +381,20 @@ a.logo:active {
   color: #333;
 }
 
+/* Books */
+.book-list {
+  list-style-type: none;
+  overflow: hidden;
+}
+.book-list li {
+  display: block;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.book-list img {
+  display: block;
+}
+
 /* Navigation */
 .navigation {
   padding: 10px;
@@ -571,3 +585,14 @@ a.item-node:active {
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
