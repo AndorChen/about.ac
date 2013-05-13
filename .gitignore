@@ -1,11 +1,1 @@
-_site/*
-_theme_packages/*
-_plugins/*
-pages/debug.html
-
-Thumbs.db
-.DS_Store
-
-!.gitkeep
-
-.rbenv-version
+_site/
