@@ -3,7 +3,7 @@ markdown: redcarpet
 redcarpet:
   extentions: ['fenced_code_blocks', 'strikethrough', 'space_after_headers', 'tables']
 permalink: /:year/:month/:title.html
-exclude: [".ruby-version", "README.md", "Rakefile", "about.ac.sublime-project", "about.ac.sublime-workspace", "Gemfile", "Gemfile.lock"]
+exclude: [".ruby-version", "README.md", "Rakefile", "about.ac.sublime-project", "about.ac.sublime-workspace", "Gemfile", "Gemfile.lock", "bin"]
 keep_files: ['.git', '.nojekyll', 'CNAME']
 
 title: Andor Chen
