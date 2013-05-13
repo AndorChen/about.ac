@@ -4,7 +4,7 @@ redcarpet:
   extentions: ['fenced_code_blocks', 'strikethrough', 'space_after_headers', 'tables']
 permalink: /:year/:month/:title.html
 exclude: [".ruby-version", "README.md", "Rakefile", "about.ac.sublime-project", "about.ac.sublime-workspace", "Gemfile", "Gemfile.lock"]
-keep_files: ['.git', '.nojekyll']
+keep_files: ['.git', '.nojekyll', 'CNAME']
 
 title: Andor Chen
 tagline: Andor 的个人网站
