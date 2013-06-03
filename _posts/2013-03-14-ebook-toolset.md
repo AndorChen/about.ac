@@ -24,6 +24,8 @@ tags: ['Book']
 
 其实 bookstrap 只是个 wrapper，使用 Ruby 编写，是个命令行工具，先把 Markdown 转换成 HTML，然后生成 PDF、Epub 和 Mobi 格式电子书。详情如下。
 
+更新（2013-6-3）：bookstrap 更名为 burr，并开源：<https://github.com/AndorChen/burr>
+
 ## 文本
 
 文本肯定要用 Markdown，这是我最熟悉的文本书写语言。决定使用 Markdown 之后就要考虑使用那个工具将其生成 HTML 了，可选的工具太多了，我第一个想到的是 [redcarpet](https://github.com/vmg/redcarpet)，我之前使用 Jekyll 开发的网站用的就是这个 gem，而且它还对基本的 Markdown 语法做了一些扩展。不过用起来还是觉得句法太少了，而且这个 gem 是用 C 语言编写的，很难扩展，所以我放弃了。
