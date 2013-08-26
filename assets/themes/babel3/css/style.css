@@ -392,6 +392,7 @@ a.logo:active {
   margin: 0 10px 10px 0;
 }
 .book-list img {
+  border: 1px solid #ccc;
   display: block;
 }
 
