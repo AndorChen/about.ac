@@ -116,7 +116,7 @@ end
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll --auto --server"
+  system "jekyll server --watch"
 end # task :preview
 
 # Public: Alias - Maintains backwards compatability for theme switching.

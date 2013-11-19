@@ -516,9 +516,8 @@ a.item-node:active {
   background-position: 0 -128px;
 }
 
-
 /* ==========
- *  Helpers
+ *  Footer
  * ======= */
 
 .footer {
@@ -546,7 +545,6 @@ a.item-node:active {
 .other-pages a {
   font-weight: bold;
 }
-
 
 /* ==========
  *  Helpers
