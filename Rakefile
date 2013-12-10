@@ -106,7 +106,7 @@ task :push do
   puts
 
   cd '_site' do
-    puts   "Pushing to gh-pages branch:"
+    puts   "Pushing to `master' branch:"
     system "git add -A"
     system "git commit -m 'update at #{Time.now.utc}'"
     system "git push origin master"
