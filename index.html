@@ -3,6 +3,19 @@ layout: default
 ---
 {{ include JB/setup }}
 
+<section class="box books">
+  <header class="box-top">
+    <h1 class="box-title f-left">翻译的书</h1>
+    <div class="f-right"><a href="{{ BASE_PATH }}/pages/hire.html" title="Hire Me">Hire Me</a></div>
+  </header>
+  <div class="box-inner">
+    <ul class="book-list">
+      <li><a href="http://railstutorial-china.org"><img src="assets/images/railstutorial2ndcn.jpg" width="116" height="164" alt="Ruby on Rails 教程" title="Ruby on Rails 教程" /></a></li>
+      <li><a href="https://leanpub.com/everydayrailsrspec-cn"><img src="assets/images/everydayrailsrspeccn.jpg" width="127" height="164" alt="使用 RSpec 测试 Rails 程序" title="使用 RSpec 测试 Rails 程序" /></a></li>
+    </ul>
+  </div>
+</section>
+
 <section class="box recent">
   <header class="box-top">
     <h1 class="box-title">最新文章</h1>
@@ -17,16 +30,4 @@ layout: default
   <footer class="box-bottom">
     <p class="more"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" title="文章归档">&raquo; 更多文章</a></p>
   </footer>
-</section>
-
-<section class="box books">
-  <header class="box-top">
-    <h1 class="box-title">翻译的书</h1>
-  </header>
-  <div class="box-inner">
-    <ul class="book-list">
-      <li><a href="http://railstutorial-china.org"><img src="assets/images/railstutorial2ndcn.jpg" width="116" height="164" alt="Ruby on Rails 教程" title="Ruby on Rails 教程" /></a></li>
-      <li><a href="https://leanpub.com/everydayrailsrspec-cn"><img src="assets/images/everydayrailsrspeccn.jpg" width="127" height="164" alt="使用 RSpec 测试 Rails 程序" title="使用 RSpec 测试 Rails 程序" /></a></li>
-    </ul>
-  </div>
 </section>

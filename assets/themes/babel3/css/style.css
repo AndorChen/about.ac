@@ -218,6 +218,7 @@ a.logo:active {
 .box-top {
   border-bottom: 1px solid #e2e2e2;
   padding: 10px;
+  overflow: hidden;
 }
 .box-title {
   font-size: 20px;
@@ -379,6 +380,23 @@ a.logo:active {
   background: #e0e0e0;
   border-color: #c0c0c0;
   color: #333;
+}
+
+.status b {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  border-width: 1px;
+  border-style: solid;
+}
+.available b {
+  background: #5CB85C;
+  border-color: #4CAE4C;
+}
+.unavailable b {
+  background: #D9534F;
+  border-color: #D43F3A;
 }
 
 /* Books */
