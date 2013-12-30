@@ -14,4 +14,4 @@ Here are some books I translated:
 
 If you have Ruby/Rails or Cocoa/Objective-C related books or documentations need translating into Chinese, please feel free to contact me at <andor.chen.27@gmail.com>.
 
-Status: <span class="status available"><b></b> Available</span>
+Status: <span class="status unavailable"><b></b> Unavailable</span>
