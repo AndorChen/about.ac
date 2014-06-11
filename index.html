@@ -10,10 +10,14 @@ layout: default
   </header>
   <div class="box-inner">
     <ul class="book-list">
-      <li><a href="http://railstutorial-china.org"><img src="assets/images/railstutorial2ndcn.jpg" width="116" height="164" alt="Ruby on Rails 教程" title="Ruby on Rails 教程" /></a></li>
-      <li><a href="https://leanpub.com/everydayrailsrspec-cn"><img src="assets/images/everydayrailsrspeccn.jpg" width="127" height="164" alt="使用 RSpec 测试 Rails 程序" title="使用 RSpec 测试 Rails 程序" /></a></li>
-      <li><a href="https://leanpub.com/deploying_rails_applications-cn"><img src="assets/images/deployrailscn.jpg" width="118" height="164" alt="Rails 程序部署之道" title="Rails 程序部署之道" /></a></li>
-      <!--li><a href="http://laravel-china.com/"><img src="assets/images/learninglaravelcn.jpg" width="127" height="164" alt="学习 Laravel" title="学习 Laravel" /></a></li-->
+      {% for book in site.data.translations %}
+        {% if book.url != null %}
+          {% assign book_url = book.url %}
+        {% else %}
+          {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
+        {% endif %}
+        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="assets/images/{{ book.image }}" height="164" alt="{{ boo.title }}" title="{{ boo.title }}" /></a></li>
+      {% endfor %}
     </ul>
   </div>
 </section>

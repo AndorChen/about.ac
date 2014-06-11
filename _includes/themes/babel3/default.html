@@ -1,105 +1,48 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  <meta name="author" content="{{ site.author.full_name }}" />
-  <link href="{{ ASSET_PATH }}/css/style.css" media="screen" type="text/css" rel="stylesheet" />
-  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
-</head>
-<body>
-  <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-  <![endif]-->
-  <header id="banner" class="header">
-    <div class="wrapper">
-      <a class="logo" href="{{ HOME_PATH }}" title="{{ site.tagline }}">{{ site.title }}</a>
-      <nav class="menu">
-        <ul>
-          <li><a href="{{ HOME_PATH }}" title="首页">首页</a></li>
-          {% assign pages_list = site.pages %}
-          {% assign group = 'menu' %}
-          {% include JB/pages_list %}
-        </ul>
-      </nav>
-      <div class="clearfix"></div>
+<div class="content">
+  <div class="wrapper">
+    <div class="main">
+      {{ content }}
     </div>
-  </header>
 
-  <div class="content">
-    <div class="wrapper">
-      <div class="main">
-        {{ content }}
-      </div>
+    <div class="sidebar">
+      <aside id="bio" class="box">
+        <header class="box-top">
+          <img class="avatar" src="{{ ASSET_PATH }}/img/andor.jpg" width="48" height="48" alt="Andor's Avatar" />
+          <strong>{{ site.author.name }}</strong>
+          笔名：{{ site.author.pen_name }}
+        </header>
+        <div class="box-inner"><p>{{ site.author.bio }}</p></div>
+        <footer class="box-bottom">
+          <a class="rss" href="http://feeds.feedburner.com/AndorChen" rel="alternate" title="订阅网站更新">RSS</a>
+        </footer>
+      </aside>
 
-      <div class="sidebar">
-        <aside id="bio" class="box">
-          <header class="box-top">
-            <img class="avatar" src="{{ ASSET_PATH }}/img/avatar.png" width="48" height="48" alt="Andor's Avatar" />
-            <strong>{{ site.author.full_name }}</strong>
-            {{ site.tagline }}
-          </header>
-          <div class="box-inner"><p>{{ site.author.bio }}</p></div>
-          <footer class="box-bottom">
-            <a class="rss" href="http://feeds.feedburner.com/AndorChen" rel="alternate" title="订阅网站更新">RSS</a>
-          </footer>
-        </aside>
+      <aside id="tags" class="box">
+        <header class="box-top">
+          <h1 class="aside-title">话题</h1>
+        </header>
+        <div class="box-inner">
+          {% assign tags_list = site.tags %}
+	        {% include JB/tags_list %}
+        </div>
+      </aside>
 
-        <aside id="tags" class="box">
-          <header class="box-top">
-            <h1 class="aside-title">话题</h1>
-          </header>
-          <div class="box-inner">
-            {% assign tags_list = site.tags %}
-  	        {% include JB/tags_list %}
-          </div>
-        </aside>
-
-        <aside id="socials" class="box">
-          <header class="box-top">
-            <h1 class="aside-title">社交</h1>
-          </header>
-          <div class="box-inner">
-            <ul>
-              <li id="twitter"><a class="ir" href="https://twitter.com/#!/Andor_Chen" title="@Andor_Chen" rel="external">@Andor_Chen</a></li>
-              <li id="douban"><a class="ir" href="http://www.douban.com/people/Andor/" title="豆瓣" rel="external">豆瓣</a></li>
-              <li id="v2ex"><a class="ir" href="http://www.v2ex.com/member/Andor_Chen" title="V2EX" rel="external">V2EX</a></li>
-              <li id="github"><a class="ir" href="https://github.com/AndorChen" title="github" rel="external">github</a></li>
-              <li id="diandian"><a class="ir" href="http://andorchen.diandian.com/" title="Andor's Tumblog" rel="external">Andor's Tumblog</a></li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-
-  <footer id="colophon" class="footer">
-    <div class="wrapper">
-      <div class="credits f-left">
-        <nav class="other-pages">
+      <aside id="socials" class="box">
+        <header class="box-top">
+          <h1 class="aside-title">社交</h1>
+        </header>
+        <div class="box-inner">
           <ul>
-            {% assign pages_list = site.pages %}
-            {% assign group = 'footer' %}
-            {% include JB/pages_list %}
+            <li id="twitter"><a class="ir" href="https://twitter.com/#!/Andor_Chen" title="@Andor_Chen" rel="external">@Andor_Chen</a></li>
+            <li id="douban"><a class="ir" href="http://www.douban.com/people/Andor/" title="豆瓣" rel="external">豆瓣</a></li>
+            <li id="v2ex"><a class="ir" href="http://www.v2ex.com/member/Andor_Chen" title="V2EX" rel="external">V2EX</a></li>
+            <li id="github"><a class="ir" href="https://github.com/AndorChen" title="github" rel="external">github</a></li>
+            <li id="diandian"><a class="ir" href="http://andorchen.diandian.com/" title="Andor's Tumblog" rel="external">Andor's Tumblog</a></li>
           </ul>
-        </nav>
-        <p><strong>&copy; {{ site.tagline }}</strong></p>
-        <p>感谢 <a href="http://www.olivida.com/" rel="external"><strong>OLIVIDA</strong></a> 的 UI 设计</p>
-        <p>如无特殊说明，本网站内容基于“<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" rel="license external"><strong>CC BY-NC-SA 3.0</strong></a>”发布</p>
-      </div>
-
-      <div class="site-generator f-right">
-        <a href="https://github.com/mojombo/jekyll" rel="external generator" title="Jekyll is a simple, blog aware, static site generator.">
-          <img src="{{ ASSET_PATH }}/img/jekyll.png" width="160" height="35" alt="Jekyll" />
-        </a>
-      </div>
-
-      <div class="clearfix"></div>
+        </div>
+      </aside>
     </div>
-  </footer>
 
-  {% include JB/analytics %}
-</body>
-</html>
+    <div class="clearfix"></div>
+  </div>
+</div>

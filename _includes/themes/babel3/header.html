@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="author" content="{{ site.author.full_name }}" />
+  <link href="{{ ASSET_PATH }}/css/style.css" media="screen" type="text/css" rel="stylesheet" />
+  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+  <header id="banner" class="header">
+    <div class="wrapper">
+      <a class="logo" href="{{ HOME_PATH }}" title="{{ site.tagline }}">{{ site.title }}</a>
+      <nav class="menu">
+        <ul>
+          <li><a href="{{ HOME_PATH }}" title="首页">首页</a></li>
+          {% assign pages_list = site.pages %}
+          {% assign group = 'menu' %}
+          {% include JB/pages_list %}
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </header>
