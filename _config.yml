@@ -1,10 +1,17 @@
-pygments: true
-markdown: redcarpet
-redcarpet:
-  extentions: ['fenced_code_blocks', 'strikethrough', 'space_after_headers', 'tables']
+highlighter: true
+markdown: MyKramdown
+kramdown:
+  input: MyMarkdownParser
+  auto_ids: false
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+
 permalink: /:year/:month/:title.html
-exclude: [".ruby-version", "README.md", "Rakefile", "about.ac.sublime-project", "about.ac.sublime-workspace", "Gemfile", "Gemfile.lock", "bin"]
-keep_files: ['.git', '.nojekyll', 'CNAME']
+exclude: [".ruby-version", "README.md", "Rakefile", "about.ac.sublime-project", "about.ac.sublime-workspace", "Gemfile", "Gemfile.lock", "bin", "pages/debug.html"]
+keep_files: ['.git', '.nojekyll', 'CNAME', 'assets/images', 'assets/themes']
 
 title: Andor Chen
 tagline: Andor 的个人网站
