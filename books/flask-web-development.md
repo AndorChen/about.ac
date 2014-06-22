@@ -11,7 +11,34 @@ title: Flask Web 开发
 
 ## 作者
 
+Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导了一个工程师团队为广播业开发视频软件。他有一个博客（<http://blog.miguelgrinberg.com>），涉及的话题很多，包括 Web 开发、机器人技术和摄影，偶尔也写影评。他和妻子、四个孩子、两只狗和一只猫一起生活在俄勒冈州波特兰市。
+
 ## 内容目录
+
+-   前言
+-   第一部分 Flask 简介
+    - 第 1 章 安装
+    - 第 2 章 程序基本结构
+    - 第 3 章 模板
+    - 第 4 章 网页表单
+    - 第 5 章 数据库
+    - 第 6 章 电子邮件
+    - 第 7 章 大型程序的结构
+-   第二部分 实例：社会化博客程序
+    - 第 8 章 用户认证
+    - 第 9 章 用户角色
+    - 第 10 章 用户资料
+    - 第 11 章 博客文章
+    - 第 12 章 关注者
+    - 第 13 章 用户评论
+    - 第 14 章 程序编程接口
+-   第三部分 成功在望
+    - 第 15 章 测试
+    - 第 16 章 性能
+    - 第 17 章 部署
+    - 第 18 章 其他资源
+-   关于作者
+-   尾页
 
 ## 实例代码
 
@@ -21,6 +48,13 @@ title: Flask Web 开发
 
 如果您在阅读本书过程中发现了错误，欢迎[指正]()。
 
+## 大事记
+
+- 2014.5.16 试译；
+- 2014.5.26 开始翻译；
+- 2014.6.11 初译完成；
+- 2014 6.18 校对完成，提交一审；
+
 ## 词汇表
 
 书中有大量术语，翻译过程中主要参照“[全国科学技术名词审定委员会](http://www.term.gov.cn/)”审定的词汇表，也参阅了已出版的相关书籍。
@@ -28,53 +62,73 @@ title: Flask Web 开发
 | 英文 | 中文 | 备注 |
 |------|------|------|
 | application | 程序 | |
-| template | 模板 | |
-| route | 路由 | |
-| model | 模型 | |
-| view function | 视图函数 | |
-| validator | 验证函数 | 验证表单数据是否符合要求的函数。 |
-| module | 模块 | 在 Python 中一个文件即是一个模块 |
-| package | 包 | |
-| method | 方法 | |
-| decorator | 修饰器 | 参照《[Python 3 程序开发指南][python_book]》 |
-| function | 函数 | |
-| variable | 变量 | |
-| class | 类 | |
-| form | 表单 | HTML 中的 `<form>` 元素 |
-| checkbox | 复选框 | HTML 中的 `<input type="checkbox">` 元素 |
-| radio | 单选框 | HTML 中的 `<input type="radio">` 元素 |
-| table | 表 | 表示数据库中的表，参照《[SQL 必知必会][sql_book]》|
-| row | 行 |表示数据库中的一行记录，参照《[SQL 必知必会][sql_book]》|
-| column | 列 | 表示数据库中的一列属性，参照《[SQL 必知必会][sql_book]》|
+| API | 程序编程接口 | |
 | attribute | 属性 | |
-| property |属性 | |
-| token | 权标 | |
-| relationship | 关联 | 两个数据表之间的关系 |
-| moderator | 协管员 | 论坛中可译为“版主”，但这里并不合适 |
-| ping | 查验 | |
-| shell | （不翻） | |
-| partial template | 局部模板 | |
-| paginate | 分页 | |
+| blueprint | 蓝本 | |
+| CDN | 内容分发网络 | |
+| checkbox | 复选框 | HTML 中的 `<input type="checkbox">` 元素 |
+| class | 类 | |
+| column | 列 | 表示数据库中的一列属性，参照《[SQL 必知必会][sql_book]》|
+| config/configuration | 配置 | |
+| context | 上下文 | |
+| daemon | 守护进程 | |
+| decorator | 修饰器 | 参照《[Python 3 程序开发指南][python_book]》 |
 | dependency | 依赖件 | |
-| sanitizer | 清理器 | |
+| derived template | 衍生模板 | |
+| endpoint | 端点 | |
+| follower | 关注者 | 从 Twitter |
+| form | 表单 | HTML 中的 `<form>` 元素 |
+| function | 函数 | |
+| handler | 处理程序 | |
+| import | 导入 | |
+| include | 包含 | |
+| interpreter | 解释器 | |
+| JSON | JavaScript 对象表示法 | |
+| label | 标号 | HTML 中的 `<label>` 元素 |
+| list comprehension | 列表推导 | |
 | listen | 监听 | |
 | listener | 监听程序 | |
+| logger | 日志记录器 | |
+| loop | 轮询 | 不是指编程中的“循环” |
+| macro | 宏 | |
+| method | 方法 | |
+| model | 模型 | |
+| module | 模块 | 在 Python 中一个文件即是一个模块 |
+| moderator | 协管员 | 论坛中可译为“版主”，但这里并不合适 |
+| package | 包 | |
+| paginate | 分页 | |
+| partial template | 局部模板 | |
+| patch | 补丁 | |
 | Permanent Link | 固定链接 | 从 WordPress |
-| slug | 别名 | 从 WordPress |
-| follower | 关注者 | 从 Twitter |
-| Self-Referential Relationship| 自引用关联 | |
-| scalability | 伸缩性 | |
-| JSON | JavaScript 对象表示法 | |
-| XML | 可扩展标记语言 | |
+| profiler | 分析器 | |
+| property |属性 | |
+| radio | 单选框 | HTML 中的 `<input type="radio">` 元素 |
+| relationship | 关联 | 两个数据表之间的关系 |
 | REST | 表现层状态转化 | |
+| revision | 修订版本 | |
+| route | 路由 | |
+| row | 行 |表示数据库中的一行记录，参照《[SQL 必知必会][sql_book]》|
+| sanitizer | 清理器 | |
+| scalability | 伸缩性 | |
+| schema | 模式 | |
+| Self-Referential Relationship| 自引用关联 | |
+| setting | 设定 | || session | 会话 | |
+| shell | | 不翻译 |
+| slug | 别名 | 从 WordPress |
 | SOAP | 简单对象访问协议 | |
-| API | 程序编程接口 | |
-| handler | 处理程序 | |
-| token | 令牌 | 但 secure token 译成“安全权标” |
-| endpoint | 端点 | |
-| list comprehension | 列表推导 | |
-| import | 导入 | |
-| daemon | 守护进程 | |
+| specifier | 说明符 | |
+| SSL | 安全套接层 | |
+| stack trace | 堆栈跟踪 | |
+| table | 表 | 表示数据库中的表，参照《[SQL 必知必会][sql_book]》|
+| template | 模板 | |
+| TLS | 传输层安全 | |
+| transaction | 事务 | |
+| token | 权标 | |
+| validator | 验证函数 | 验证表单数据是否符合要求的函数。 |
+| variable | 变量 | |
+| view function | 视图函数 | |
+| worker | 职程 | |
+| XML | 可扩展标记语言 | |
 {:class="table table-bordered"}
 
 [python_book]: http://book.douban.com/subject/5924860/
@@ -86,7 +140,11 @@ title: Flask Web 开发
         <h1 class="aside-title">购买</h1>
     </header>
     <div class="box-inner">
-
+        <p><img src="/assets/images/flask-web-development.gif" title="Flask Web 开发封面" /></p>
+        <ul>
+            <li><a href="" title="">亚马逊</a></li>
+            <li><a href="" title="">当当网</a></li>
+        </ul>
     </div>
 </aside>
 {% endsidebar %}
