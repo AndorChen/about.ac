@@ -18,10 +18,10 @@
   url: https://selfstore.io/products/66
   image: deployrailscn.jpg
 
-- title: Flask Web 开发
-  slug: flask-web-development
-  image: flask-web-development.gif
+# - title: Flask Web 开发
+#   slug: flask-web-development
+#   image: flask-web-development.gif
 
-- title: 探索 Flask
-  slug: explore-flask
-  image: explore-flask.jpg
+# - title: 探索 Flask
+#   slug: explore-flask
+#   image: explore-flask.jpg
