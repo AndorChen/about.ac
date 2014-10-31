@@ -2,7 +2,6 @@
 layout: page
 title: Hire Me
 slug: about
-group: menu
 ---
 
 Hi, I am an experienced Chinese translator, interested in all modern technologies, like Ruby/Rails, Cocoa/Objective-C, Python and Laravel.

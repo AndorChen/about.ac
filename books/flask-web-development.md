@@ -61,7 +61,7 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 
 | 英文 | 中文 | 备注 |
 |------|------|------|
-| application | 程序 | |
+| application | 应用 | |
 | API | 程序编程接口 | |
 | attribute | 属性 | |
 | blueprint | 蓝本 | |
@@ -73,7 +73,7 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 | context | 上下文 | |
 | daemon | 守护进程 | |
 | decorator | 修饰器 | 参照《[Python 3 程序开发指南][python_book]》 |
-| dependency | 依赖件 | |
+| dependency | 依赖 | |
 | derived template | 衍生模板 | |
 | endpoint | 端点 | |
 | follower | 关注者 | 从 Twitter |
@@ -123,7 +123,7 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 | template | 模板 | |
 | TLS | 传输层安全 | |
 | transaction | 事务 | |
-| token | 权标 | |
+| token | 令牌 | |
 | validator | 验证函数 | 验证表单数据是否符合要求的函数。 |
 | variable | 变量 | |
 | view function | 视图函数 | |

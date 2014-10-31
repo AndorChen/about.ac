@@ -1,0 +1,41 @@
+---
+layout: default
+title: 图书
+group: menu
+---
+
+<section class="box translations">
+  <header class="box-top">
+    <h1 class="box-title f-left">Ruby/Rails 相关</h1>
+  </header>
+  <div class="box-inner">
+    <ul class="book-list">
+      {% for book in site.data.trans.1ruby %}
+        {% if book.url != null %}
+          {% assign book_url = book.url %}
+        {% else %}
+          {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
+        {% endif %}
+        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="/assets/images/{{ book.image }}" height="164" alt="{{ boo.title }}" title="{{ boo.title }}" /></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="box translations">
+  <header class="box-top">
+    <h1 class="box-title f-left">Python 相关</h1>
+  </header>
+  <div class="box-inner">
+    <ul class="book-list">
+      {% for book in site.data.trans.2python %}
+        {% if book.url != null %}
+          {% assign book_url = book.url %}
+        {% else %}
+          {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
+        {% endif %}
+        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="/assets/images/{{ book.image }}" height="164" alt="{{ boo.title }}" title="{{ boo.title }}" /></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

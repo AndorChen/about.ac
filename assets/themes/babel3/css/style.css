@@ -249,7 +249,7 @@ a.logo:active {
   color: #bbb;
   font-family: Menlo, "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, "Hiragino Sans GB", STHeiti;
 }
-.recent .more {
+.more {
   font-size: 12px;
   text-align: right;
 }

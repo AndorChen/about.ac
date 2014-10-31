@@ -29,7 +29,7 @@ title: Python 网络编程攻略
 
 ## 勘误
 
-如果您在阅读本书过程中发现了错误，欢迎[指正]()。
+如果您在阅读本书过程中发现了错误，欢迎[指正](http://www.ituring.com.cn/book/1484)。
 
 ## 大事记
 
@@ -37,6 +37,7 @@ title: Python 网络编程攻略
 - 2014.06.26 开始翻译
 - 2014.07.09 翻译完毕
 - 2014.07.24 校对完毕
+- 2014.10.31 出版电子书
 
 ## 词汇表
 
@@ -79,10 +80,10 @@ title: Python 网络编程攻略
         <h1 class="aside-title">购买</h1>
     </header>
     <div class="box-inner">
-        <p><a href="https://selfstore.io/products/83" title="购买电子书"><img src="/assets/images/explore-flask.jpg" alt="探索 Flask 封面" /></a></p>
-        <p>PDF, ePub, mobi</p>
+        <p><a href="http://www.ituring.com.cn/book/1484" title="购买电子书"><img src="/assets/images/python-network-programming-cookbook.jpg" alt="Python网络编程攻略封面" /></a></p>
+        <p>PDF, mobi</p>
         <ul>
-            <li><a href="https://selfstore.io/products/83" title="购买电子书">SelfStore</a></li>
+            <li><a href="http://www.ituring.com.cn/book/1484" title="购买电子书">图灵社区</a></li>
         </ul>
     </div>
 </aside>

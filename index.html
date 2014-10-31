@@ -6,20 +6,26 @@ layout: default
 <section class="box translations">
   <header class="box-top">
     <h1 class="box-title f-left">翻译的书</h1>
-    <div class="f-right"><a href="{{ BASE_PATH }}/pages/hire.html" title="Hire Me">Hire Me</a></div>
   </header>
   <div class="box-inner">
     <ul class="book-list">
-      {% for book in site.data.translations %}
-        {% if book.url != null %}
-          {% assign book_url = book.url %}
-        {% else %}
-          {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
-        {% endif %}
-        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="assets/images/{{ book.image }}" height="164" alt="{{ boo.title }}" title="{{ boo.title }}" /></a></li>
+      {% for books in site.data.trans %}
+        {% for book in books[1] %}
+          {% if book.featured %}
+            {% if book.url != null %}
+              {% assign book_url = book.url %}
+            {% else %}
+              {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
+            {% endif %}
+            <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="assets/images/{{ book.image }}" height="164" alt="{{ boo.title }}" title="{{ boo.title }}" /></a></li>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </ul>
   </div>
+  <footer class="box-bottom">
+    <p class="more"><a href="/books/" title="文章归档">更多图书 &raquo;</a></p>
+  </footer>
 </section>
 
 <!--<section class="box books">
@@ -45,6 +51,6 @@ layout: default
     </ul>
   </div>
   <footer class="box-bottom">
-    <p class="more"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" title="文章归档">&raquo; 更多文章</a></p>
+    <p class="more"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" title="文章归档">更多文章 &raquo;</a></p>
   </footer>
 </section>
