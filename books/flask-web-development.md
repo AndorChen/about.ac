@@ -7,7 +7,9 @@ title: Flask Web 开发
 
 [Flask](http://flask.pocoo.org/) 是使用 Python 开发的 Web 框架，用到了 Werkzeug 和 Jinja2 等包。Flask 是一个微型框架，但别被这个“微”迷惑了。其实 Flask 像其他框架一样强大，可以做很多事情，不管时小型应用还是大型应用都能胜任。
 
-《Flask Web 开发》这本书全面介绍 Flask，并且手把手教你如何开发一个现代化的 Web 应用。
+《Flask Web 开发》分三部分，全面介绍如何基于 Python 微框架 Flask 进行 Web 开发。第一部分是 Flask 简介，介绍使用 Flask 框架及扩展开发 Web 程序的必备基础知识。第二部分则给出一个实例，真正带领大家一步步开发完整的博客和社交应用 Flasky，从而将前述知识融会贯通，付诸实践。第三部分介绍了发布应用之前必须考虑的事项，如单元测试策略、性能分析技术、Flask 程序的部署方式等。
+
+本书适合熟悉 Python 编程，有意通过 Flask 全面掌握 Web 开发的程序员学习、参考。
 
 ## 作者
 
@@ -46,7 +48,7 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 
 ## 勘误
 
-如果您在阅读本书过程中发现了错误，欢迎[指正]()。
+如果您在阅读本书过程中发现了错误，欢迎[指正](http://www.ituring.com.cn/book/1449)。
 
 ## 大事记
 
@@ -112,7 +114,8 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 | scalability | 伸缩性 | |
 | schema | 模式 | |
 | Self-Referential Relationship| 自引用关联 | |
-| setting | 设定 | || session | 会话 | |
+| setting | 设定 | |
+| session | 会话 | |
 | shell | | 不翻译 |
 | slug | 别名 | 从 WordPress |
 | SOAP | 简单对象访问协议 | |
@@ -140,11 +143,18 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
         <h1 class="aside-title">购买</h1>
     </header>
     <div class="box-inner">
-        <p><img src="/assets/images/flask-web-development.gif" title="Flask Web 开发封面" /></p>
+        <p><img class="border" src="/assets/images/flask-web-development.png" title="Flask Web 开发封面" /></p>
         <ul>
-            <li><a href="" title="">亚马逊</a></li>
-            <li><a href="" title="">当当网</a></li>
+            <li><a href="http://www.ituring.com.cn/book/1449" title="购买 Flask Web 开发">图灵社区</a></li>
         </ul>
+    </div>
+</aside>
+<aside id="related" class="box">
+    <header class="box-top">
+        <h1 class="aside-title">相关图书</h1>
+    </header>
+    <div class="box-inner">
+        <p><a href="/books/explore-flask.html" title="探索 Flask"><img src="/assets/images/explore-flask.jpg" title="探索 Flask 封面" /></a></p>
     </div>
 </aside>
 {% endsidebar %}
