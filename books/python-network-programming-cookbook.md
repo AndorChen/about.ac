@@ -83,7 +83,7 @@ title: Python 网络编程攻略
         <p><img src="/assets/images/python-network-programming-cookbook.jpg" alt="Python网络编程攻略封面" /></p>
         <ul>
             <li><a href="http://www.ituring.com.cn/book/1484" title="购买电子书" target="_blank">电子书</a></li>
-            <li><a href="http://www.amazon.cn/dp/B00PUP2IWS/" title="到亚马逊购买" target="_blank">亚马逊</a></li>
+            <li><a href="http://www.amazon.cn/gp/product/B00PUP2IWS/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00PUP2IWS&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
             <li><a href="http://item.jd.com/1367333254.html" title="到京东购买" target="_blank">京东</a></li>
             <li><a href="http://product.china-pub.com/3770650" title="到 China Pub 购买" target="_blank">China Pub</a></li>
         </ul>
