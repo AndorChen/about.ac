@@ -13,16 +13,16 @@ title: Flask Web 开发
 
 ## 作者
 
-Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导了一个工程师团队为广播业开发视频软件。他有一个博客（<http://blog.miguelgrinberg.com>），涉及的话题很多，包括 Web 开发、机器人技术和摄影，偶尔也写影评。他和妻子、四个孩子、两只狗和一只猫一起生活在俄勒冈州波特兰市。
+Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导了一个工程师团队为广播业开发视频软件。他有一个[博客](http://blog.miguelgrinberg.com)，涉及的话题很多，包括 Web 开发、机器人技术和摄影，偶尔也写影评。他和妻子、四个孩子、两只狗和一只猫一起生活在俄勒冈州波特兰市。
 
 ## 内容目录
 
--   前言
+-   [前言](http://www.ituring.com.cn/tupubarticle/1673)
 -   第一部分 Flask 简介
-    - 第 1 章 安装
-    - 第 2 章 程序基本结构
+    - [第 1 章 安装](http://www.ituring.com.cn/tupubarticle/1953)
+    - [第 2 章 程序基本结构](http://www.ituring.com.cn/tupubarticle/1954)
     - 第 3 章 模板
-    - 第 4 章 网页表单
+    - 第 4 章 Web 表单
     - 第 5 章 数据库
     - 第 6 章 电子邮件
     - 第 7 章 大型程序的结构
@@ -33,14 +33,12 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
     - 第 11 章 博客文章
     - 第 12 章 关注者
     - 第 13 章 用户评论
-    - 第 14 章 程序编程接口
+    - 第 14 章 应用编程接口
 -   第三部分 成功在望
     - 第 15 章 测试
     - 第 16 章 性能
     - 第 17 章 部署
     - 第 18 章 其他资源
--   关于作者
--   尾页
 
 ## 实例代码
 
@@ -52,10 +50,11 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 
 ## 大事记
 
-- 2014.5.16 试译；
-- 2014.5.26 开始翻译；
-- 2014.6.11 初译完成；
-- 2014 6.18 校对完成，提交一审；
+- 2014.05.16 试译；
+- 2014.05.26 开始翻译；
+- 2014.06.11 初译完成；
+- 2014.06.18 校对完成，提交一审；
+- 2014.12.02 电子书发布；
 
 ## 词汇表
 
@@ -64,7 +63,7 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 | 英文 | 中文 | 备注 |
 |------|------|------|
 | application | 应用 | |
-| API | 程序编程接口 | |
+| API | 应用编程接口 | |
 | attribute | 属性 | |
 | blueprint | 蓝本 | |
 | CDN | 内容分发网络 | |
@@ -149,12 +148,12 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
         </ul>
     </div>
 </aside>
-<aside id="related" class="box">
+<!-- <aside id="related" class="box">
     <header class="box-top">
         <h1 class="aside-title">相关图书</h1>
     </header>
     <div class="box-inner">
         <p><a href="/books/explore-flask.html" title="探索 Flask"><img src="/assets/images/explore-flask.jpg" title="探索 Flask 封面" /></a></p>
     </div>
-</aside>
+</aside> -->
 {% endsidebar %}

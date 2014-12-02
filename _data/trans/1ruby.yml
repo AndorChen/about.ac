@@ -14,7 +14,7 @@
   slug: rails-guides
   url: https://selfstore.io/products/13
   image: railsguides.jpg
-  featured: yes
+  featured: no
 
 - title: Rails 程序部署之道
   slug: deploying-rails
