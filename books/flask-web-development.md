@@ -144,16 +144,11 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
     <div class="box-inner">
         <p><img class="border" src="/assets/images/flask-web-development.png" title="Flask Web 开发封面" /></p>
         <ul>
-            <li><a href="http://www.ituring.com.cn/book/1449" title="购买 Flask Web 开发">图灵社区</a></li>
+            <li><a href="http://www.ituring.com.cn/book/1449" title="购买电子书" target="_blank">电子书</a></li>
+            <li><a href="http://www.amazon.cn/gp/product/B00QT2TQCG/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00QT2TQCG&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
+            <li><a href="http://item.jd.com/11594082.html" title="到京东购买" target="_blank">京东</a></li>
+            <li><a href="http://product.china-pub.com/3770763" title="到 China Pub 购买" target="_blank">China Pub</a></li>
         </ul>
     </div>
 </aside>
-<!-- <aside id="related" class="box">
-    <header class="box-top">
-        <h1 class="aside-title">相关图书</h1>
-    </header>
-    <div class="box-inner">
-        <p><a href="/books/explore-flask.html" title="探索 Flask"><img src="/assets/images/explore-flask.jpg" title="探索 Flask 封面" /></a></p>
-    </div>
-</aside> -->
 {% endsidebar %}
