@@ -17,7 +17,7 @@ layout: default
             {% else %}
               {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
             {% endif %}
-            <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="assets/images/{{ book.image }}" height="164" alt="{{ boo.title }}" title="{{ boo.title }}" /></a></li>
+            <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="assets/images/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
           {% endif %}
         {% endfor %}
       {% endfor %}
@@ -28,16 +28,28 @@ layout: default
   </footer>
 </section>
 
-<!--<section class="box books">
+<section class="box books">
   <header class="box-top">
     <h1 class="box-title f-left">自己写的书</h1>
   </header>
   <div class="box-inner">
     <ul class="book-list">
-      <li><a href="https://leanpub.com/jekyll-little-book"><img src="assets/images/jekyll-little-book.jpg" width="127" height="164" alt="Jekyll 小书" title="Jekyll 小书" /></a></li>
+      {% for book in site.data.books %}
+        {% if book.featured %}
+          {% if book.url != null %}
+            {% assign book_url = book.url %}
+          {% else %}
+            {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
+          {% endif %}
+          <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="/assets/images/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </div>
-</section>-->
+  <footer class="box-bottom">
+    <p class="more"><a href="/books/" title="更多图书">更多图书 &raquo;</a></p>
+  </footer>
+</section>
 
 <section class="box recent">
   <header class="box-top">
