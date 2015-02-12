@@ -388,6 +388,20 @@ a.logo:active {
   background-color: #ccc;
   -webkit-border-radius: 4px;
 }
+.entry-content .footnote {
+  padding: 0 5px;
+}
+.entry-content .footnotes {
+  border-top: 3px double #222;
+  color: #666;
+  margin-top: 20px;
+}
+.entry-content .footnotes ol {
+  margin-left: 0;
+}
+.entry-content .footnotes li p {
+  margin-bottom: 10px;
+}
 .page-archive .entry-content h3 {
   margin-left: 15px;
 }
