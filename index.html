@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="book-list inner">
+<section class="book-list">
   <h2 class="section-title"><span>翻译/写的书</span></h2>
   <ul>
   {% for meta in site.data.meta.books %}
@@ -21,7 +21,7 @@ layout: default
   <p class="more"><a href="{{ site.baseurl }}/books/" title="更多图书">更多图书 &raquo;</a></p>
 </section>
 
-<section class="post-list inner">
+<section class="post-list">
   <h2 class="section-title"><span>最新文章</span></h2>
   <ul>
   {% for post in site.posts limit: 10 %}
@@ -31,7 +31,7 @@ layout: default
   <p class="more"><a href="{{ site.baseurl }}/archive/" title="文章归档">更多文章 &raquo;</a></p>
 </section>
 
-<section class="featured inner">
+<section class="featured">
   <h5>倾情推荐</h5>
   <p><a href="http://self.pub" title="自出版好书推荐" target="_blank"><img src="{{ site.baseurl }}/assets/images/self.pub.png" width="144" height="33" alt="自出版好书推荐" title="自出版好书推荐" /></a></p>
 </section>

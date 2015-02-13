@@ -14,12 +14,13 @@
 <body>
 
 <div class="wrapper">
-  <header class="site-header inner">
-    <div class="avatar">
-      <a href="{{ site.baseurl }}/" title="首页"><img src="{{ site.baseurl }}/assets/images/andor.png" width="180" height="180" alt="" title="" /></a>
-    </div>
+  <div class="inner">
+    <header class="site-header">
+      <div class="avatar">
+        <a href="{{ site.baseurl }}/" title="首页"><img src="{{ site.baseurl }}/assets/images/andor.png" width="180" height="180" alt="" title="" /></a>
+      </div>
 
-    <h1 class="logo"><a href="{{ site.baseurl }}/" title="首页">{{ site.author }}</a></h1>
+      <h1 class="logo"><a href="{{ site.baseurl }}/" title="首页">{{ site.author }}</a></h1>
 
-    {% if is_home %}<p class="about-me">{{ site.author_info }}</p>{% endif %}
-  </header>
+      {% if is_home %}<p class="about-me">{{ site.author_info }}</p>{% endif %}
+    </header>

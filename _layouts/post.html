@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="breadcrumbs inner">
+<div class="breadcrumbs">
   <a href="{{ site.baseurl }}/" title="首页">首页</a>
   //
   <a href="{{ site.baseurl }}/archive/" title="文章归档">文章归档</a>
@@ -10,7 +10,7 @@ layout: default
   {{ page.title }}
 </div>
 
-<article class="hentry entry post inner">
+<article class="hentry entry post">
   <header class="entry-header">
     <h1 class="entry-title">{{ page.title }}</h1>
     <p class="entry-meta">{{ site.author_cn }}发布于{{ page.date | date: '%Y年%-m月%-d日' }}</p>
@@ -32,7 +32,7 @@ layout: default
 </article>
 
 {% if page.previous or page.next %}
-<ul class="pager inner">
+<ul class="pager">
   {% if page.previous %}
   <li class="previous">
     <a rel="prev" href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title | escape }}">&laquo; 上一篇文章</a>
