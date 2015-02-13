@@ -10,14 +10,14 @@
   image: everydayrailsrspeccn.jpg
   featured: yes
 
+- title: Rails 程序部署之道
+  slug: deploying-rails
+  url: https://selfstore.io/products/66
+  image: deployrailscn.jpg
+  featured: no
+
 - title: Rails 指南
   slug: rails-guides
   url: https://selfstore.io/products/13
   image: railsguides.jpg
   featured: no
-
-- title: Rails 程序部署之道
-  slug: deploying-rails
-  url: https://selfstore.io/products/66
-  image: deployrailscn.jpg
-  featured: yes

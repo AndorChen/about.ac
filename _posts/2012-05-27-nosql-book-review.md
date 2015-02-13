@@ -3,7 +3,6 @@ layout: post
 title: 不要站在巨人的肩上耍人
 tags: ['Book']
 ---
-{% include JB/setup %}
 
 本文是对《[NoSQL数据库入门](http://book.douban.com/subject/10736899/)》一书的评论，原文载于豆瓣。
 

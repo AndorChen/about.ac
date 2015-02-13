@@ -3,7 +3,6 @@ layout: post
 title: 禁用 WordPress 的 Toolbar
 tags: ['WordPress']
 ---
-{% include JB/setup %}
 
 WordPress 3.3 之后，用户可以在个人资料页面设置访问前台时是否显式 Toolbar。如果不想把决定权给用户，可以通过一些代码设置前台不显式 Toolbar，具体方法可以参照“[Disable Admin Bar in WordPress 3.3](http://wp.tutsplus.com/tutorials/how-to-disable-the-admin-bar-in-wordpress-3-3/)”一文。但是该文提供的方法有个弊端：虽然 Toolbar “不显式”了，但是它所用到的文件（样式表文件和Javascript 脚本文件）一个都没少，而且还多加了一个样式表。
 

@@ -3,7 +3,6 @@ layout: post
 title: 修改基于日期的归档页面的 URL 结构
 tags: ['WordPress']
 ---
-{% include JB/setup %}
 
 WordPress 的链接格式是很灵活的，几乎可以任意的定制 URL 的格式。如果你所用的服务器支持 mod_rewrite 的话就可以设置“精美”的 URL 格式。WordPress 默认提供了 5 种 URL 格式供选择，而且还可以自由定制。WordPress 还提供了针对“分类”和“标签”的 rewrite base 设置选项。
 

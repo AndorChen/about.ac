@@ -1,0 +1,8 @@
+- slug: self
+  name: '自己写的书'
+
+- slug: ruby
+  name: 'Ruby/Rails 相关'
+
+- slug: python
+  name: 'Python 相关'

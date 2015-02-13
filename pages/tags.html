@@ -1,22 +1,22 @@
 ---
 layout: page
-title: 话题
-slug: tags
-group: menu
+title: '话题'
+class: 'tags-page'
+permalink: '/tags/'
 ---
-{% include JB/setup %}
 
 <p>
   {% for tag in site.tags %}
-    <a id="{{ tag[0] }}-tag" href="#{{ tag[0] }}-ref" title="{{ tag[0] | escape }}" class="item-node">{{ tag[0] }}</a>
+    <a id="{{ tag[0] | slugify }}-tag" class="btn btn-default btn-sm" href="#{{ tag[0] | slugify }}-ref" title="{{ tag[0] | tag_name | escape }}">{{ tag[0] | tag_name }}</a>
   {% endfor %}
 </p>
 
 
 {% for tag in site.tags %}
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+  <h2 id="{{ tag[0] | slugify }}-ref">{{ tag[0] | tag_name }}</h2>
   <ul>
-    {% assign pages_list = tag[1] %}
-    {% include JB/pages_list %}
+  {% for post in tag[1] %}
+    <li><a href="post.url" title="{{ post.title | escape }}">{{ post.title }}</a></li>
+  {% endfor %}
   </ul>
 {% endfor %}

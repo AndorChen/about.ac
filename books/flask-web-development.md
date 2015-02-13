@@ -3,6 +3,17 @@ layout: book
 title: Flask Web 开发
 ---
 
+<aside class="purchase">
+    <p><img class="border" src="{{ site.baseurl }}/assets/images/flask-web-development.png" title="Flask Web 开发封面" /></p>
+    <h5>购买：</h5>
+    <ul>
+        <li><a href="http://www.ituring.com.cn/book/1449" title="购买电子书" target="_blank">电子书</a></li>
+        <li><a href="http://www.amazon.cn/gp/product/B00QT2TQCG/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00QT2TQCG&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
+        <li><a href="http://item.jd.com/11594082.html" title="到京东购买" target="_blank">京东</a></li>
+        <li><a href="http://product.china-pub.com/3770763" title="到 China Pub 购买" target="_blank">China Pub</a></li>
+    </ul>
+</aside>
+
 ## 关于本书
 
 [Flask](http://flask.pocoo.org/) 是使用 Python 开发的 Web 框架，用到了 Werkzeug 和 Jinja2 等包。Flask 是一个微型框架，但别被这个“微”迷惑了。其实 Flask 像其他框架一样强大，可以做很多事情，不管时小型应用还是大型应用都能胜任。
@@ -135,20 +146,3 @@ Miguel Grinberg 有超过 25 年的软件开发经验。在工作中，他领导
 
 [python_book]: http://book.douban.com/subject/5924860/
 [sql_book]: http://book.douban.com/subject/24250054/
-
-{% sidebar %}
-<aside id="purchase" class="box">
-    <header class="box-top">
-        <h1 class="aside-title">购买</h1>
-    </header>
-    <div class="box-inner">
-        <p><img class="border" src="/assets/images/flask-web-development.png" title="Flask Web 开发封面" /></p>
-        <ul>
-            <li><a href="http://www.ituring.com.cn/book/1449" title="购买电子书" target="_blank">电子书</a></li>
-            <li><a href="http://www.amazon.cn/gp/product/B00QT2TQCG/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00QT2TQCG&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
-            <li><a href="http://item.jd.com/11594082.html" title="到京东购买" target="_blank">京东</a></li>
-            <li><a href="http://product.china-pub.com/3770763" title="到 China Pub 购买" target="_blank">China Pub</a></li>
-        </ul>
-    </div>
-</aside>
-{% endsidebar %}

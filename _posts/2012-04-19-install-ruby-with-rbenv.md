@@ -3,7 +3,6 @@ layout: post
 title: 使用 rbenv 安装管理 Ruby
 tags: ['Ruby']
 ---
-{% include JB/setup %}
 
 Ruby 有不同的版本会同时存在，现在最新版本是 1.9.3-9125，但是有些开发者仍然使用 1.8.x 系列。而且很多程序只针对特定的 Ruby 版本。所以对 Ruby 做版本管理是即为重要的，这其中也就涉及到安装的问题。
 

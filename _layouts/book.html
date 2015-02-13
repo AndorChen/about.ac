@@ -1,8 +1,21 @@
 ---
-theme :
-  name : babel3
+layout: default
 ---
-{% include JB/setup %}
-{% include themes/babel3/header.html %}
-{% include themes/babel3/book.html %}
-{% include themes/babel3/footer.html %}
+
+<div class="breadcrumbs inner">
+  <a href="{{ site.baseurl }}/" title="首页">首页</a>
+  //
+  <a href="{{ site.baseurl }}/books/" title="图书">图书</a>
+  //
+  {{ page.title }}
+</div>
+
+<article class="hentry entry page book-page inner">
+  <header class="entry-header">
+    <h1 class="entry-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="entry-content">
+    {{ content }}
+  </div>
+</article>

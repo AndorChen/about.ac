@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 制作电子书的工具集
-tags: ['Book']
+tags: ['eBook']
 ---
 
 在制作[《Ruby on Rails Tutorial》中文版](http://about.ac/rails-tutorial-2nd-cn)电子书的过程中积累了一些经验，记录如下。

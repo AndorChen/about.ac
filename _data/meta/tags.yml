@@ -1,0 +1,26 @@
+- slug: book
+  name: 书
+
+- slug: wordpress
+  name: WordPress
+
+- slug: ruby
+  name: Ruby
+
+- slug: translation
+  name: 翻译
+
+- slug: dev
+  name: 开发
+
+- slug: life
+  name: 生活
+
+- slug: rails
+  name: Rails
+
+- slug: ebook
+  name: 电子书
+
+- slug: os-x
+  name: 'OS X'

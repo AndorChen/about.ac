@@ -3,7 +3,6 @@ layout: post
 title: 怎样学习 Ruby
 tags: ['Ruby']
 ---
-{% include JB/setup %}
 
 学给自己的忠告。
 

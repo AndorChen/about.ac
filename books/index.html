@@ -1,58 +1,22 @@
 ---
-layout: default
+layout: page
 title: 图书
-group: menu
+class: 'books-page'
 ---
-<section class="box books">
-  <header class="box-top">
-    <h1 class="box-title f-left">自己写的书</h1>
-  </header>
-  <div class="box-inner">
-    <ul class="book-list">
-      {% for book in site.data.books %}
-        {% if book.url != null %}
-          {% assign book_url = book.url %}
-        {% else %}
-          {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
-        {% endif %}
-        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="/assets/images/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
 
-<section class="box translations">
-  <header class="box-top">
-    <h1 class="box-title f-left">Ruby/Rails 相关</h1>
-  </header>
-  <div class="box-inner">
-    <ul class="book-list">
-      {% for book in site.data.trans.1ruby %}
-        {% if book.url != null %}
-          {% assign book_url = book.url %}
-        {% else %}
-          {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
-        {% endif %}
-        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="/assets/images/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
-      {% endfor %}
+{% for meta in site.data.meta.books %}
+  {% assign slug = meta['slug'] %}
+  <section class="book-list {{ slug }}-list inner">
+    <h2 class="section-title"><span>{{ meta['name'] }}</span></h2>
+    <ul>
+    {% for book in site.data.books[slug] %}
+      {% if book.url != null %}
+        {% assign book_url = book.url %}
+      {% else %}
+        {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' | prepend: site.baseurl %}
+      {% endif %}
+      <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
+    {% endfor %}
     </ul>
-  </div>
-</section>
-
-<section class="box translations">
-  <header class="box-top">
-    <h1 class="box-title f-left">Python 相关</h1>
-  </header>
-  <div class="box-inner">
-    <ul class="book-list">
-      {% for book in site.data.trans.2python %}
-        {% if book.url != null %}
-          {% assign book_url = book.url %}
-        {% else %}
-          {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' %}
-        {% endif %}
-        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="/assets/images/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+  </section>
+{% endfor %}

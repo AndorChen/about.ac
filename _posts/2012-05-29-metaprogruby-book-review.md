@@ -3,7 +3,6 @@ layout: post
 title: 中译本的好和不好
 tags: ['Book', 'Ruby']
 ---
-{% include JB/setup %}
 
 本文是对《[Ruby元编程](http://book.douban.com/subject/7056800/)》一书的评论，原文载于豆瓣。
 

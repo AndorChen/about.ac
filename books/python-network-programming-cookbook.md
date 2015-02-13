@@ -3,6 +3,17 @@ layout: book
 title: Python 网络编程攻略
 ---
 
+<aside class="purchase">
+    <p><img src="{{ site.baseurl }}/assets/images/python-network-programming-cookbook.jpg" alt="Python网络编程攻略封面" /></p>
+    <h5>购买：</h5>
+    <ul>
+        <li><a href="http://www.ituring.com.cn/book/1484" title="购买电子书" target="_blank">电子书</a></li>
+        <li><a href="http://www.amazon.cn/gp/product/B00PUP2IWS/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00PUP2IWS&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
+        <li><a href="http://item.jd.com/1367333254.html" title="到京东购买" target="_blank">京东</a></li>
+        <li><a href="http://product.china-pub.com/3770650" title="到 China Pub 购买" target="_blank">China Pub</a></li>
+    </ul>
+</aside>
+
 ## 关于本书
 
 这本书是Python网络编程方面的探索性指南，涉及了很多网络协议，例如TCP/UDP、HTTP/HTTPS、FTP、SMTP、POP3、IMAP、CGI等。Python功能强大且具交互性，用来开发解决实际问题的脚本是一种享受，比如处理网络和系统管理操作、开发Web应用、与本地和远程网络交互、捕获并分析低层网络数据包，等等。本书主要的目的是教你如何动手处理这些任务，因此不会牵涉太多理论，而是专注实践。
@@ -73,20 +84,3 @@ title: Python 网络编程攻略
 | Unix Domain Socket | Unix 域套接字 | |
 | WSDL | Web 服务定义语言 | Web Service Definition Language |
 {:class="table table-bordered"}
-
-{% sidebar %}
-<aside id="purchase" class="box">
-    <header class="box-top">
-        <h1 class="aside-title">购买</h1>
-    </header>
-    <div class="box-inner">
-        <p><img src="/assets/images/python-network-programming-cookbook.jpg" alt="Python网络编程攻略封面" /></p>
-        <ul>
-            <li><a href="http://www.ituring.com.cn/book/1484" title="购买电子书" target="_blank">电子书</a></li>
-            <li><a href="http://www.amazon.cn/gp/product/B00PUP2IWS/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00PUP2IWS&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
-            <li><a href="http://item.jd.com/1367333254.html" title="到京东购买" target="_blank">京东</a></li>
-            <li><a href="http://product.china-pub.com/3770650" title="到 China Pub 购买" target="_blank">China Pub</a></li>
-        </ul>
-    </div>
-</aside>
-{% endsidebar %}

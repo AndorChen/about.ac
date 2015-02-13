@@ -1,55 +1,23 @@
-highlighter: true
-markdown: MyKramdown
-kramdown:
-  input: MyMarkdownParser
-  auto_ids: false
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
-
-permalink: /:year/:month/:title.html
-exclude: [".ruby-version", "README.md", "Rakefile", "about.ac.sublime-project", "about.ac.sublime-workspace", "Gemfile", "Gemfile.lock", "bin", "pages/debug.html"]
-keep_files: ['.git', '.nojekyll', 'CNAME', 'assets/images', 'assets/themes']
-
+# Site settings
 title: Andor Chen
-tagline: Andor 的个人网站
-author:
-  name: Andor
-  full_name: Andor Chen
-  pen_name: 安道
-  bio: Andor 是一位父亲、丈夫，也是一名机械工程师。翻译爱好者，已出版几本电子书。偶尔写些代码。
-  email: Andor.Chen.27@gmail.com
+author: 安道
+author_info: 安道是一位父亲、丈夫，一名机械工程师。翻译爱好者，已出版几本电子书。偶尔写些代码。
+email: andor.chen.27@gmail.com
+description: 安道的个人网站
+baseurl: ""
+url: "http://about.ac"
+twitter_username: andor_chen
+github_username:  andorchen
 
-production_url: http://about.ac
+# Build settings
+permalink: /:year/:month/:title.html
+exclude: ["README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
+keep_files: ['.git', '.nojekyll', 'CNAME', 'assets']
 
-JB:
-  version: 0.2.13
-
-  BASE_PATH: false
-  ASSET_PATH: false
-
-  archive_path: /pages/archive.html
-  categories_path: /pages/categories.html
-  tags_path: /pages/tags.html
-
-  comments:
-    provider: false
-
-  analytics:
-    provider: false
-    google:
-      tracking_id: 'UA-123-12'
-
-  sharing:
-    provider: false
-
-  tags_list:
-    provider: 'custom'
-
-  posts_collate:
-    provider: 'custom'
-
-  pages_list:
-    provider: 'custom'
+# Converter settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: false
+  use_coderay: false
+  syntax_highlighter: rouge

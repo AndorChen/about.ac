@@ -3,7 +3,6 @@ layout: post
 title: HTML 的未来一片光明
 tags: ['Book']
 ---
-{% include JB/setup %}
 
 本文是对《[HTML5 For Web Designer](http://book.douban.com/subject/4903307/)》一书的评论，原载于豆瓣。
 

@@ -3,7 +3,6 @@ layout: post
 title: WordPress 的 i18n 和 l10n 流程
 tags: ['WordPress']
 ---
-{% include JB/setup %}
 
 WordPress 对 i18n 和 l10n 有着很完善的支持。最近在做 V2Press 的时候把 i18n 和 l10n 的流程走了一遍，在此做个记录，备查。
 
