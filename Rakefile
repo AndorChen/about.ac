@@ -23,3 +23,7 @@ desc "Launch preview environment"
 task :preview do
   system "bundle exec jekyll s --baseurl='/aboutac'"
 end
+
+task :s => :preview
+task :server => :preview
+task :default => :preview
