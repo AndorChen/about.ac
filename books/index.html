@@ -13,7 +13,7 @@ class: 'books-page'
       {% if book.url != null %}
         {% assign book_url = book.url %}
       {% else %}
-        {% assign book_url =  book.slug | append: '.html' | prepend: '/books/' | prepend: site.baseurl %}
+        {% assign book_url =  book.slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
       {% endif %}
       <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
     {% endfor %}

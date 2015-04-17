@@ -21,3 +21,8 @@ kramdown:
   auto_ids: false
   use_coderay: false
   syntax_highlighter: rouge
+
+collections:
+  books:
+    output: true
+    permalink: /:collection/:path/
