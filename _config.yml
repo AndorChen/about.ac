@@ -15,7 +15,7 @@ exclude: ["README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
 keep_files: ['.git', '.nojekyll', 'CNAME', 'assets', 'favicon.ico']
 
 # Converter settings
-markdown: kramdown
+markdown: ACKramdownParser
 kramdown:
   input: GFM
   auto_ids: false
