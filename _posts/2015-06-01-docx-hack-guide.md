@@ -1,7 +1,7 @@
 ---
 layout: post
 title: docx 文件定制指南
-tags: ['开发']
+tags: ['Dev']
 ---
 
 我在“[翻译时使用的应用]({{site.baseurl}}{% post_url 2015-05-10-apps-for-translator%})”一文中提到，因为最近翻译的一本书要求提供 `docx` 文件，所以我第一次使用了 [pandoc](http://pandoc.org/)。
