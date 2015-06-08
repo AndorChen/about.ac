@@ -31,6 +31,15 @@ layout: default
   <p class="more"><a href="{{ site.baseurl }}/archive/" title="文章归档">更多文章 &raquo;</a></p>
 </section>
 
+<section class="websites">
+  <h2 class="section-title"><span>名下网站</span></h2>
+  <ul>
+  {% for website in site.data.websites %}
+    <li><a href="{{ website.url }}" title="{{ website.desc | escape }}" target="_blank">{{ website.url }}</a></li>
+  {% endfor %}
+  </ul>
+</section>
+
 <section class="featured">
   <h5>倾情推荐</h5>
   <p><a href="http://self.pub" title="自出版好书推荐" target="_blank"><img src="{{ site.baseurl }}/assets/images/self.pub.png" width="144" height="33" alt="自出版好书推荐" title="自出版好书推荐" /></a></p>
