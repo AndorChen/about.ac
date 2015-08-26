@@ -23,5 +23,11 @@
 
       <h1 class="logo"><a href="{{ site.baseurl }}/" title="首页">{{ site.author }}</a></h1>
 
-      {% if is_home %}<p class="about-me">{{ site.author_info }}</p>{% endif %}
+      {% if is_home %}
+      <div class="description">
+        <p>自由翻译，专注于现代化计算机技术。</p>
+        <p>翻译之余关注电子书制作技术，图书电子化动态。</p>
+        <p class="status"><span class="indicator unavailable"></span>正在翻译《<a href="http://shop.oreilly.com/product/0636920036357.do" title="CSS: The Missing Manual, 4th Edition">CSS: The Missing Manual, 4th Edition</a>》</p>
+      </div>
+      {% endif %}
     </header>
