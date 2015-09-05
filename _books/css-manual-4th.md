@@ -4,7 +4,7 @@ title: 'CSS: The Missing Manual, 4th Edition'
 ---
 
 <aside class="purchase">
-    <p><img class="border" src="{{ site.baseurl }}/assets/images/css-manual-4th.jpg" title="{{ page.title }}" /></p>
+    <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/css-manual-4th.jpg" title="{{ page.title }}" /></p>
     <p class="unpublish">翻译中</p>
 </aside>
 

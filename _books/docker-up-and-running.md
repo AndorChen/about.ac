@@ -4,7 +4,7 @@ title: 'Docker 即学即用'
 ---
 
 <aside class="purchase">
-    <p><img class="border" src="{{ site.baseurl }}/assets/images/docker-up-and-running.jpg" title="{{ page.title }}" /></p>
+    <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/docker-up-and-running.jpg" title="{{ page.title }}" /></p>
     <p class="unpublish">未出版</p>
 </aside>
 

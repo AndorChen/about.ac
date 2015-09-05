@@ -4,7 +4,7 @@ title: Python 网络编程攻略
 ---
 
 <aside class="purchase">
-    <p><img src="{{ site.baseurl }}/assets/images/python-network-programming-cookbook.jpg" alt="Python网络编程攻略封面" /></p>
+    <p><img src="{{ site.baseurl }}/assets/images/covers/python-network-programming-cookbook.jpg" alt="Python网络编程攻略封面" /></p>
     <h5>购买：</h5>
     <ul>
         <li><a href="http://www.ituring.com.cn/book/1484" title="购买电子书" target="_blank">电子书</a></li>

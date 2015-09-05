@@ -4,7 +4,7 @@ title: Flask Web 开发
 ---
 
 <aside class="purchase">
-    <p><img class="border" src="{{ site.baseurl }}/assets/images/flask-web-development.png" title="Flask Web 开发封面" /></p>
+    <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/flask-web-development.png" title="Flask Web 开发封面" /></p>
     <h5>购买：</h5>
     <ul>
         <li><a href="http://www.ituring.com.cn/book/1449" title="购买电子书" target="_blank">电子书</a></li>

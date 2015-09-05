@@ -4,7 +4,7 @@ title: Python Web 开发：测试驱动方法
 ---
 
 <aside class="purchase">
-    <p><img class="border" src="{{ site.baseurl }}/assets/images/python-tdd.jpg" title="{{ page.title }}" /></p>
+    <p><img class="border" src="{{ site.baseurl }}/assets/covers/images/python-tdd.jpg" title="{{ page.title }}" /></p>
     <p class="unpublish">未出版</p>
 </aside>
 
