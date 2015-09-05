@@ -7,7 +7,7 @@ permalink: '/books/'
 
 {% for meta in site.data.meta.books %}
   {% assign slug = meta['slug'] %}
-  <section class="book-list {{ slug }}-list inner">
+  <section class="book-list {{ slug }}-list">
     <h2 class="section-title"><span>{{ meta['name'] }}</span></h2>
     <ul>
     {% for book in site.data.books[slug] %}
