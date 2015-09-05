@@ -1,22 +1,6 @@
-desc "Push to github"
-task :push do
-  puts   "Pushing to `source' branch:"
-  system "git push origin source"
-  puts   "`source' branch updated."
-  puts
-
-  puts   "Building site...."
-  system "bundle exec jekyll build"
-  puts   "Site updated."
-  puts
-
-  cd '_site' do
-    puts   "Pushing to `master' branch:"
-    system "git add -A"
-    system "git commit -m 'update at #{Time.now.utc}'"
-    system "git push origin master"
-    puts   "`master' branch updated."
-  end
+desc 'Deploy to FTP'
+task :deploy do
+  system 'bundle exec glynn'
 end
 
 desc "Launch preview environment"
