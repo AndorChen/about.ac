@@ -27,6 +27,21 @@ module Kramdown
         output * "\n"
       end
 
+      def convert_a(el, indent)
+        res = inner(el, indent)
+        attr = el.attr.dup
+        if attr['href'].start_with?('mailto:')
+          mail_addr = attr['href'][7..-1]
+          attr['href'] = obfuscate('mailto') << ":" << obfuscate(mail_addr)
+          res = obfuscate(res) if res == mail_addr
+        end
+
+        # Use link text as `title' attribute if not set explictly
+        attr['title'] = escape_html(res) if attr['title'].nil?
+
+        format_as_span_html(el.type, attr, res)
+      end
+
     end
   end
 end
