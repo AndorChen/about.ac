@@ -11,7 +11,7 @@ github_username:  andorchen
 # Build settings
 permalink: /:year/:month/:title.html
 exclude: ["README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
-keep_files: ['.git', '.nojekyll', 'CNAME', 'assets', 'favicon.ico']
+# keep_files: ['.git', '.nojekyll', 'CNAME', 'assets', 'favicon.ico']
 timezone: '+0800'
 
 # Converter settings
