@@ -1,0 +1,19 @@
+- title: Java 权威技术手册（第6版）
+  slug: java-nutshell-6th
+  image: java-nutshell-6th.jpg
+  featured: no
+
+- title: Modern PHP（中文版）
+  slug: modern-php
+  image: modern-php.jpg
+  featured: no
+
+- title: Docker 即学即用
+  slug: docker-up-and-running
+  image: docker-up-and-running.jpg
+  featured: no
+
+- title: 'CSS: The Missing Manual, 4th Edition'
+  slug: css-manual-4th
+  image: css-manual-4th.jpg
+  featured: no

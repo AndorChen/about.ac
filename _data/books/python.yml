@@ -8,7 +8,7 @@
   image: python-network-programming-cookbook.jpg
   featured: no
 
-# - title: 'Python Web 开发：测试驱动方法'
-#   slug: python-tdd
-#   image: python-tdd.jpg
-#   featured: no
+- title: 'Python Web 开发：测试驱动方法'
+  slug: python-tdd
+  image: python-tdd.jpg
+  featured: no
