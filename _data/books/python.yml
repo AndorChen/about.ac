@@ -3,12 +3,12 @@
   image: flask-web-development.png
   featured: yes
 
-# - title: 探索 Flask
-#   slug: explore-flask
-#   image: explore-flask.jpg
-#   featured: no
-
 - title: Python 网络编程攻略
   slug: python-network-programming-cookbook
   image: python-network-programming-cookbook.jpg
   featured: no
+
+# - title: 'Python Web 开发：测试驱动方法'
+#   slug: python-tdd
+#   image: python-tdd.jpg
+#   featured: no
