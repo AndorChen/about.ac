@@ -15,13 +15,9 @@ GEM
       csspool-st (= 3.1.2)
       json
     csspool-st (3.1.2)
-    double-bag-ftps (0.1.2)
     execjs (2.3.0)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
-    glynn (1.2.0)
-      double-bag-ftps (~> 0.1.2)
-      jekyll
     hitimes (1.2.2)
     html_press (0.8.2)
       htmlentities
@@ -96,7 +92,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  glynn (= 1.2.0)
   jekyll (= 2.5.3)
   octopress-minify-html (= 1.2.1)
   rake (= 10.4.2)
