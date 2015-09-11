@@ -31,12 +31,14 @@ $ bundle
 $ bundle exec jekyll build
 $ cd _site
 _site $ git init
+_site $ git add -A
+_site $ git commit -m 'init'
 ```
 
-4. 上传到 FTP
+4. 第一次部署
 
 ```
-$ rake deploy
+_site $ git ftp init -u <user> -p <passwd> ftp://host.example.com/public_html
 ```
 
 ### 后续部署
