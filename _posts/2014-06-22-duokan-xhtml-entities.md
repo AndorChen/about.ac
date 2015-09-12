@@ -8,228 +8,44 @@ tags: ['eBook']
 
 在这个表格中，只列出了多看不支持的实体，不包含浏览器不支持的实体。同时为了对比，列出了 iBooks 的支持情况。测试的实体来自 <http://www.w3.org/2000/07/8378/xhtml/entities/entities.xml>。
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>实体</th>
-            <th>16 进制表示</th>
-            <th>多看</th>
-            <th>iBooks</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>&#x3D2;</td>
-            <td>3D2</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2118;</td>
-            <td>2118</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2111;</td>
-            <td>2111</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x211C;</td>
-            <td>211C</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x21B5;</td>
-            <td>21B5</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x21D0;</td>
-            <td>21D0</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x21D1;</td>
-            <td>21D1</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x21D2;</td>
-            <td>21D2</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x21D3;</td>
-            <td>21D3</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x21D4;</td>
-            <td>21D4</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2200;</td>
-            <td>2200</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2203;</td>
-            <td>2203</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2205;</td>
-            <td>2205</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2207;</td>
-            <td>2207</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2209;</td>
-            <td>2209</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x220B;</td>
-            <td>220B</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2217;</td>
-            <td>2217</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x223C;</td>
-            <td>223C</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2282;</td>
-            <td>2282</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2283;</td>
-            <td>2283</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2284;</td>
-            <td>2284</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2286;</td>
-            <td>2286</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2287;</td>
-            <td>2287;</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2297;</td>
-            <td>2297</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x22C5;</td>
-            <td>22C5</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2308;</td>
-            <td>2308</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2309;</td>
-            <td>2309</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x230A;</td>
-            <td>230A</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x230B;</td>
-            <td>230B</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2329;</td>
-            <td>2329</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x232A;</td>
-            <td>232A</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2660;</td>
-            <td>2660</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2663;</td>
-            <td>2663</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2665;</td>
-            <td>2665</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>&#x2666;</td>
-            <td>2666</td>
-            <td>N</td>
-            <td>Y</td>
-        </tr>
-    </tbody>
-</table>
+| 实体 | 16 进制表示 | 多看 | iBooks |
+|-----|------------|------|--------|
+| &#x3D2;  | 3D2  | N | Y |
+| &#x2118; | 2118 | N | Y |
+| &#x2111; | 2111 | N | Y |
+| &#x211C; | 211C | N | Y |
+| &#x21B5; | 21B5 | N | Y |
+| &#x21D0; | 21D0 | N | Y |
+| &#x21D1; | 21D1 | N | Y |
+| &#x21D2; | 21D2 | N | Y |
+| &#x21D3; | 21D3 | N | Y |
+| &#x21D4; | 21D4 | N | Y |
+| &#x2200; | 2200 | N | Y |
+| &#x2203; | 2203 | N | Y |
+| &#x2205; | 2205 | N | Y |
+| &#x2207; | 2207 | N | Y |
+| &#x2209; | 2209 | N | Y |
+| &#x220B; | 220B | N | Y |
+| &#x2217; | 2217 | N | Y |
+| &#x223C; | 223C | N | Y |
+| &#x2282; | 2282 | N | Y |
+| &#x2283; | 2283 | N | Y |
+| &#x2284; | 2284 | N | Y |
+| &#x2286; | 2286 | N | Y |
+| &#x2287; | 2287 | N | Y |
+| &#x2297; | 2297 | N | Y |
+| &#x22C5; | 22C5 | N | Y |
+| &#x2308; | 2308 | N | Y |
+| &#x2309; | 2309 | N | Y |
+| &#x230A; | 230A | N | Y |
+| &#x230B; | 230B | N | Y |
+| &#x2329; | 2329 | N | Y |
+| &#x232A; | 232A | N | Y |
+| &#x2660; | 2660 | N | Y |
+| &#x2663; | 2663 | N | Y |
+| &#x2665; | 2665 | N | Y |
+| &#x2666; | 2666 | N | Y |
+{:class="table table-bordered"}
 
 由上表可以看出：
 
@@ -237,3 +53,13 @@ tags: ['eBook']
 - 多看不支持的实体，iBooks 都支持；
 
 另外，在 ePub 中使用实体时要注意一点。ePub 规范基于 XHTML，而 XHTML 实体比 [HTML 实体](http://dev.w3.org/html5/html-author/charref)少得多。
+
+### 2015.09.12 更新
+
+在多看中可以使用特殊的字体显示这些特殊的符号：
+
+```css
+.symbol {
+    font-family: 'DK-SYMBOL';
+}
+```
