@@ -5,12 +5,169 @@
     <description>安道的个人网站</description>
     <link>http://about.ac/</link>
     <atom:link href="http://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Sep 2015 13:43:32 +0000</pubDate>
-    <lastBuildDate>Sat, 12 Sep 2015 13:43:32 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Sep 2015 10:02:23 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Sep 2015 10:02:23 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>渲染公式</title>
+        <title>ePub 电子书排版最佳实践</title>
+        <description>&lt;p&gt;在制作《&lt;a href=&quot;http://railstutorial-china.org&quot; title=&quot;Ruby on Rails 教程&quot;&gt;Ruby on Rails 教程&lt;/a&gt;》和《&lt;a href=&quot;http://jekyll-china.com/book/&quot; title=&quot;Jekyll 小书&quot;&gt;Jekyll 小书&lt;/a&gt;》电子书的过程中，积累了一些经验，班门弄斧，姑且称之为“最佳实践”吧。&lt;/p&gt;
+
+&lt;h2&gt;没有“页”这个概念&lt;/h2&gt;
+
+&lt;p&gt;这是大前提，制作 ePub 电子书时一定要谨记这一点。ePub 电子书是“流式”的，不像实体书和 PDF 电子书那样有“页”这个概念。因此，很多效果或功能在 ePub 电子书中实现不了，比如说页眉和页码等（ePub 阅读器通常会在屏幕上部实现“页眉”，显示当前查看的书名和章节名；而且也会“分页”，但对阅读器来说，这个页与实体书的页并不一样）。&lt;/p&gt;
+
+&lt;p&gt;因为没有页码，书中的交叉引用不能简单地使用“参见 XX 页”，而要链接到章节名或章节序号。&lt;/p&gt;
+
+&lt;h2&gt;ePub 文件是小型的静态网站&lt;/h2&gt;
+
+&lt;p&gt;这也是一个核心概念。你可以把 ePub 电子书的扩展名改为 &lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt;，然后解压。你会看到解压得到的基本上就是个简单的静态网站：有 XHTML 文件，有图像，有样式表。如下所示：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── META-INF/
+├── OEBPS
+│   ├── chapter1.xhtml
+│   ├── chapter2.xhtml
+│   ├── chapter3.xhtml
+│   ├── cover.jpg
+│   ├── epub.css
+│   ├── images/
+│   ├── package.opf
+│   └── toc.ncx
+└── mimetype
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;当然，这个网站与我们平常所说的网站有所不同，这是由 Web 浏览器与 ePub 阅读器之间的功能差异造成的。例如，在 ePub 电子书中不能使用 JavaScript，基本不能使用 SVG，只能使用部分 CSS 属性。不过，ePub 电子书可以嵌入字体。&lt;/p&gt;
+
+&lt;h2&gt;交叉引用&lt;/h2&gt;
+
+&lt;p&gt;交叉引用是指引用书内的某个部分，比如“参见 1.2.3 节”，“如图 2.7”，等等。交叉引用最好加上链接，因为电子书不像实体书那样可以来回翻阅，加入链接便于读者定位所引用的内容。&lt;/p&gt;
+
+&lt;h2&gt;提供目录&lt;/h2&gt;
+
+&lt;p&gt;ePub 阅读器一般都会使用特殊的交互方式显示目录，但不会自己去解析内容，再生成目录。所以我们要在 ePub 文件中加入目录，让阅读器读取。如果内容较多，想显示次级目录，比如“3.2 节”，一定要设定目录的层级，不要把所有目录都放在相同的层级。指定目录层级的方式是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素中嵌套 &lt;code class=&quot;highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素，如下所示：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;navMap&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;navPoint&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;navLabel&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;text&amp;gt;&lt;/span&gt;第 1 章&lt;span class=&quot;nt&quot;&gt;&amp;lt;/text&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navLabel&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch1.html#ch_1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;navPoint&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;h2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch_1_1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;navLabel&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;text&amp;gt;&lt;/span&gt;1.1 节&lt;span class=&quot;nt&quot;&gt;&amp;lt;/text&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navLabel&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch1.html#ch_1_1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navPoint&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navPoint&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;navPoint&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;navLabel&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;text&amp;gt;&lt;/span&gt;第 2 章&lt;span class=&quot;nt&quot;&gt;&amp;lt;/text&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navLabel&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch2.html#ch_2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navPoint&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/navMap&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;不要把整本书都放在一个 XHTML 文件里&lt;/h2&gt;
+
+&lt;p&gt;一本书的内容有长有短，但是，不管多长，建议一章放在一个 XHTML 文件里，不要把整本书都放在一个 XHTML 文件里。如果都放在一个文件里，ePub 阅读器解析的速度会变慢。&lt;/p&gt;
+
+&lt;h2&gt;重置默认样式&lt;/h2&gt;
+
+&lt;p&gt;ePub 阅读器就像 Web 浏览器一样，会内置默认的样式。为了更好的掌控，实现较为统一的视觉效果，建议在样式表开头重置样式。比如说：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;applet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;iframe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;pre&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;abbr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;acronym&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;big&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;cite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;del&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;dfn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;kbd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;samp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;small&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;strike&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;sup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;tt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;dl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;dd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ol&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;fieldset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;tbody&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;tfoot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;thead&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;tr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;th&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;td&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;outline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;vertical-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;按章“换页”&lt;/h2&gt;
+
+&lt;p&gt;ePub 电子书虽然没有“页”这个概念，却可以换页（严格来说应该是“换屏”）。从视觉上来看，换页就是新起一屏显示内容，让相对独立的内容（例如两章）不连在一起。一般来说，建议每章结束后换页，使用下述 CSS 代码实现：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.chapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;page-break-after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;always&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;字体&lt;/h2&gt;
+
+&lt;p&gt;ePub 阅读器底层的操作系统（例如 iOS，Android 和各种定制的 ROM）往往会提供不同的字体，因此不能期望读者的系统中一定有某个字体。设置字体时要指定通用字体族（&lt;code class=&quot;highlighter-rouge&quot;&gt;serif&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sans-serif&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;monospace&lt;/code&gt;），让阅读器或底层系统判断要使用哪个字体。当然，我们也可以指定各种系统中常用的字体，提供更好的阅读体验。&lt;/p&gt;
+
+&lt;p&gt;如果十分想保持一致的阅读体验，还可以使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;@font-face&lt;/code&gt; 嵌入字体。但是要考虑嵌入的字体会不会让电子书的体积变得特别大，影响传输速度。&lt;/p&gt;
+
+&lt;p&gt;如果指定了字体，而不是让阅读器自行判断该使用哪个字体，在 iBooks 中会遇到一个问题：没使用指定的字体。这个问题的解决方法是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;.opf&lt;/code&gt; 文件中加入下面两个元素：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:version&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;1.2.0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:specified-fonts&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;添加这两个属性后，你会发现，在 iBooks 的外观设置中，字体项目下多了一个“Original”。这个选项的意思是，使用电子书中指定的字体。&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/figures/ibooks-fonts.png&quot; alt=&quot;让 iBooks 使用指定的字体&quot; /&gt;
+&lt;figcaption&gt;让 iBooks 使用指定的字体&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2&gt;字号&lt;/h2&gt;
+
+&lt;p&gt;我想你一定有这样的经历——调整电子书的文字大小。这种情况经常出现，因此，不要使用固定字号，例如 &lt;code class=&quot;highlighter-rouge&quot;&gt;12px&lt;/code&gt;，而要使用便于缩放的字号单位。ePub 电子书的字号一般建议使用百分比为单位，比如 &lt;code class=&quot;highlighter-rouge&quot;&gt;80%&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h2&gt;为标题加序号&lt;/h2&gt;
+
+&lt;p&gt;书中的各级标题往往使用不同于正文的字体和字号显示，但是在手持设备中，字号之间的差异并不明显。为了让读者对一本书的纲要有全局的认识，建议在标题前加上序号，例如：“1.2 二级标题”，“1.2.3 三级标题”。&lt;/p&gt;
+
+&lt;h2&gt;考虑兼容性&lt;/h2&gt;
+
+&lt;p&gt;是的，与浏览器一样，我们也要考虑 ePub 阅读器的兼容性。就我目前的观察，iBooks 对标准的支持是最好的。但我们不能期望所有读者都使用 iOS/OS X 系统。下面举个例子。&lt;/p&gt;
+
+&lt;p&gt;我平常看书喜欢用多看（手机和平板），但是&lt;a href=&quot;/2014/06/duokan-xhtml-entities.html&quot; title=&quot;多看对 XHTML 实体的支持并不好&quot;&gt;多看对 XHTML 实体的支持并不好&lt;/a&gt;，有些特殊的符号显示不出来。这时就要专门针对多看编写样式：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.symbol&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&#39;DK-SYMBOL&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DK-SYMBOL&lt;/code&gt; 是多看自带的字体，用于显示一些特殊的字体。&lt;/p&gt;
+
+&lt;h2&gt;其他&lt;/h2&gt;
+
+&lt;p&gt;除了上面列出的几点之外，还有一些推荐的做法，在此不一一展开详述。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;不要定义大块背景色；&lt;/li&gt;
+  &lt;li&gt;脚注加上返回链接；&lt;/li&gt;
+  &lt;li&gt;尽量不使用某个阅读器专属的功能；&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+        <link>http://about.ac/2015/09/epub-best-practices.html</link>
+        <guid isPermaLink="true">http://about.ac/2015/09/epub-best-practices.html</guid>
+        
+        <category>eBook</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>在电子书中渲染公式</title>
         <description>&lt;p&gt;昨天更新了《&lt;a href=&quot;http://railstutorial-china.org&quot; title=&quot;Ruby on Rails 教程&quot;&gt;Ruby on Rails 教程&lt;/a&gt;》，这次更新最大的变化是对公式的处理方式。这本书有一节用了几个公式，我使用的电子书工具链之前不支持转换公式，所以只能做些简单的处理：使用上下标。后来越看越不舒服，因此前几天抽空实现了 LaTex 式的显示效果。&lt;/p&gt;
 
 &lt;p&gt;公式一直是我的电子书工具链所缺乏的功能之一，我也一直想解决，不过苦于没有合适的方法。前几天，O’Reilly 电子书方面的负责人（Sanders Kleinfeld）分享了&lt;a href=&quot;http://diagramcenter.org/webinars.html#mmlc&quot; title=&quot;他们的处理方式&quot;&gt;他们的处理方式&lt;/a&gt;，勾起了我解决这个问题的欲望。&lt;/p&gt;
@@ -627,71 +784,6 @@ sleepForTimeInterval(_:)&lt;/code&gt; 方法都会导致 UI 无响应，就像�
         <guid isPermaLink="true">http://about.ac/2014/12/2014.html</guid>
         
         <category>Life</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>升级到 Mavericks</title>
-        <description>&lt;p&gt;最近把系统升级到了 Mavericks 10.9.5。观察了好久，最终评估我的电脑应该无法顺畅运行 Yosemite，所以决定安装前一代 OS X。&lt;/p&gt;
-
-&lt;p&gt;安装的过程尚算顺利，用时一个半小时左右。这一次我选择的是直接升级，不是全新安装。升级后应用都兼容（我安装的应用实在少的可怜），不过也遇到一些问题。&lt;/p&gt;
-
-&lt;h2&gt;内存&lt;/h2&gt;
-
-&lt;p&gt;不升级 10.10，最大的担忧就是内存不够。看样子，10.9 也很吃内存，开机后就用掉了 3GB。所以终决定升级内存，把 2x2GB 换成 2x8GB。事后证明这个决策是明智的，因为开 XCode 后内存用量超过了 9GB。&lt;/p&gt;
-
-&lt;p&gt;我用的是英睿达的内存条，按照英睿达的系统推荐，最终选定的型号是 CT102464BF160B。因为这个型号的频率是 1600MHz，而电脑原装的是 1333MHz，所以买之前有些犹豫。随后咨询了一些推友，大家的说法不一，不过我决定买回来试试。&lt;/p&gt;
-
-&lt;p&gt;装上之后系统能正确识别，目前来看没有什么问题。&lt;/p&gt;
-
-&lt;h2&gt;Git&lt;/h2&gt;
-
-&lt;p&gt;不知什么原因，升级后识别不了 brew 安装的 git，直接使用系统自带的版本。所以，重新使用 brew 安装了 git。&lt;/p&gt;
-
-&lt;p&gt;另外，bash prompt 中的 git 设置也失效了，所以&lt;a href=&quot;https://github.com/AndorChen/dotfiles/commit/179b51897ff8eaa454778e4191cd4821de17f9ca&quot; title=&quot;升级了 dotfiles&quot;&gt;升级了 dotfiles&lt;/a&gt;。顺便也把 git 的推送规则设为了 &lt;code class=&quot;highlighter-rouge&quot;&gt;matching&lt;/code&gt;（&lt;a href=&quot;https://github.com/AndorChen/dotfiles/commit/d1af6aad079ccd953ef100eb4324cc7a0508d728&quot; title=&quot;ref&quot;&gt;ref&lt;/a&gt;）。&lt;/p&gt;
-
-&lt;h2&gt;Ruby&lt;/h2&gt;
-
-&lt;h3&gt;OpenSSL&lt;/h3&gt;
-
-&lt;p&gt;在使用 Ruby 的过程中遇到“Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib (LoadError)”错误，使用如下方法解决（&lt;a href=&quot;http://mithun.co/hacks/library-not-loaded-libcrypto-1-0-0-dylib-issue-in-mac/&quot; title=&quot;via&quot;&gt;via&lt;/a&gt;）：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# install openssl via brew&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew install openssl
-
-&lt;span class=&quot;c&quot;&gt;# copy files&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /usr/local/Cellar/openssl/1.0.1i/lib
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;../1.0.1i/lib] &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo cp libssl.1.0.0.dylib libcrypto.1.0.0.dylib /usr/lib/
-
-&lt;span class=&quot;c&quot;&gt;# re-create symbolic links&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;../1.0.1i/lib] &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo rm libssl.dylib libcrypto.dylib
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;../1.0.1i/lib] &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo ln -s libssl.1.0.0.dylib libssl.dylib
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;../1.0.1i/lib] &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sudo ln -s libcrypto.1.0.0.dylib libcrypto.dylib
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3&gt;readline&lt;/h3&gt;
-
-&lt;p&gt;使用 Rails 的过程中遇到“Library not loaded: /usr/local/opt/readline/lib/libreadline.6.2.dylib”错误，使用如下方法解决（&lt;a href=&quot;http://qiita.com/hoisjp/items/61b5e016f51bc1ac8ed8&quot; title=&quot;via&quot;&gt;via&lt;/a&gt;）：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# uninstall old readline&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew uninstall readline
-
-&lt;span class=&quot;c&quot;&gt;# re-install readline&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew install readline
-
-&lt;span class=&quot;c&quot;&gt;# link dylibs&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew link --force readline
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Sat, 15 Nov 2014 00:00:00 +0000</pubDate>
-        <link>http://about.ac/2014/11/mavericks.html</link>
-        <guid isPermaLink="true">http://about.ac/2014/11/mavericks.html</guid>
-        
-        <category>OS X</category>
         
         
       </item>
