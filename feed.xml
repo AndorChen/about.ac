@@ -5,8 +5,8 @@
     <description>安道的个人网站</description>
     <link>http://about.ac/</link>
     <atom:link href="http://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Sep 2015 10:41:54 +0000</pubDate>
-    <lastBuildDate>Tue, 15 Sep 2015 10:41:54 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2015 05:31:04 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 05:31:04 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -112,14 +112,13 @@
 
 &lt;p&gt;如果十分想保持一致的阅读体验，还可以使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;@font-face&lt;/code&gt; 嵌入字体。但是要考虑嵌入的字体会不会让电子书的体积变得特别大，影响传输速度。&lt;/p&gt;
 
-&lt;p&gt;如果指定了字体，而不是让阅读器自行判断该使用哪个字体，在 iBooks 中会遇到一个问题：没使用指定的字体。这个问题的解决方法是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;.opf&lt;/code&gt; 文件中加入下面两个元素：&lt;/p&gt;
+&lt;p&gt;如果指定了字体，而不是让阅读器自行判断该使用哪个字体，在 iBooks 中会遇到一个问题：没使用指定的字体。这个问题的解决方法是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;.opf&lt;/code&gt; 文件中加入下述元素：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:version&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;1.2.0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:specified-fonts&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:specified-fonts&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;添加这两个属性后，你会发现，在 iBooks 的外观设置中，字体项目下多了一个“Original”。这个选项的意思是，使用电子书中指定的字体。&lt;/p&gt;
+&lt;p&gt;添加这个属性后，你会发现，在 iBooks 的外观设置中，字体项目下多了一个“Original”。这个选项的意思是，使用电子书中指定的字体。&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;/assets/images/figures/ibooks-fonts.png&quot; alt=&quot;让 iBooks 使用指定的字体&quot; /&gt;
