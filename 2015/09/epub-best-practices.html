@@ -9,7 +9,7 @@
 │   ├── package.opf
 │   └── toc.ncx
 └── mimetype
-</code></pre></div><p>当然，这个网站与我们平常所说的网站有所不同，这是由 Web 浏览器与 ePub 阅读器之间的功能差异造成的。例如，在 ePub 电子书中不能使用 JavaScript，基本不能使用 SVG，只能使用部分 CSS 属性。不过，ePub 电子书可以嵌入字体。</p><h2>交叉引用</h2><p>交叉引用是指引用书内的某个部分，比如“参见 1.2.3 节”，“如图 2.7”，等等。交叉引用最好加上链接，因为电子书不像实体书那样可以来回翻阅，加入链接便于读者定位所引用的内容。</p><h2>提供目录</h2><p>ePub 阅读器一般都会使用特殊的交互方式显示目录，但不会自己去解析内容，再生成目录。所以我们要在 ePub 文件中加入目录，让阅读器读取。如果内容较多，想显示次级目录，比如“3.2 节”，一定要设定目录的层级，不要把所有目录都放在相同的层级。指定目录层级的方式是，在 <code class="highlighter-rouge">navPoint</code> 元素中嵌套 <code class="highlighter-rouge">navPoint</code> 元素，如下所示：</p><div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;navMap&gt;</span>
+</code></pre></div><p>当然，这个网站与我们平常所说的网站有所不同，这是由 Web 浏览器与 ePub 阅读器之间的功能差异造成的。例如，在 ePub 电子书中基本不能使用 JavaScript，对 SVG 的支持有限，只能使用部分 CSS 属性。不过，ePub 电子书可以嵌入字体。</p><h2>交叉引用</h2><p>交叉引用是指引用书内的某个部分，比如“参见 1.2.3 节”，“如图 2.7”，等等。交叉引用最好加上链接，因为电子书不像实体书那样可以来回翻阅，加入链接便于读者定位所引用的内容。</p><h2>提供目录</h2><p>ePub 阅读器一般都会使用特殊的交互方式显示目录，但不会自己去解析内容，再生成目录。所以我们要在 ePub 文件中加入目录，让阅读器读取。如果内容较多，想显示次级目录，比如“3.2 节”，一定要设定目录的层级，不要把所有目录都放在相同的层级。指定目录层级的方式是，在 <code class="highlighter-rouge">navPoint</code> 元素中嵌套 <code class="highlighter-rouge">navPoint</code> 元素，如下所示：</p><div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;navMap&gt;</span>
     <span class="nt">&lt;navPoint</span> <span class="na">id=</span><span class="s">"ch1"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;navLabel&gt;</span>
             <span class="nt">&lt;text&gt;</span>第 1 章<span class="nt">&lt;/text&gt;</span>

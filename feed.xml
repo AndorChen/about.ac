@@ -5,8 +5,8 @@
     <description>安道的个人网站</description>
     <link>http://about.ac/</link>
     <atom:link href="http://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2015 05:31:04 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2015 05:31:04 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2015 07:46:37 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 07:46:37 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -37,7 +37,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;当然，这个网站与我们平常所说的网站有所不同，这是由 Web 浏览器与 ePub 阅读器之间的功能差异造成的。例如，在 ePub 电子书中不能使用 JavaScript，基本不能使用 SVG，只能使用部分 CSS 属性。不过，ePub 电子书可以嵌入字体。&lt;/p&gt;
+&lt;p&gt;当然，这个网站与我们平常所说的网站有所不同，这是由 Web 浏览器与 ePub 阅读器之间的功能差异造成的。例如，在 ePub 电子书中基本不能使用 JavaScript，对 SVG 的支持有限，只能使用部分 CSS 属性。不过，ePub 电子书可以嵌入字体。&lt;/p&gt;
 
 &lt;h2&gt;交叉引用&lt;/h2&gt;
 
