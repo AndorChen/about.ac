@@ -1,7 +1,7 @@
 - title: Modern PHP（中文版）
   slug: modern-php
   image: modern-php.jpg
-  featured: no
+  featured: yes
 
 - title: Java 权威技术手册（第6版）
   slug: java-nutshell-6th

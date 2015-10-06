@@ -2,7 +2,7 @@
   slug: ember-cli-101
   url: http://ember-china.com
   image: ember-cli-101.jpg
-  featured: yes
+  featured: no
 
 - title: JavaScript Web 应用开发
   slug: js-app-design

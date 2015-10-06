@@ -1,7 +1,7 @@
 - title: Flask Web 开发
   slug: flask-web-development
   image: flask-web-development.png
-  featured: yes
+  featured: no
 
 - title: Python 网络编程攻略
   slug: python-network-programming-cookbook
@@ -11,4 +11,4 @@
 - title: 'Python Web 开发：测试驱动方法'
   slug: python-tdd
   image: python-tdd.jpg
-  featured: no
+  featured: yes
