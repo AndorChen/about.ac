@@ -22,7 +22,27 @@ Nicolas Bevacqua 是 JavaScript 开源社区的活跃成员，一位自由 Web �
 
 ## 目录
 
-加工中。
+点击链接可试读部分章节。
+
+- [前言](http://www.ituring.com.cn/article/205569)
+- [献词](http://www.ituring.com.cn/article/205570)
+- [序](http://www.ituring.com.cn/article/205571)
+- [致谢](http://www.ituring.com.cn/article/205572)
+- [第一部分　构建过程](http://www.ituring.com.cn/article/205573)
+    - [第1章　构建优先](http://www.ituring.com.cn/article/205574)
+    - 第2章　编写构建任务，制定流程
+    - 第3章　精通环境配置和开发流程
+- 第二部分 管理复杂度
+    - 第4章　发布、部署和监控
+    - 第5章　理解模块化和依赖管理
+    - 第6章　理解JavaScript中的异步流程控制方法
+    - 第7章　使用模型-视图-控制器模式
+    - 第8章　测试JavaScript组件
+    - 第9章　REST API设计和分层服务架构
+- 附录A　Node.js的模块
+- 附录B　介绍Grunt
+- 附录C　选择合适的构建工具
+- 附录D　JavaScript代码质量指南
 
 ## 源码
 
