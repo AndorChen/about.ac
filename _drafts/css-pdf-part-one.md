@@ -1,7 +1,8 @@
 ---
 layout: post
-title: '使用 CSS 排版 PDF 格式电子书（一）'
+title: '使用 CSS 排版 PDF 格式电子书：页'
 tags: ['eBook']
+series: 'css-pdf'
 ---
 
 ## 按
@@ -19,3 +20,6 @@ CSS Working Group 也为纸质媒介制定了规范：[CSS Paged Media Module Le
 - [CSS Paged Media Module Level 3](http://www.w3.org/TR/css3-page/)
 - [Designing For Print With CSS](http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
 - [Building Books with CSS3](http://alistapart.com/article/building-books-with-css3)
+
+
+{% include series.html %}
