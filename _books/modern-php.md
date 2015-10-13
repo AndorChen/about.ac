@@ -5,7 +5,6 @@ title: 'Modern PHP（中文版）'
 
 <aside class="purchase">
     <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/modern-php.jpg" title="{{ page.title }}" /></p>
-    <p class="unpublish">未出版</p>
 </aside>
 
 ## 简介
@@ -56,6 +55,7 @@ PHP 正在重生，不过所有 PHP 在线教程都过时了，很难体现这�
 - 2015.05.09 开始翻译;
 - 2015.05.27 初译完成;
 - 2015.06.02 校对完成，提交审核；
+- 2015.10    出版；
 
 ## 词汇表
 
