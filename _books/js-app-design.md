@@ -5,7 +5,7 @@ title: JavaScript Web 应用开发
 
 <aside class="purchase">
     <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/js-app-design.jpg" title="{{ page.title }}" /></p>
-    <p class="unpublish">未出版</p>
+    <p class="unpublish">即将出版</p>
 </aside>
 
 ## 简介
