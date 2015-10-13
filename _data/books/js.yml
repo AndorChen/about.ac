@@ -8,6 +8,8 @@
   slug: js-app-design
   image: js-app-design.jpg
   featured: no
+  signed_version: yes
+  price: 59
 
 - title: AngularJS 学习手册
   slug: learning-angularjs

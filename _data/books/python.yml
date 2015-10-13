@@ -12,3 +12,5 @@
   slug: python-tdd
   image: python-tdd.jpg
   featured: yes
+  signed_version: yes
+  price: 99
