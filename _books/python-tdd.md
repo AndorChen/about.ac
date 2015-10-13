@@ -5,7 +5,7 @@ title: Python Web 开发：测试驱动方法
 
 <aside class="purchase">
     <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/python-tdd.jpg" title="{{ page.title }}" /></p>
-    <p class="unpublish">未出版</p>
+    <p class="unpublish">即将出版</p>
 </aside>
 
 ## 简介
