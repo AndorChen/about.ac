@@ -5,6 +5,7 @@ title: 'Modern PHP（中文版）'
 
 <aside class="purchase">
     <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/modern-php.jpg" title="{{ page.title }}" /></p>
+    <h5>购买：</h5>
     <ul>
         <li><a href="http://www.amazon.cn/gp/product/B016MGW5G2/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016MGW5G2&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
         <li><a href="http://item.jd.com/11786541.html" title="到京东购买" target="_blank">京东</a></li>
