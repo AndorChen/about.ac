@@ -285,6 +285,13 @@ img.border {
     padding-left: 1em;
 }
 
+/* Buy page */
+
+.buy-page .price {
+    display: block;
+    text-align: center;
+}
+
 /* Footer */
 
 .site-footer {
