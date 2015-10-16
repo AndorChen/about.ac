@@ -5,7 +5,12 @@ title: JavaScript Web 应用开发
 
 <aside class="purchase">
     <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/js-app-design.jpg" title="{{ page.title }}" /></p>
-    <p class="unpublish">即将出版</p>
+    <h5>购买：</h5>
+    <ul>
+        <li><a href="http://www.amazon.cn/gp/product/B016I9T8QI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016I9T8QI&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
+        <li><a href="http://item.jd.com/11783874.html" title="到京东购买" target="_blank">京东</a></li>
+        <li><a href="http://product.china-pub.com/3804282" title="到 China Pub 购买" target="_blank">China Pub</a></li>
+    </ul>
 </aside>
 
 ## 简介
@@ -57,6 +62,7 @@ Nicolas Bevacqua 是 JavaScript 开源社区的活跃成员，一位自由 Web �
 - 2015.02.10 开始翻译；
 - 2015.04.28 翻译完成；
 - 2015.05.06 校对完成，提交审核；
+- 2015.10 出版；
 
 ## 词汇表
 
