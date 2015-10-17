@@ -5,7 +5,12 @@ title: Python Web 开发：测试驱动方法
 
 <aside class="purchase">
     <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/python-tdd.jpg" title="{{ page.title }}" /></p>
-    <p class="unpublish">即将出版</p>
+    <h5>购买：</h5>
+    <ul>
+        <li><a href="http://www.amazon.cn/gp/product/B016I9T8SQ/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016I9T8SQ&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
+        <li><a href="http://item.jd.com/11783873.html" title="到京东购买" target="_blank">京东</a></li>
+        <li><a href="http://product.china-pub.com/3804291" title="到 China Pub 购买" target="_blank">China Pub</a></li>
+    </ul>
 </aside>
 
 ## 简介
@@ -37,6 +42,7 @@ Harry J.W. Percival 的童年很美好，他在 Thomson T-07（当时在法国�
 - 2014.09.28 初译完成；
 - 2014.10.07 校对；
 - 2014.10.16 校对完成，提交审核；
+- 2015.10 出版；
 
 ## 词汇表
 
