@@ -2,7 +2,7 @@
   slug: rails-tutorial
   url: http://railstutorial-china.org
   image: railstutorial2ndcn.jpg
-  featured: yes
+  featured: no
 
 - title: 使用 RSpec 测试 Rails 程序
   slug: everyday-rails-rspec

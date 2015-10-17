@@ -11,6 +11,6 @@
 - title: 'Python Web 开发：测试驱动方法'
   slug: python-tdd
   image: python-tdd.jpg
-  featured: no
+  featured: yes
   signed_version: yes
   price: 99
