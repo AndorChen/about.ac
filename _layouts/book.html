@@ -15,6 +15,14 @@ layout: default
     <h1 class="entry-title book-title">{{ page.title }}</h1>
   </header>
 
+  {% if page.signed_version %}
+  <aside>
+    <div class="alert alert-info">
+    <p>本书有少量译者签名版，<a href="{{ site.baseurl }}/buy/" title="购买译者签名版"><i class="fa fa-shopping-cart"></i> 点击购买</a>！</p>
+    </div>
+  </aside>
+  {% endif %}
+
   <div class="entry-content">
     {{ content }}
   </div>
