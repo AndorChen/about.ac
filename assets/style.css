@@ -173,6 +173,17 @@ img.border {
     margin-bottom: 20px;
 }
 
+.entry-content code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.entry-content a {
+    color: #c7254e;
+}
+
 .entry-content h2 {
     font-size: 22px;
 }
