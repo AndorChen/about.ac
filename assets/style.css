@@ -123,11 +123,11 @@ img.border {
 .book-list ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    overflow: hidden;
 }
 
 .book-list li {
-    display: inline-block;
+    float: left;
     margin-right: 6px;
     margin-bottom: 10px;
 }
@@ -258,10 +258,6 @@ img.border {
 }
 
 /* Book(s) Page */
-
-.books-page .book-list ul {
-    text-align: left;
-}
 
 .books-page .section-title {
     text-align: left;
