@@ -1,12 +1,8 @@
 ---
 layout: book
 title: Java 权威技术手册（第6版）
+status: unpublish
 ---
-
-<aside class="purchase">
-    <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/java-nutshell-6th.jpg" title="{{ page.title }}" /></p>
-    <p class="unpublish">未出版</p>
-</aside>
 
 ## 简介
 

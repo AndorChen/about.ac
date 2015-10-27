@@ -1,18 +1,11 @@
 ---
 layout: book
 title: Python 网络编程攻略
+ebook_url: 'http://www.ituring.com.cn/book/1484'
+amazon_url: 'http://www.amazon.cn/gp/product/B00PUP2IWS/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00PUP2IWS&linkCode=as2&tag=aboutac-23'
+jd_url: 'http://item.jd.com/1367333254.html'
+china_pub_url: 'http://product.china-pub.com/3770650'
 ---
-
-<aside class="purchase">
-    <p><img src="{{ site.baseurl }}/assets/images/covers/python-network-programming-cookbook.jpg" alt="Python网络编程攻略封面" /></p>
-    <h5>购买：</h5>
-    <ul>
-        <li><a href="http://www.ituring.com.cn/book/1484" title="购买电子书" target="_blank">电子书</a></li>
-        <li><a href="http://www.amazon.cn/gp/product/B00PUP2IWS/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00PUP2IWS&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
-        <li><a href="http://item.jd.com/1367333254.html" title="到京东购买" target="_blank">京东</a></li>
-        <li><a href="http://product.china-pub.com/3770650" title="到 China Pub 购买" target="_blank">China Pub</a></li>
-    </ul>
-</aside>
 
 ## 关于本书
 

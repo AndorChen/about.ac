@@ -24,6 +24,28 @@ layout: default
   {% endif %}
 
   <div class="entry-content">
+    <aside class="purchase">
+      <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/{{ page.id | remove: '/books/' }}.jpg" title="{{ page.title }}" alt="{{ page.title }}" /></p>
+
+      {% if page.status == 'unpublish' %}
+      <p class="unpublish">未出版</p>
+      {% elsif page.status == 'wip' %}
+      <p class="wip">翻译中</p>
+      {% endif %}
+
+      {% if page.amazon_url or china_pub_url or jd_url or dangdang_url or ebook_url %}
+      <h5>购买：</h5>
+      <ul>
+        {% if page.signed_version %}<li><a href="{{ site.baseurl }}/buy/" title="购买译者签名版">译者签名版</a></li>{% endif %}
+        {% if page.ebook_url %}<li><a href="{{ page.ebook_url }}" title="购买电子书" target="_blank">电子书</a></li>{% endif %}
+        {% if page.amazon_url %}<li><a href="{{ page.amazon_url }}" title="到亚马逊购买" target="_blank">亚马逊</a></li>{% endif %}
+        {% if page.jd_url %}<li><a href="{{ page.jd_url }}" title="到京东购买" target="_blank">京东</a></li>{% endif %}
+        {% if page.china_pub_url %}<li><a href="{{ page.china_pub_url }}" title="到 China Pub 购买" target="_blank">China Pub</a></li>{% endif %}
+        {% if page.dangdang_url %}<li><a href="{{ page.dangdang_url }}" title="到当当网购买" target="_blank">当当网</a></li>{% endif %}
+      </ul>
+      {% endif %}
+    </aside>
+
     {{ content }}
   </div>
 </article>

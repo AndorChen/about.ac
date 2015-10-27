@@ -2,18 +2,10 @@
 layout: book
 title: JavaScript Web 应用开发
 signed_version: yes
+amazon_url: 'http://www.amazon.cn/gp/product/B016I9T8QI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016I9T8QI&linkCode=as2&tag=aboutac-23'
+jd_url: 'http://item.jd.com/11783874.html'
+china_pub_url: 'http://product.china-pub.com/3804282'
 ---
-
-<aside class="purchase">
-    <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/js-app-design.jpg" title="{{ page.title }}" /></p>
-    <h5>购买：</h5>
-    <ul>
-        {% if page.signed_version %}<li><a href="{{ site.baseurl }}/buy/" title="购买译者签名版">译者签名版</a></li>{% endif %}
-        <li><a href="http://www.amazon.cn/gp/product/B016I9T8QI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016I9T8QI&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
-        <li><a href="http://item.jd.com/11783874.html" title="到京东购买" target="_blank">京东</a></li>
-        <li><a href="http://product.china-pub.com/3804282" title="到 China Pub 购买" target="_blank">China Pub</a></li>
-    </ul>
-</aside>
 
 ## 简介
 

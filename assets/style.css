@@ -274,7 +274,7 @@ img.border {
     margin: 20px 0 40px;
 }
 
-.unpublish {
+.unpublish, .wip {
     background-color: #d9534f;
     color: #fff;
     border-radius: 5px;
@@ -341,6 +341,12 @@ img.border {
 
 .copyright {
     color: #646464;
+}
+
+/* Debug info */
+
+.debug {
+    overflow: hidden;
 }
 
 /* Media Queries */
