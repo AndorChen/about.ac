@@ -2,6 +2,8 @@
   slug: modern-php
   image: modern-php.jpg
   featured: yes
+  signed_version: true
+  price: 39
 
 - title: Java 权威技术手册（第6版）
   slug: java-nutshell-6th

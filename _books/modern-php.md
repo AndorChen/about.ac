@@ -1,12 +1,14 @@
 ---
 layout: book
 title: 'Modern PHP（中文版）'
+signed_version: true
 ---
 
 <aside class="purchase">
     <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/modern-php.jpg" title="{{ page.title }}" /></p>
     <h5>购买：</h5>
     <ul>
+        {% if page.signed_version %}<li><a href="{{ site.baseurl }}/buy/" title="购买译者签名版">译者签名版</a></li>{% endif %}
         <li><a href="http://www.amazon.cn/gp/product/B016MGW5G2/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016MGW5G2&linkCode=as2&tag=aboutac-23" title="到亚马逊购买" target="_blank">亚马逊</a></li>
         <li><a href="http://item.jd.com/11786541.html" title="到京东购买" target="_blank">京东</a></li>
         <li><a href="http://product.dangdang.com/23794949.html" title="到当当购买" target="_blank">当当</a></li>
