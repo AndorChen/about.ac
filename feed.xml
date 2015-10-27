@@ -5,9 +5,9 @@
     <description>安道的个人网站</description>
     <link>http://about.ac/</link>
     <atom:link href="http://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Oct 2015 03:44:30 +0000</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2015 03:44:30 +0000</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Tue, 27 Oct 2015 04:46:45 +0000</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 04:46:45 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>ePub 电子书排版最佳实践</title>
