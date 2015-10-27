@@ -1,7 +1,71 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/><title>修改基于日期的归档页面的 URL 结构 - Andor Chen</title><meta name="description" content="安道的个人网站"/><meta name="author" content="安道"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.2.0/css/bootstrap.min.css"/><link rel="stylesheet" href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css"/><link rel="stylesheet" href="/assets/style.css"/></head><body><div class="wrapper"><div class="inner"> <header class="site-header clearfix"><div class="avatar"> <a href="/" title="首页"><img src="/assets/images/andor@2x.jpg" width="180" height="180" alt="" title=""/></a></div><h1 class="logo"><a href="/about/" title="关于安道">安道</a></h1> </header><div class="breadcrumbs"> <a href="/" title="首页">首页</a> // <a href="/archive/" title="文章归档">文章归档</a> // 修改基于日期的归档页面的 URL 结构</div><article class="hentry entry post"> <header class="entry-header"><h1 class="entry-title">修改基于日期的归档页面的 URL 结构</h1><p class="entry-meta">发布于2012年1月29日</p> </header><div class="entry-content"><p>WordPress 的链接格式是很灵活的，几乎可以任意的定制 URL 的格式。如果你所用的服务器支持 mod_rewrite 的话就可以设置“精美”的 URL 格式。WordPress 默认提供了 5 种 URL 格式供选择，而且还可以自由定制。WordPress 还提供了针对“分类”和“标签”的 rewrite base 设置选项。</p><p>默认的，WordPress 的分类 URL 格式是 <code class="highlighter-rouge">host/category/xxx/</code>，其中 <code class="highlighter-rouge">category</code> 就是 rewrite base，这是可定制的部分，例如本站分类 URL 的 rewrite base 就设置为“go”了。同理，可以设置标签 URL 的 rewrite base。</p><p>在设置 WordPress 链接格式的时候我遇到一个问题。我设置的 URL 格式是 <code class="highlighter-rouge">/t/%postname%</code>，rewrite base 是固定的，不再是占位符，这时文章页面的 URL 是没问题的，页面的 URL 是没问题的，分类、标签的页面 URL 也是没问题的，但是，基于时间的页面就出现问题了，其 URL 结构变成 <code class="highlighter-rouge">/t/2012/01</code> 的格式，这个“t”是我不需要的。</p><p>查看 <code class="highlighter-rouge">wp-includes/rewrite.php</code> 第 862 行 <code class="highlighter-rouge">get_date_permastruct()</code> 函数的定义可以发现，最终返回的结果加入了 <code class="highlighter-rouge">$front</code>，这就是“t”为什么会出现的原因。</p><div class="highlighter-rouge"><pre class="highlight"><code>....
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <title>修改基于日期的归档页面的 URL 结构 - Andor Chen</title>
+  <meta name="description" content="安道的个人网站"/>
+  <meta name="author" content="安道"/>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.2.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="inner">
+    <header class="site-header clearfix">
+      <div class="avatar">
+        <a href="/" title="首页"><img src="/assets/images/andor@2x.jpg" width="180" height="180" alt="" title="" /></a>
+      </div>
+
+      <h1 class="logo"><a href="/about/" title="关于安道">安道</a></h1>
+
+      
+    </header>
+
+
+<div class="breadcrumbs">
+  <a href="/" title="首页">首页</a>
+  //
+  <a href="/archive/" title="文章归档">文章归档</a>
+  //
+  修改基于日期的归档页面的 URL 结构
+</div>
+
+<article class="hentry entry post">
+  <header class="entry-header">
+    <h1 class="entry-title">修改基于日期的归档页面的 URL 结构</h1>
+    <p class="entry-meta">发布于2012年1月29日</p>
+  </header>
+
+  <div class="entry-content">
+    <p>WordPress 的链接格式是很灵活的，几乎可以任意的定制 URL 的格式。如果你所用的服务器支持 mod_rewrite 的话就可以设置“精美”的 URL 格式。WordPress 默认提供了 5 种 URL 格式供选择，而且还可以自由定制。WordPress 还提供了针对“分类”和“标签”的 rewrite base 设置选项。</p>
+
+<p>默认的，WordPress 的分类 URL 格式是 <code class="highlighter-rouge">host/category/xxx/</code>，其中 <code class="highlighter-rouge">category</code> 就是 rewrite base，这是可定制的部分，例如本站分类 URL 的 rewrite base 就设置为“go”了。同理，可以设置标签 URL 的 rewrite base。</p>
+
+<p>在设置 WordPress 链接格式的时候我遇到一个问题。我设置的 URL 格式是 <code class="highlighter-rouge">/t/%postname%</code>，rewrite base 是固定的，不再是占位符，这时文章页面的 URL 是没问题的，页面的 URL 是没问题的，分类、标签的页面 URL 也是没问题的，但是，基于时间的页面就出现问题了，其 URL 结构变成 <code class="highlighter-rouge">/t/2012/01</code> 的格式，这个“t”是我不需要的。</p>
+
+<p>查看 <code class="highlighter-rouge">wp-includes/rewrite.php</code> 第 862 行 <code class="highlighter-rouge">get_date_permastruct()</code> 函数的定义可以发现，最终返回的结果加入了 <code class="highlighter-rouge">$front</code>，这就是“t”为什么会出现的原因。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>....
 $this-&gt;date_structure = $front . $date_endian;
 ....
-</code></pre></div><p>那么只需要覆盖类 <code class="highlighter-rouge">WP_Rewrite</code> 的 <code class="highlighter-rouge">$date_structure</code> 变量即可。将以下代码片段写入主题的 <code class="highlighter-rouge">functions.php</code>：</p><div class="highlighter-rouge"><pre class="highlight"><code>function ac_re_rewrite() {
+</code></pre>
+</div>
+
+<p>那么只需要覆盖类 <code class="highlighter-rouge">WP_Rewrite</code> 的 <code class="highlighter-rouge">$date_structure</code> 变量即可。将以下代码片段写入主题的 <code class="highlighter-rouge">functions.php</code>：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function ac_re_rewrite() {
     global $wp_rewrite;
 
     // Not need the $wp_rewrite-&gt;front
@@ -10,4 +74,70 @@ $this-&gt;date_structure = $front . $date_endian;
     $wp_rewrite-&gt;flush_rules();
 }
 add_action( 'init', 'ac_re_rewrite' );
-</code></pre></div><p>如此一来，基于日期的存档 URL 格式就定制好了，利用同样的方法还可以定制作者归档等页面的 URL 格式。</p></div><ul class="entry-tags"><li><a class="btn btn-default btn-sm" href="/tags/#wordpress-ref" title="WordPress">WordPress</a></li></ul> </article><ul class="pager"><li class="previous"> <a rel="prev" href="/2010/07/brightly-html.html" title="HTML 的未来一片光明">« 上一篇文章</a></li><li class="next"> <a rel="next" href="/2012/01/disable-wordpress-toolbar.html" title="禁用 WordPress 的 Toolbar">下一篇文章 »</a></li></ul><footer class="site-footer clearfix"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><ul class="socials"><li><a href="/feed.xml" title="订阅网站更新"><i class="fa fa-rss"></i></a></li><li><a href="mailto:andor.chen.27@gmail.com" title="电子邮件"><i class="fa fa-envelope-o"></i></a></li><li><a href="https://twitter.com/Andor_Chen" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="http://www.weibo.com/andor27/" title="微博" target="_blank"><i class="fa fa-weibo"></i></a></li><li><a href="https://github.com/AndorChen" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li><li><a class="douban" href="http://www.douban.com/people/Andor/" title="豆瓣" target="_blank">豆</a></li></ul><p class="copyright">© 1988- 2015。如无特殊说明，本站内容基于“<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" title="CC BY-NC-SA 3.0" target="_blank">CC BY-NC-SA 3.0</a>”发布。</p><p class="powered-by"><a href="http://jekyllrb.com" title="本站使用 Jekyll 生成" target="_blank"><img src="/assets/images/jekyll-logo@2x.png" width="60" height="24" alt="Jekyll Logo" title="本站使用 Jekyll 生成"/></a></p></div> </footer></div></div><script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-69344223-1","auto"),ga("send","pageview")</script></body></html>
+</code></pre>
+</div>
+
+<p>如此一来，基于日期的存档 URL 格式就定制好了，利用同样的方法还可以定制作者归档等页面的 URL 格式。</p>
+
+  </div>
+
+  
+    <ul class="entry-tags">
+      
+        
+        
+        <li><a class="btn btn-default btn-sm" href="/tags/#wordpress-ref" title="WordPress">WordPress</a></li>
+      
+    </ul>
+  
+</article>
+
+
+<ul class="pager">
+  
+  <li class="previous">
+    <a rel="prev" href="/2010/07/brightly-html.html" title="HTML 的未来一片光明">&laquo; 上一篇文章</a>
+  </li>
+  
+
+  
+  <li class="next">
+    <a rel="next" href="/2012/01/disable-wordpress-toolbar.html" title="禁用 WordPress 的 Toolbar">下一篇文章 &raquo;</a>
+  </li>
+  
+</ul>
+
+
+
+      <footer class="site-footer clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <ul class="socials">
+            <li><a href="/feed.xml" title="订阅网站更新"><i class="fa fa-rss"></i></a></li>
+            <li><a href="mailto:andor.chen.27@gmail.com" title="电子邮件"><i class="fa fa-envelope-o"></i></a></li>
+            <li><a href="https://twitter.com/Andor_Chen" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.weibo.com/andor27/" title="微博" target="_blank"><i class="fa fa-weibo"></i></a></li>
+            <li><a href="https://github.com/AndorChen" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a class="douban" href="http://www.douban.com/people/Andor/" title="豆瓣" target="_blank">豆</a></li>
+          </ul>
+
+          <p class="copyright">&copy;  1988- 2015。如无特殊说明，本站内容基于“<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" title="CC BY-NC-SA 3.0" target="_blank">CC BY-NC-SA 3.0</a>”发布。</p>
+
+          <p class="powered-by"><a href="http://jekyllrb.com" title="本站使用 Jekyll 生成" target="_blank"><img src="/assets/images/jekyll-logo@2x.png" width="60" height="24" alt="Jekyll Logo" title="本站使用 Jekyll 生成" /></a></p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69344223-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
