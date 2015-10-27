@@ -294,9 +294,8 @@ img.border {
 
 /* Buy page */
 
-.buy-page .price {
-    display: block;
-    text-align: center;
+.buy-page .book-meta {
+    margin-left: 6px;
 }
 
 /* Footer */
