@@ -14,9 +14,15 @@
           <p class="powered-by"><a href="http://jekyllrb.com" title="本站使用 Jekyll 生成" target="_blank"><img src="{{ site.baseurl }}/assets/images/jekyll-logo@2x.png" width="60" height="24" alt="Jekyll Logo" title="本站使用 Jekyll 生成" /></a></p>
         </div>
       </footer>
+
+      {% if is_local %}
+        {% include debug.html %}
+      {% endif %}
     </div>
   </div>
 
   {% include ga.html %}
 </body>
 </html>
+{% assign is_local = nil %}
+{% assign is_home = nil %}
