@@ -1,6 +1,6 @@
 {% if site.baseurl == '/aboutac' %}{% assign is_local = true %}{% endif %}
 
-{% if page.url == '/index.html' %}{% assign is_home = true %}{% endif %}
+{% if page.url == '/' %}{% assign is_home = true %}{% endif %}
 
 {% capture bootstrap_url %}{% if is_local %}{{ site.baseurl }}/assets/local/bootstrap.min.css{% else %}http://cdn.staticfile.org/twitter-bootstrap/3.2.0/css/bootstrap.min.css{% endif %}{% endcapture %}
 

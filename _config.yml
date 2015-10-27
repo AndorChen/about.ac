@@ -19,7 +19,7 @@ markdown: ACKramdownParser
 kramdown:
   input: GFM
   auto_ids: false
-  use_coderay: false
+  enable_coderay: false
   syntax_highlighter: rouge
 
 collections:
