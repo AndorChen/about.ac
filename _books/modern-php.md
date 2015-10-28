@@ -1,7 +1,6 @@
 ---
 layout: book
 title: 'Modern PHP（中文版）'
-signed_version: true
 amazon_url: 'http://www.amazon.cn/gp/product/B016MGW5G2/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016MGW5G2&linkCode=as2&tag=aboutac-23'
 jd_url: 'http://item.jd.com/11786541.html'
 dangdang_url: 'http://product.dangdang.com/23794949.html'
