@@ -1,6 +1,7 @@
 ---
 layout: book
 title: RESTful Rails Development（中文版）
+status: 'pending'
 signed_version: false
 amazon_url:
 jd_url:
