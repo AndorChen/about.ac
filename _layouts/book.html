@@ -27,11 +27,14 @@ layout: default
     <aside class="purchase">
       <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/{{ page.id | remove: '/books/' }}.jpg" title="{{ page.title }}" alt="{{ page.title }}" /></p>
 
-      {% if page.status == 'unpublish' %}
+      {% case page.status %}
+      {% when 'unpublish' %}
       <p class="unpublish">未出版</p>
-      {% elsif page.status == 'wip' %}
+      {% when 'wip' %}
       <p class="wip">翻译中</p>
-      {% endif %}
+      {% when 'pending' %}
+      <p class="pending">待译</p>
+      {% endcase %}
 
       {% if page.amazon_url or china_pub_url or jd_url or dangdang_url or ebook_url %}
       <h5>购买：</h5>
