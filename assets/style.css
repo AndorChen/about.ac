@@ -274,11 +274,19 @@ img.border {
     margin: 20px 0 40px;
 }
 
-.unpublish, .wip {
-    background-color: #d9534f;
+.unpublish, .wip, .pending {
+    background-color: #f0ad4e;
     color: #fff;
     border-radius: 5px;
     text-align: center;
+}
+
+.wip {
+    background-color: #5bc0de;
+}
+
+.pending {
+    background-color: #d9534f;
 }
 
 .purchase {
