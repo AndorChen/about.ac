@@ -1,12 +1,10 @@
 - title: ember-cli 入门
   slug: ember-cli-101
   url: http://ember-china.com
-  image: ember-cli-101.jpg
   featured: no
 
 - title: JavaScript Web 应用开发
   slug: js-app-design
-  image: js-app-design.jpg
   featured: yes
   signed_version: yes
   price: 59
@@ -14,5 +12,4 @@
 
 - title: AngularJS 学习手册
   slug: learning-angularjs
-  image: learning-angularjs.jpg
   featured: no

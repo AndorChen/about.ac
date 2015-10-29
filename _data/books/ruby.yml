@@ -1,28 +1,23 @@
 - title: Ruby on Rails 教程
   slug: rails-tutorial
   url: http://railstutorial-china.org
-  image: railstutorial2ndcn.jpg
   featured: no
 
 - title: 使用 RSpec 测试 Rails 程序
   slug: everyday-rails-rspec
   url: https://selfstore.io/products/3
-  image: everydayrailsrspeccn.jpg
   featured: no
 
 - title: Rails 程序部署之道
   slug: deploying-rails
   url: https://selfstore.io/products/66
-  image: deployrailscn.jpg
   featured: no
 
 - title: Rails 指南
   slug: rails-guides
   url: https://selfstore.io/products/13
-  image: railsguides.jpg
   featured: no
 
 - title: RESTful Rails Development
   slug: restful-rails-development
-  image: restful-rails-development.jpg
   featured: no

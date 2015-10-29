@@ -18,7 +18,7 @@ permalink: '/buy/'
       {% if book.signed_version %}
        {% capture counter %}{{ counter | plus:1 }}{% endcapture %}
         {% assign book_url =  book.slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
-        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a><p class="book-meta"><strong>定价</strong>：{{ book.price | prepend: '￥' | append: '.00' }}<br/><strong>库存</strong>：{{ book.stock | append: '本' }}</p></li>
+        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book.slug }}.jpg" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a><p class="book-meta"><strong>定价</strong>：{{ book.price | prepend: '￥' | append: '.00' }}<br/><strong>库存</strong>：{{ book.stock | append: '本' }}</p></li>
       {% endif %}
     {% endfor %}
   {% endfor %}

@@ -16,7 +16,7 @@ permalink: '/books/'
       {% else %}
         {% assign book_url =  book.slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
       {% endif %}
-      <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book.image }}" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
+      <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book.slug }}.jpg" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
     {% endfor %}
     </ul>
   </section>

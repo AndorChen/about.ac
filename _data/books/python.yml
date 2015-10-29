@@ -1,16 +1,13 @@
 - title: Flask Web 开发
   slug: flask-web-development
-  image: flask-web-development.jpg
   featured: no
 
 - title: Python 网络编程攻略
   slug: python-network-programming-cookbook
-  image: python-network-programming-cookbook.jpg
   featured: no
 
 - title: 'Python Web 开发：测试驱动方法'
   slug: python-tdd
-  image: python-tdd.jpg
   featured: yes
   signed_version: yes
   price: 99
