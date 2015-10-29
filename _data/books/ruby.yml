@@ -21,3 +21,8 @@
   url: https://selfstore.io/products/13
   image: railsguides.jpg
   featured: no
+
+- title: RESTful Rails Development
+  slug: restful-rails-development
+  image: restful-rails-development.jpg
+  featured: no
