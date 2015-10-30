@@ -2,6 +2,7 @@
 layout: book
 title: Python Web 开发：测试驱动方法
 signed_version: yes
+ebook_url: 'http://www.ituring.com.cn/book/1486'
 amazon_url: 'http://www.amazon.cn/gp/product/B016I9T8SQ/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016I9T8SQ&linkCode=as2&tag=aboutac-23'
 jd_url: 'http://item.jd.com/11783873.html'
 china_pub_url: 'http://product.china-pub.com/3804291'
