@@ -1,6 +1,6 @@
 ---
 layout: book
-title: Java 权威技术手册（第6版）
+title: Java 技术手册（第6版）
 status: unpublish
 ---
 
