@@ -1,10 +1,6 @@
 ---
 layout: book
-title: Python 网络编程攻略
-ebook_url: 'http://www.ituring.com.cn/book/1484'
-amazon_url: 'http://www.amazon.cn/gp/product/B00PUP2IWS/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00PUP2IWS&linkCode=as2&tag=aboutac-23'
-jd_url: 'http://item.jd.com/1367333254.html'
-china_pub_url: 'http://product.china-pub.com/3770650'
+book_category: python
 ---
 
 ## 关于本书

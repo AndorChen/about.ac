@@ -1,7 +1,6 @@
 ---
 layout: book
-title: 'CSS: The Missing Manual, 4th Edition'
-status: wip
+book_category: other
 ---
 
 ## 简介

@@ -1,7 +1,6 @@
 ---
 layout: book
-title: 'Docker 即学即用'
-status: unpublish
+book_category: other
 ---
 
 ## 简介

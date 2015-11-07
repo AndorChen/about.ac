@@ -6,15 +6,21 @@ layout: default
   <h2 class="section-title"><span>翻译/写的书</span></h2>
   <ul>
   {% for meta in site.data.meta.books %}
-    {% for book in site.data.books[meta['slug']] %}
+    {% for book_hash in site.data.books[meta['slug']] %}
+      {% assign book_slug = book_hash[0] %}
+      {% assign book = book_hash[1] %}
+
       {% if book.featured %}
         {% if book.url != null %}
           {% assign book_url = book.url %}
         {% else %}
-          {% assign book_url =  book.slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
+          {% assign book_url =  book_slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
         {% endif %}
-        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book.slug }}.jpg" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
+        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book_slug }}.jpg" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
       {% endif %}
+
+      {% assign book_slug = nil %}
+      {% assign book = nil %}
     {% endfor %}
   {% endfor %}
   </ul>

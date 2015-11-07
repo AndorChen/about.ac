@@ -1,7 +1,6 @@
 ---
 layout: book
-title: 'AngularJS 学习手册'
-status: 'unpublish'
+book_category: js
 ---
 
 ## 简介

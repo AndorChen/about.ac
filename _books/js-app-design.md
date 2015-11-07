@@ -1,10 +1,6 @@
 ---
 layout: book
-title: JavaScript Web 应用开发
-signed_version: yes
-amazon_url: 'http://www.amazon.cn/gp/product/B016I9T8QI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B016I9T8QI&linkCode=as2&tag=aboutac-23'
-jd_url: 'http://item.jd.com/11783874.html'
-china_pub_url: 'http://product.china-pub.com/3804282'
+book_category: js
 ---
 
 ## 简介

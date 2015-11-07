@@ -1,10 +1,6 @@
 ---
 layout: book
-title: Flask Web 开发
-ebook_url: 'http://www.ituring.com.cn/book/1449'
-amazon_url: 'http://www.amazon.cn/gp/product/B00QT2TQCG/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00QT2TQCG&linkCode=as2&tag=aboutac-23'
-jd_url: 'http://item.jd.com/11594082.html'
-china_pub_url: 'http://product.china-pub.com/3770763'
+book_category: python
 ---
 
 ## 关于本书

@@ -2,20 +2,21 @@
 layout: default
 ---
 
+{% capture book_slug %}{{ page.id | remove: '/books/' }}{% endcapture %}
+{% assign book = site.data.books[page.book_category][book_slug] %}
+
 <div class="breadcrumbs">
   <a href="{{ site.baseurl }}/" title="首页">首页</a>
   //
   <a href="{{ site.baseurl }}/books/" title="图书">图书</a>
-  //
-  {{ page.title }}
 </div>
 
 <article class="hentry entry page book-page">
   <header class="entry-header">
-    <h1 class="entry-title book-title">{{ page.title }}</h1>
+    <h1 class="entry-title book-title">{{ book.title }}</h1>
   </header>
 
-  {% if page.signed_version %}
+  {% if book.signed_version %}
   <aside>
     <div class="alert alert-info">
     <p>本书有少量译者签名版，<a href="{{ site.baseurl }}/buy/" title="购买译者签名版"><i class="fa fa-shopping-cart"></i> 点击购买</a>！</p>
@@ -25,9 +26,9 @@ layout: default
 
   <div class="entry-content">
     <aside class="purchase">
-      <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/{{ page.id | remove: '/books/' }}.jpg" title="{{ page.title }}" alt="{{ page.title }}" /></p>
+      <p><img class="border" src="{{ site.baseurl }}/assets/images/covers/{{ book_slug }}.jpg" title="{{ book.title }}" alt="{{ book.title }}" /></p>
 
-      {% case page.status %}
+      {% case book.status %}
       {% when 'unpublish' %}
       <p class="unpublish">未出版</p>
       {% when 'wip' %}
@@ -36,15 +37,15 @@ layout: default
       <p class="pending">待译</p>
       {% endcase %}
 
-      {% if page.amazon_url or china_pub_url or jd_url or dangdang_url or ebook_url %}
+      {% if book.amazon_url or book.china_pub_url or book.jd_url or book.dangdang_url or book.ebook_url %}
       <h5>购买：</h5>
       <ul>
-        {% if page.signed_version %}<li><a href="{{ site.baseurl }}/buy/" title="购买译者签名版">译者签名版</a></li>{% endif %}
-        {% if page.ebook_url %}<li><a href="{{ page.ebook_url }}" title="购买电子书" target="_blank">电子书</a></li>{% endif %}
-        {% if page.amazon_url %}<li><a href="{{ page.amazon_url }}" title="到亚马逊购买" target="_blank">亚马逊</a></li>{% endif %}
-        {% if page.jd_url %}<li><a href="{{ page.jd_url }}" title="到京东购买" target="_blank">京东</a></li>{% endif %}
-        {% if page.china_pub_url %}<li><a href="{{ page.china_pub_url }}" title="到 China Pub 购买" target="_blank">China Pub</a></li>{% endif %}
-        {% if page.dangdang_url %}<li><a href="{{ page.dangdang_url }}" title="到当当网购买" target="_blank">当当网</a></li>{% endif %}
+        {% if book.signed_version %}<li><a href="{{ site.baseurl }}/buy/" title="购买译者签名版">译者签名版</a></li>{% endif %}
+        {% if book.ebook_url %}<li><a href="{{ book.ebook_url }}" title="购买电子书" target="_blank">电子书</a></li>{% endif %}
+        {% if book.amazon_url %}<li><a href="{{ book.amazon_url }}" title="到亚马逊购买" target="_blank">亚马逊</a></li>{% endif %}
+        {% if book.jd_url %}<li><a href="{{ book.jd_url }}" title="到京东购买" target="_blank">京东</a></li>{% endif %}
+        {% if book.china_pub_url %}<li><a href="{{ book.china_pub_url }}" title="到 China Pub 购买" target="_blank">China Pub</a></li>{% endif %}
+        {% if book.dangdang_url %}<li><a href="{{ book.dangdang_url }}" title="到当当网购买" target="_blank">当当网</a></li>{% endif %}
       </ul>
       {% endif %}
     </aside>
@@ -52,3 +53,6 @@ layout: default
     {{ content }}
   </div>
 </article>
+
+{% assign book_slug = nil %}
+{% assign book = nil %}

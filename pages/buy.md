@@ -14,12 +14,19 @@ permalink: '/buy/'
 <section class="book-list">
   <ul>
   {% for meta in site.data.meta.books %}
-    {% for book in site.data.books[meta['slug']] %}
+    {% for book_hash in site.data.books[meta['slug']] %}
+      {% assign book_slug = book_hash[0] %}
+      {% assign book = book_hash[1] %}
+
       {% if book.signed_version %}
-       {% capture counter %}{{ counter | plus:1 }}{% endcapture %}
-        {% assign book_url =  book.slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
-        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book.slug }}.jpg" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a><p class="book-meta"><strong>定价</strong>：{{ book.price | prepend: '￥' | append: '.00' }}<br/><strong>库存</strong>：{{ book.stock | append: '本' }}</p></li>
+        {% capture counter %}{{ counter | plus:1 }}{% endcapture %}
+        {% assign book_url =  book_slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
+
+        <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book_slug }}.jpg" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a><p class="book-meta"><strong>定价</strong>：{{ book.price | prepend: '￥' | append: '.00' }}<br/><strong>库存</strong>：{{ book.stock | append: '本' }}</p></li>
       {% endif %}
+
+      {% assign book_slug = nil %}
+      {% assign book = nil %}
     {% endfor %}
   {% endfor %}
   </ul>
