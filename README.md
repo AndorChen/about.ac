@@ -25,7 +25,13 @@ $ brew install git-ftp
 $ bundle
 ```
 
-3. 初始化 `_site` 仓库
+3. 安装 Node 依赖：
+
+```
+$ npm install
+```
+
+4. 初始化 `_site` 仓库
 
 ```
 $ bundle exec jekyll build
@@ -35,7 +41,7 @@ _site $ git add -A
 _site $ git commit -m 'init'
 ```
 
-4. 第一次部署
+5. 第一次部署
 
 ```
 _site $ git ftp init -u <user> -p <passwd> ftp://host.example.com/public_html
