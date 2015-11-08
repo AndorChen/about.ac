@@ -1,147 +1,16 @@
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8"/>
-  <title>Ruby 的路径分隔符 - Andor Chen</title>
-  <meta name="description" content="安道的个人网站"/>
-  <meta name="author" content="安道"/>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.2.0/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="/assets/style.css"/>
-</head>
-<body>
-
-<div class="wrapper">
-  <div class="inner">
-    <header class="site-header clearfix">
-      <div class="avatar">
-        <a href="/" title="首页"><img src="/assets/images/andor@2x.jpg" width="180" height="180" alt="" title="" /></a>
-      </div>
-
-      <h1 class="logo"><a href="/about/" title="关于安道">安道</a></h1>
-
-      
-    </header>
-
-
-<div class="breadcrumbs">
-  <a href="/" title="首页">首页</a>
-  //
-  <a href="/archive/" title="文章归档">文章归档</a>
-</div>
-
-<article class="hentry entry post">
-  <header class="entry-header">
-    <h1 class="entry-title">Ruby 的路径分隔符</h1>
-    <p class="entry-meta">发布于2012年6月22日</p>
-  </header>
-
-  <div class="entry-content">
-    <p>当我看到 Ruby 的 File 有 <code class="highlighter-rouge">SEPARATOR</code> 这个常量时，我的第一反应，这个常量是设置文件路径的分隔符的，而且这个分隔符在不同的系统实现上是不同的，比如 Unix 和 Windows 就应该是不同的。</p>
-
-<p>但事实并非如此。在《The Ruby Programming Language》一书 §9.6.1 第一段有这样一句话：“The constant <code class="highlighter-rouge">File::SEPARATOR</code> should be ‘/’ in all implementations.”（<a href="http://rubyforge.org/tracker/index.php?func=detail&amp;aid=13026&amp;group_id=426&amp;atid=1698" title="为什么要这样做">为什么要这样做</a>）也就是说这个常量在所有的系统中的值是不变的，是 <code class="highlighter-rouge">/</code>。</p>
-
-<p>为了提供对不同系统的支持，在生成路径时，通常会使用 <code class="highlighter-rouge">File.join</code> 将路径的各部分连接起来。文档中说该方法会“Returns a new string formed by joining the strings using File::SEPARATOR”。但是通过实验就可以证明这句话是错误的（<a href="http://objectmix.com/ruby/185491-wrong-file-separator.html#post655633" title="via">via</a>）：</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt; File::SEPARATOR = "\\"
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/><title>Ruby 的路径分隔符 - Andor Chen</title><meta name="description" content="安道的个人网站"/><meta name="author" content="安道"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/><link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.2.0/css/bootstrap.min.css"/><link rel="stylesheet" href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css"/><link rel="stylesheet" href="/assets/style.css"/></head><body><div class="wrapper"><div class="inner"><header class="site-header clearfix"><div class="avatar"><a href="/" title="首页"><img src="/assets/images/andor@2x.jpg" width="180" height="180" alt="" title=""/></a></div><h1 class="logo"><a href="/about/" title="关于安道">安道</a></h1></header><div class="breadcrumbs"><a href="/" title="首页">首页</a> // <a href="/archive/" title="文章归档">文章归档</a></div><article class="hentry entry post"><header class="entry-header"><h1 class="entry-title">Ruby 的路径分隔符</h1><p class="entry-meta">发布于2012年6月22日</p></header><div class="entry-content"><p>当我看到 Ruby 的 File 有 <code class="highlighter-rouge">SEPARATOR</code> 这个常量时，我的第一反应，这个常量是设置文件路径的分隔符的，而且这个分隔符在不同的系统实现上是不同的，比如 Unix 和 Windows 就应该是不同的。</p><p>但事实并非如此。在《The Ruby Programming Language》一书 §9.6.1 第一段有这样一句话：“The constant <code class="highlighter-rouge">File::SEPARATOR</code> should be ‘/’ in all implementations.”（<a href="http://rubyforge.org/tracker/index.php?func=detail&amp;aid=13026&amp;group_id=426&amp;atid=1698" title="为什么要这样做">为什么要这样做</a>）也就是说这个常量在所有的系统中的值是不变的，是 <code class="highlighter-rouge">/</code>。</p><p>为了提供对不同系统的支持，在生成路径时，通常会使用 <code class="highlighter-rouge">File.join</code> 将路径的各部分连接起来。文档中说该方法会“Returns a new string formed by joining the strings using File::SEPARATOR”。但是通过实验就可以证明这句话是错误的（<a href="http://objectmix.com/ruby/185491-wrong-file-separator.html#post655633" title="via">via</a>）：</p><div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt; File::SEPARATOR = "\\"
 (irb):3: warning: already initialized constant SEPARATOR
 =&gt; "\\"
 &gt;&gt; File.join("c:", "My Documents")
 =&gt; "c:/My Documents"
 &gt;&gt; File::SEPARATOR
 =&gt; "\\"
-</code></pre>
-</div>
-
-<p>也就是说不管 <code class="highlighter-rouge">SEPARATOR</code> 的值是什么，<code class="highlighter-rouge">join()</code> 是直接使用 <code class="highlighter-rouge">/</code> 进行连接操作的。基于 <code class="highlighter-rouge">join()</code> 的这种操作方式，很多人就倾向于 hard code 路径，其实还是使用 <code class="highlighter-rouge">join()</code> 方法好一些，因为这个方法会做一些额外的工作，比如去除额外的 ‘/’：</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>File.join('/foo/', 'bar') # =&gt; /foo/bar 而非 /foo//bar
-</code></pre>
-</div>
-
-<p>现在的问题是：<code class="highlighter-rouge">SEPARATOR</code> 有没有用？答案是，基本没什么用，而且现在看来也没有什么其他的特殊用途（<a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/58085" title="via">via</a>）。</p>
-
-<p>这个常量是没用的，那么还有一个问题需要解决：Windows 或其他平台能够识别 ‘/’ 作为分隔符的路径吗？答案是肯定的，Windows 本身可以识别 ‘/’ 作为路径分隔符，只是在某些特殊的环境中无法识别，比如 DOS 命令行（<a href="http://objectmix.com/ruby/185491-wrong-file-separator.html#post655635" title="via">via</a>）。</p>
-
-<p>Ruby 还提供了另外一个常量 <code class="highlighter-rouge">ALT_SEPARATOR</code>，这个常量更符合我们的期待，它在 Windows 中的值是 <code class="highlighter-rouge">\</code>，在其他平台中则是 <code class="highlighter-rouge">nil</code>。如果确实需要 Windows 风格的路径字符串，可以通过下面的代码实现：</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>File.join('path', 'to', 'file').gsub(/\//, '\\')
-</code></pre>
-</div>
-
-  </div>
-
-  
-    <ul class="entry-tags">
-      
-        
-        
-        <li><a class="btn btn-default btn-sm" href="/tags/#ruby-ref" title="Ruby">Ruby</a></li>
-      
-    </ul>
-  
-</article>
-
-
-<ul class="pager">
-  
-  <li class="previous">
-    <a rel="prev" href="/2012/06/semantic-versioning.html" title="语义性版本号">&laquo; 上一篇文章</a>
-  </li>
-  
-
-  
-  <li class="next">
-    <a rel="next" href="/2012/12/2012.html" title="2012 年">下一篇文章 &raquo;</a>
-  </li>
-  
-</ul>
-
-
-
-      <footer class="site-footer clearfix">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <ul class="socials">
-            <li><a href="/feed.xml" title="订阅网站更新"><i class="fa fa-rss"></i></a></li>
-            <li><a href="mailto:andor.chen.27@gmail.com" title="电子邮件"><i class="fa fa-envelope-o"></i></a></li>
-            <li><a href="https://twitter.com/Andor_Chen" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="http://www.weibo.com/andor27/" title="微博" target="_blank"><i class="fa fa-weibo"></i></a></li>
-            <li><a href="https://github.com/AndorChen" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a class="douban" href="http://www.douban.com/people/Andor/" title="豆瓣" target="_blank">豆</a></li>
-          </ul>
-
-          <p class="copyright">&copy;  1988- 2015。如无特殊说明，本站内容基于“<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" title="CC BY-NC-SA 3.0" target="_blank">CC BY-NC-SA 3.0</a>”发布。</p>
-
-          <p class="powered-by"><a href="http://jekyllrb.com" title="本站使用 Jekyll 生成" target="_blank"><img src="/assets/images/jekyll-logo@2x.png" width="60" height="24" alt="Jekyll Logo" title="本站使用 Jekyll 生成" /></a></p>
-        </div>
-      </footer>
-
-      
-    </div>
-  </div>
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+</code></pre></div><p>也就是说不管 <code class="highlighter-rouge">SEPARATOR</code> 的值是什么，<code class="highlighter-rouge">join()</code> 是直接使用 <code class="highlighter-rouge">/</code> 进行连接操作的。基于 <code class="highlighter-rouge">join()</code> 的这种操作方式，很多人就倾向于 hard code 路径，其实还是使用 <code class="highlighter-rouge">join()</code> 方法好一些，因为这个方法会做一些额外的工作，比如去除额外的 ‘/’：</p><div class="highlighter-rouge"><pre class="highlight"><code>File.join('/foo/', 'bar') # =&gt; /foo/bar 而非 /foo//bar
+</code></pre></div><p>现在的问题是：<code class="highlighter-rouge">SEPARATOR</code> 有没有用？答案是，基本没什么用，而且现在看来也没有什么其他的特殊用途（<a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/58085" title="via">via</a>）。</p><p>这个常量是没用的，那么还有一个问题需要解决：Windows 或其他平台能够识别 ‘/’ 作为分隔符的路径吗？答案是肯定的，Windows 本身可以识别 ‘/’ 作为路径分隔符，只是在某些特殊的环境中无法识别，比如 DOS 命令行（<a href="http://objectmix.com/ruby/185491-wrong-file-separator.html#post655635" title="via">via</a>）。</p><p>Ruby 还提供了另外一个常量 <code class="highlighter-rouge">ALT_SEPARATOR</code>，这个常量更符合我们的期待，它在 Windows 中的值是 <code class="highlighter-rouge">\</code>，在其他平台中则是 <code class="highlighter-rouge">nil</code>。如果确实需要 Windows 风格的路径字符串，可以通过下面的代码实现：</p><div class="highlighter-rouge"><pre class="highlight"><code>File.join('path', 'to', 'file').gsub(/\//, '\\')
+</code></pre></div></div><ul class="entry-tags"><li><a class="btn btn-default btn-sm" href="/tags/#ruby-ref" title="Ruby">Ruby</a></li></ul></article><ul class="pager"><li class="previous"><a rel="prev" href="/2012/06/semantic-versioning.html" title="语义性版本号">&laquo; 上一篇文章</a></li><li class="next"><a rel="next" href="/2012/12/2012.html" title="2012 年">下一篇文章 &raquo;</a></li></ul><footer class="site-footer clearfix"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><ul class="socials"><li><a href="/feed.xml" title="订阅网站更新"><i class="fa fa-rss"></i></a></li><li><a href="mailto:andor.chen.27@gmail.com" title="电子邮件"><i class="fa fa-envelope-o"></i></a></li><li><a href="https://twitter.com/Andor_Chen" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="http://www.weibo.com/andor27/" title="微博" target="_blank"><i class="fa fa-weibo"></i></a></li><li><a href="https://github.com/AndorChen" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li><li><a class="douban" href="http://www.douban.com/people/Andor/" title="豆瓣" target="_blank">豆</a></li></ul><p class="copyright">&copy; 1988- 2015。如无特殊说明，本站内容基于“<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" title="CC BY-NC-SA 3.0" target="_blank">CC BY-NC-SA 3.0</a>”发布。</p><p class="powered-by"><a href="http://jekyllrb.com" title="本站使用 Jekyll 生成" target="_blank"><img src="/assets/images/jekyll-logo@2x.png" width="60" height="24" alt="Jekyll Logo" title="本站使用 Jekyll 生成"/></a></p></div></footer></div></div><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-69344223-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-</body>
-</html>
-
-
-
+  ga('send', 'pageview');</script></body></html>
