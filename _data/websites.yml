@@ -1,3 +1,6 @@
+- url: 'http://self.pub'
+  desc: 'self.pub'
+
 - url: 'http://ember-china.com'
   desc: 'ember-cli 入门'
 
