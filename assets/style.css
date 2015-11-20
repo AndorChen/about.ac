@@ -157,11 +157,6 @@ img.border {
     font-family: Menlo, "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, monospace;
 }
 
-.featured {
-    margin-top: 30px;
-    text-align: center;
-}
-
 /* Entry */
 
 .entry-header {
@@ -309,7 +304,9 @@ img.border {
 /* Footer */
 
 .site-footer {
-    margin-top: 30px;
+    background: transparent url('images/divider_thin.png') repeat-x left top;
+    margin: 50px -40px 30px;
+    padding: 30px 40px 0;
     text-align: center;
 }
 
