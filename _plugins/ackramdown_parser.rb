@@ -4,7 +4,7 @@ module Jekyll
       class ACKramdownParser < KramdownParser
 
         def convert(content)
-          Kramdown::Document.new(content, Utils.symbolize_hash_keys(@config["kramdown"])).to_achtml
+          Kramdown::Document.new(content, Utils.symbolize_hash_keys(@config)).to_achtml
         end
 
       end
