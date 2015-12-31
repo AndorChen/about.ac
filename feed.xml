@@ -5,9 +5,40 @@
     <description>安道的个人网站</description>
     <link>http://about.ac/</link>
     <atom:link href="http://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Dec 2015 05:27:42 +0000</pubDate>
-    <lastBuildDate>Fri, 25 Dec 2015 05:27:42 +0000</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Thu, 31 Dec 2015 12:28:39 +0000</pubDate>
+    <lastBuildDate>Thu, 31 Dec 2015 12:28:39 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.0.pre.beta1</generator>
+    
+      <item>
+        <title>2015 年</title>
+        <description>&lt;p&gt;又到一年一度写年终总结的时候。做自由翻译进入第二个年头了，相关的事情也逐渐进了正轨。&lt;/p&gt;
+
+&lt;p&gt;今年翻译了7本书（按结束的时间顺序）：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/java-nutshell-6th/&quot; title=&quot;Java 技术手册（第6版）&quot;&gt;Java 技术手册（第6版）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/js-app-design/&quot; title=&quot;JavaScript Web 应用开发&quot;&gt;JavaScript Web 应用开发&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/modern-php/&quot; title=&quot;Modern PHP（中文版）&quot;&gt;Modern PHP（中文版）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ember-china.com&quot; title=&quot;ember-cli 入门&quot;&gt;ember-cli 入门&lt;/a&gt;（自出版）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/learning-angularjs/&quot; title=&quot;AngularJS 学习手册&quot;&gt;AngularJS 学习手册&lt;/a&gt;（未出版）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/docker-up-and-running/&quot; title=&quot;Docker 即学即用&quot;&gt;Docker 即学即用&lt;/a&gt;（未出版）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/css-manual-4th/&quot; title=&quot;CSS: The Missing Manual, 4th Edition&quot;&gt;CSS: The Missing Manual, 4th Edition&lt;/a&gt;（未出版）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其中三本书出版了，也收到了翻译费用，所以生活没有像&lt;a href=&quot;/2014/12/2014.html&quot; title=&quot;2014 年年终总结&quot;&gt;去年那样&lt;/a&gt;“潦倒”。&lt;/p&gt;
+
+&lt;p&gt;至于明年的计划，我定了一个大方向：&lt;/p&gt;
+
+&lt;p&gt;从 Ruby 初级迈向中级！&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://about.ac/2015/12/2015.html</link>
+        <guid isPermaLink="true">http://about.ac/2015/12/2015.html</guid>
+        
+        <category>Life</category>
+        
+        
+      </item>
     
       <item>
         <title>Ruby on Rails 教程销售报告</title>
@@ -730,80 +761,6 @@ sleepForTimeInterval(_:)&lt;/code&gt; 方法都会导致 UI 无响应，就像�
         <guid isPermaLink="true">http://about.ac/2015/04/duokanify.html</guid>
         
         <category>eBook</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>翻译流程</title>
-        <description>&lt;p&gt;我翻译了&lt;a href=&quot;/books/&quot; title=&quot;一些书&quot;&gt;一些书&lt;/a&gt;，积累了一些经验。写这篇文章，给对翻译感兴趣、想从事翻译的人看一下，希望对新人有所帮助。其实，我也还是个“新人”。&lt;/p&gt;
-
-&lt;p&gt;我要说的是和出版社合作翻译，倘若你是和客户直接联系，自然不能用本文所述的“流程”。而且，这里所述的流程仅限部分出版社、部分图书类别（主要是计算机科学类）。&lt;/p&gt;
-
-&lt;h3&gt;找书&lt;/h3&gt;
-
-&lt;p&gt;国外的出版社很多，每年出版的书数量众多，国内会引进的却不多。国内从事计算机科学类图书引进的出版社（或旗下专门的公司）主要有：人邮信息技术分社，&lt;a href=&quot;http://www.ituring.com.cn/&quot; title=&quot;图灵&quot;&gt;图灵&lt;/a&gt;（人民邮电出版社），&lt;a href=&quot;http://www.broadview.com.cn/&quot; title=&quot;博文视点&quot;&gt;博文视点&lt;/a&gt;（电子工业出版社），&lt;a href=&quot;http://www.hzbook.com/&quot; title=&quot;华章图文&quot;&gt;华章图文&lt;/a&gt;（机械工业出版社）。&lt;/p&gt;
-
-&lt;p&gt;如果想寻找已经引进待译的书，可以访问各出版社或公司的网站，联系相应的编辑，看他们手头上有哪些书在“诚征译者”。&lt;/p&gt;
-
-&lt;p&gt;在这方面，我觉得图灵做得不错，&lt;a href=&quot;http://www.ituring.com.cn/minibook/921&quot; title=&quot;所有待译的书都能在网站上找到&quot;&gt;所有待译的书都能在网站上找到&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h3&gt;调研&lt;/h3&gt;
-
-&lt;p&gt;找到“想”翻译的书后，你要做些调研，问自己几个问题，最终决定要不要翻译：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;我对这本书所讲的内容（领域）是否熟悉（不一定要精通）？&lt;/li&gt;
-  &lt;li&gt;这本书在原出版地的影响如何？亚马逊等网站上的评价如何？&lt;/li&gt;
-  &lt;li&gt;我能为这本书投入多少时间？投入产出比是否令我满意？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;关于最后一个问题，我可以给你提供一个参考。如果你是业余翻译，一般一天能翻译 3-5 页；出版社能支付你的翻译酬劳，一般是 ￥30-80 每千字。&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;当然，这些只是参考，不排除有超级赛亚人和资金雄厚的出版社。&lt;/p&gt;
-
-&lt;h3&gt;试译&lt;/h3&gt;
-
-&lt;p&gt;确定要翻译的书之后，联系出版社，索要试译章节，开始试译。试译内容的长度一般在 3 千字左右。出版社通过试译确认译者的翻译能力以及对书中所讲的知识是否了解。&lt;/p&gt;
-
-&lt;h3&gt;签合同&lt;/h3&gt;
-
-&lt;p&gt;试译通过后，出版社会和你签订“翻译委托协议”，确认翻译的具体细节，例如酬劳，交稿期限和方式等。&lt;/p&gt;
-
-&lt;h3&gt;翻译&lt;/h3&gt;
-
-&lt;p&gt;接下来就是“漫长而痛苦”的翻译了。你要制定一个计划，比如每天翻译多少页，确保在约定的交稿期限之前能翻译完。一般情况下，如果没按期译完，出版社会扣除一定的稿酬（在“翻译委托协议”中应有说明）。&lt;/p&gt;
-
-&lt;h3&gt;交稿，审核&lt;/h3&gt;
-
-&lt;p&gt;如果你挺过来了，完成了整本书的翻译，这时候该把译稿交给出版社审查了。&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;出版社的编辑会仔细认真地审核你的译稿，如果发现问题会及时和你联系，共同解决。这个过程可能很长，有时可能长达半年。&lt;/p&gt;
-
-&lt;h3&gt;等待&lt;/h3&gt;
-
-&lt;p&gt;出版社确认你的译稿没问题之后，会走些“内部流程”，比如排版、专家审读等。这个时候你只能等待，如果想继续翻译其他书，现在就可以回到第一步了。&lt;/p&gt;
-
-&lt;h3&gt;确认样书&lt;/h3&gt;
-
-&lt;p&gt;出版社的那些流程走完之后，应该会寄送你几本样书。收到样书后，你要再次确认。如果发现问题，及时向出版社反馈。&lt;/p&gt;
-
-&lt;h3&gt;出版&lt;/h3&gt;
-
-&lt;p&gt;一切都顺利完成了，现在书就出版了。接下来是铺天盖地的宣传期。&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;税前，起征额 ￥800。字数统计方式：一般以 Word 统计的字数为准。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;有时出版社会要求译者分批提交译稿，即每隔一段时间就要提交一次。具体的提交方式以“翻译委托协议”为准。 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 12 Feb 2015 00:00:00 +0000</pubDate>
-        <link>http://about.ac/2015/02/translation-process.html</link>
-        <guid isPermaLink="true">http://about.ac/2015/02/translation-process.html</guid>
-        
-        <category>Translation</category>
         
         
       </item>
