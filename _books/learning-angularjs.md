@@ -5,7 +5,7 @@ book_category: js
 
 ## 简介
 
-加工中。
+使用 AngularJS 可以快速开发后台为 REST Web 服务的客户端应用，能运行在任何桌面或移动平台中。你可能听说这个 JavaScript MVC 框架的学习曲线很陡，但其实不然。这本实用的指南通过实战方式教你 AngularJS，以及如何快速开发高质量的应用和网站。《AngularJS 学习手册》会开发一个示例应用，不仅让你了解 AngularJS 框架的相关概念，还让你直接动手操作。如果你熟悉 JavaScript Web开发、软件设计概念和模式，那么《AngularJS 学习手册》是着手学习 AngularJS 不二的选择。
 
 ## 作者
 
@@ -13,13 +13,26 @@ book_category: js
 
 ## 目录
 
-加工中。
+- 前言
+- 第1章 AngularJS 简介
+- 第2章 IDE 和 AngularJS 项目
+- 第3章 MVC 和 AngularJS
+- 第4章 AngularJS 的控制器
+- 第5章 AngularJS 的视图和 Bootstrap
+- 第6章 AngularJS 和 REST 服务
+- 第7章 AngularJS 的模型
+- 第8章 服务和业务逻辑
+- 第9章 AngularJS 的指令
+- 第10章 AngularJS 的安全性
+- 第11章 把 MEAN 工具栈开发的应用部署到云端，开发移动应用
+- 第12章 AngularJS 和 SEO
 
 ## 大事记
 
 - 2015.06.15 开始翻译;
 - 2015.07.07 初译完成;
 - 2015.07.08 校对完成，提交审核；
+- 2015.11.01 出版；
 
 ## 词汇表
 
