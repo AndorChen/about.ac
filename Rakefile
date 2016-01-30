@@ -26,7 +26,14 @@ task :preview do
   system "bundle exec jekyll s --drafts --baseurl='/aboutac' --host='0.0.0.0'"
 end
 
+desc 'Alias to :deploy'
 task :d => :deploy
+
+desc 'Alias to :preview'
 task :s => :preview
+
+desc 'Alias to :preview'
 task :server => :preview
+
+desc 'Alias to :preview'
 task :default => :preview
