@@ -19,8 +19,6 @@ markdown: ACKramdownParser
 kramdown:
   input: GFM
   auto_ids: false
-  enable_coderay: false
-  syntax_highlighter: rouge
 
 collections:
   books:
