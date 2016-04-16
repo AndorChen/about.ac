@@ -24,3 +24,6 @@
 
 - slug: os-x
   name: 'OS X'
+
+- slug: git
+  name: Git
