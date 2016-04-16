@@ -5,9 +5,104 @@
     <description>安道的个人网站</description>
     <link>http://about.ac/</link>
     <atom:link href="http://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Apr 2016 04:27:40 +0000</pubDate>
-    <lastBuildDate>Sat, 09 Apr 2016 04:27:40 +0000</lastBuildDate>
+    <pubDate>Sat, 16 Apr 2016 04:31:10 +0000</pubDate>
+    <lastBuildDate>Sat, 16 Apr 2016 04:31:10 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>在 GitHub 中设置 GPG 签名</title>
+        <description>&lt;p&gt;GitHub 前几天支持 GPG 签名验证提交了（&lt;a href=&quot;https://github.com/blog/2144-gpg-signature-verification&quot; title=&quot;GPG signature verification&quot;&gt;via&lt;/a&gt;），今天对我的 GitHub 账户做了相应的设置，本文记录过程备考。&lt;/p&gt;
+
+&lt;h3&gt;第 1 步：安装 GPG 命令行工具&lt;/h3&gt;
+
+&lt;p&gt;使用 Homebrew 安装 GPG 命令行工具 gnupg：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew install gpg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;第 2 步：生成 GPG 密钥&lt;/h3&gt;
+
+&lt;p&gt;执行下述命令生成 GPG 密钥：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gpg --gen-key
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在生成的过程中：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;询问密钥种类时按回车键，选择默认类型（RSA and RSA）；&lt;/li&gt;
+  &lt;li&gt;询问密钥大小时，输入“4096”；&lt;/li&gt;
+  &lt;li&gt;询问密钥有效期时按回车键，使用默认值，即永不过期；&lt;/li&gt;
+  &lt;li&gt;输入“y”确认上述设置；&lt;/li&gt;
+  &lt;li&gt;输入真实姓名和电子邮件地址，“Comment”可留空；&lt;/li&gt;
+  &lt;li&gt;输入“O”确认；&lt;/li&gt;
+  &lt;li&gt;输入保护私钥的密码；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上信息设置完毕后，等待程序生成密钥。&lt;/p&gt;
+
+&lt;h3&gt;第 3 步：添加 GPG 公钥&lt;/h3&gt;
+
+&lt;p&gt;执行下述命令，查看可用的 GPG 密钥：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gpg --list-keys
+/Users/userA/.gnupg/pubring.gpg
+-------------------------------
+pub   4096R/4A667092 2016-04-16
+uid                  Your Name &amp;lt;your-name@gmail.com&amp;gt;
+sub   4096R/48E027A6 2016-04-16
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，&lt;code class=&quot;highlighter-rouge&quot;&gt;4A667092&lt;/code&gt; 是 GPG 密钥的 ID。&lt;/p&gt;
+
+&lt;p&gt;执行下属命令，输出指定的 GPG 公钥：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gpg --armor --export &amp;lt;GPG-ID&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;把 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;GPG-ID&amp;gt;&lt;/code&gt; 替换成具体的 ID。在输出的内容中，从“—–BEGIN PGP PUBLIC KEY BLOCK—–”复制到“—–END PGP PUBLIC KEY BLOCK—–”。打开 &lt;a href=&quot;https://github.com/settings/keys&quot; title=&quot;GitHub 设置密钥的网页&quot;&gt;GitHub 设置密钥的网页&lt;/a&gt;，粘贴 GPG 密钥。&lt;/p&gt;
+
+&lt;h3&gt;第 4 步：设置 Git&lt;/h3&gt;
+
+&lt;p&gt;最后要设置 Git，让 Git 使用指定的 GPG 密钥，并让 Git 在提交时使用 GPG 密钥签名。&lt;/p&gt;
+
+&lt;p&gt;在 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.gitconfig&lt;/code&gt; 文件中添加下述设置（如果集中管理 dotfiles，则在相应的文件中添加）：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[user]
+  ...
+  signingkey = &amp;lt;GPG-ID&amp;gt;
+...
+[commit]
+  gpgsign = true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;第 5 步：签名提交&lt;/h3&gt;
+
+&lt;p&gt;按照常规的方式提交，Git 会询问私钥的密码，输入即可。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &lt;span class=&quot;s1&quot;&gt;&#39;&amp;lt;commit message&amp;gt;&#39;&lt;/span&gt;
+
+You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;for
+&lt;/span&gt;user: &lt;span class=&quot;s2&quot;&gt;&quot;Your Name &amp;lt;your-name@gmail.com&amp;gt;&quot;&lt;/span&gt;
+4096-bit RSA key, ID 4A667092, created 2016-04-16
+
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+        <link>http://about.ac/2016/04/github-with-gpg-signature.html</link>
+        <guid isPermaLink="true">http://about.ac/2016/04/github-with-gpg-signature.html</guid>
+        
+        <category>Git</category>
+        
+        
+      </item>
     
       <item>
         <title>2015 年</title>
@@ -658,109 +753,6 @@ sleepForTimeInterval(_:)&lt;/code&gt; 方法都会导致 UI 无响应，就像�
         <guid isPermaLink="true">http://about.ac/2015/05/first-mac-app.html</guid>
         
         <category>Dev</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>O&#39;Reilly 电子书在多看中没有目录的修正方法</title>
-        <description>&lt;p&gt;我平时看电子书，尤其是 ePub 格式的电子书，喜欢使用多看，包括我的 Kindle，也刷成了多看的系统。我看的电子书中相当一部分是 O’Reilly 出版社的。但在多看的系统中，O’Reilly 出版社的电子书都没有目录。如果只有一两本是这种情况，有可能是 O’Reilly 的问题。可是，我接触到的所有O’Reilly 出版社的电子书都是如此，所以我猜想可能是多看系统的问题。&lt;/p&gt;
-
-&lt;p&gt;鉴于此，我在其他几个 ePub 阅读器中做了测试，包括 iBooks（Mac 和 iPhone）和 Adobe Digital Editions。在这些阅读器中，O’Reilly 出版社的电子书都能正确显示目录。我还使用 &lt;a href=&quot;https://github.com/idpf/epubcheck&quot; title=&quot;epubcheck&quot;&gt;epubcheck&lt;/a&gt; 对 O’Reilly 的电子书做了验证，结果是，完全没问题。&lt;/p&gt;
-
-&lt;p&gt;今天，我仔细研究了一下，发现在 O’Reilly 的电子书中，&lt;a href=&quot;http://www.idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.4.1&quot; title=&quot;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;toc.ncx&amp;lt;/code&amp;gt; 文件&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;toc.ncx&lt;/code&gt; 文件&lt;/a&gt;中“缺少”一个 &lt;code class=&quot;highlighter-rouge&quot;&gt;meta&lt;/code&gt; 元素：&lt;a href=&quot;http://www.niso.org/workrooms/daisy/Z39-86-2005.html#li_406&quot; title=&quot;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;dtb:depth&amp;lt;/code&amp;gt;&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dtb:depth&lt;/code&gt;&lt;/a&gt;。我把”缺少“放在了引号中，因为没有这个元素，epubcheck 并没有报错，说明 ePub 规范并不强制要求必须有这个元素。而且，虽然没有这个元素，很多其他 ePub 阅读器都能正确解析目录。所以，多看没有显示目录的原因，我想应该是兼容性不够强。&lt;/p&gt;
-
-&lt;p&gt;我在 &lt;code class=&quot;highlighter-rouge&quot;&gt;toc.ncx&lt;/code&gt; 文件中加上了这个 &lt;code class=&quot;highlighter-rouge&quot;&gt;meta&lt;/code&gt; 元素：&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;meta name=&quot;dtb:depth&quot; content=&quot;1&quot;/&amp;gt;&lt;/code&gt;，然后重新打包，在多个 ePub 阅读器中做了测试，包括多看系统，都能正确显示目录。而且，我也使用 epubcheck 做了验证，没有错误。&lt;/p&gt;
-
-&lt;p&gt;如果你也在使用多看系统，阅读O’Reilly 出版社的电子书觉得没有目录不方便，可以按照下述方法修正：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;使用解压缩软件解压 ePub 文件（可能要先把 ePub 文件的扩展名改为 &lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt;）;&lt;/li&gt;
-  &lt;li&gt;打开解压得到的文件夹，在文本编辑器中打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;OEBPS&lt;/code&gt; 子文件夹中的 &lt;code class=&quot;highlighter-rouge&quot;&gt;toc.ncx&lt;/code&gt; 文件；&lt;/li&gt;
-  &lt;li&gt;在 &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt; 元素中加上这个 &lt;code class=&quot;highlighter-rouge&quot;&gt;meta&lt;/code&gt; 元素：&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;meta name=&quot;dtb:depth&quot; content=&quot;1&quot;/&amp;gt;&lt;/code&gt;；&lt;/li&gt;
-  &lt;li&gt;最后，重新打包整个文件夹。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;重新打包时要注意两个问题：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;一定要先打包 &lt;code class=&quot;highlighter-rouge&quot;&gt;mimetype&lt;/code&gt; 这个文件；&lt;/li&gt;
-  &lt;li&gt;而且，这个文件的压缩率必须为 0%。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;如果你觉得每次都手动修正很麻烦，可以使用我写的 Rake 任务，如下所示。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;fileutils&#39;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Usage: rake duokanify file=path/to/sample.epub&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Adds dtb:depth to ncx file in an ePub&#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:duokanify&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;file&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;abort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ERROR: Please provide the ePub file path!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;exit&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;file&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;end_with?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;.epub&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;abort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ERROR: The file you provided is not an ePub!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;exit&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;expand_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;file&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;exist?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;abort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ERROR: The file you provided is not exists!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;exit&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Unzipping....&#39;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;dest_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;basename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;.epub&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;unzip &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;file&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; -d &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dest_dir&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Normalize....&#39;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;ncx_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dest_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;OEBPS&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;toc.ncx&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;exist?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ncx_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;abort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Info: The ePub has no ncx file, needless to normalize.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;exit&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;ncx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ncx_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;r+&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;read&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# puts content.inspect&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=~&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/meta=&quot;dtb:depth&quot;/i&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;abort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Info: The ePub already set dtb:depth, needless to normalize.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;exit&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&amp;lt;/head&amp;gt;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;&amp;lt;meta name=&quot;dtb:depth&quot; content=&quot;1&quot;/&amp;gt;&#39;&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rewind&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;write&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&amp;lt;/head&amp;gt;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Rezipping....&#39;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;normalized_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;basename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dest_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;-normalized.epub&quot;&lt;/span&gt;
-  &lt;span class=&quot;no&quot;&gt;FileUtils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dest_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;zip -0 -X &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalized_file&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; mimetype&quot;&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;zip -9 -r &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalized_file&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; META-INF OEBPS&quot;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;no&quot;&gt;FileUtils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cp&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dest_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;normalized_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;pwd&lt;/span&gt;
-
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Cleanning....&#39;&lt;/span&gt;
-  &lt;span class=&quot;no&quot;&gt;FileUtils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rm_rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dest_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:secure&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Done&#39;&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Normalized ePub path: ./&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalized_file&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这个 Rake 任务的使用方法是：在命令行中执行 &lt;code class=&quot;highlighter-rouge&quot;&gt;rake duokanify file=path/to/sample.epub&lt;/code&gt;。执行这个命令后会得到一个名为 &lt;code class=&quot;highlighter-rouge&quot;&gt;sample-normalized.epub&lt;/code&gt; 的文件，然后再把这个文件上传到多看中即可。&lt;/p&gt;
-
-&lt;p&gt;水平有限，我的这个 Rake 任务写得比较蹩脚，如果你觉得有可以改进的地方（有很多），请访问&lt;a href=&quot;https://gist.github.com/AndorChen/8ebfc5821ceac8884416&quot; title=&quot;这个 Gist&quot;&gt;这个 Gist&lt;/a&gt;，给我留言。这个 Rake 任务的最新版会在这个 Gist 中更新。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
-        <link>http://about.ac/2015/04/duokanify.html</link>
-        <guid isPermaLink="true">http://about.ac/2015/04/duokanify.html</guid>
-        
-        <category>eBook</category>
         
         
       </item>
