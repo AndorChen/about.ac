@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "在 GitHub 中设置 GPG 签名"
+title: "为 GitHub 设置 GPG 签名"
 tags: ['Git']
 ---
 
