@@ -345,6 +345,11 @@ img.border {
     text-decoration: none;
 }
 
+.socials i:before {
+    margi-left: 0;
+    margin-right: 0;
+}
+
 .socials a.douban {
     font-size: 22px;
 }
