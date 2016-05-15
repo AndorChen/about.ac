@@ -1,9 +1,0 @@
-ftp_host: 'hk3.homezz.net'
-ftp_dir: '/public_html/about.ac/'
-ftp_passive: false
-
-# optional
-ftp_port: 21                  # default 21
-ftp_username: 'emberchi'      # default read from stdin
-ftp_password: '1ad5a884'      # default read from stdin
-ftp_secure: true              # default false

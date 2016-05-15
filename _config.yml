@@ -4,14 +4,14 @@ author: 安道
 email: andor.chen.27@gmail.com
 description: 安道的个人网站
 baseurl: ""
-url: "http://about.ac"
+url: "https://about.ac"
 twitter_username: andor_chen
 github_username:  andorchen
 
 # Build settings
 permalink: /:year/:month/:title.html
 exclude: ["README.md", "Rakefile", "Gemfile", "Gemfile.lock", 'node_modules', 'package.json', 'gulpfile.js']
-keep_files: ['.git', '.gitignore', '.git-ftp-ignore']
+keep_files: ['.git']
 timezone: '+0800'
 
 # Converter settings
@@ -19,6 +19,9 @@ markdown: ACKramdownParser
 kramdown:
   input: GFM
   auto_ids: false
+
+sass:
+  style: compressed
 
 collections:
   books:

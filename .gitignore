@@ -1,4 +1,4 @@
 _site/
-_glynn.yml
 .jekyll-metadata
+.sass-cache
 node_modules/

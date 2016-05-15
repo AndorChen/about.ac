@@ -1,3 +1,9 @@
+---
+---
+
+@import 'bootstrap';
+@import 'font';
+
 body {
     color: #333;
     font: 14px/1.6 "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB","Microsoft Yahei", STHeiti, sans-serif;
@@ -393,7 +399,7 @@ img.border {
 @media (min-width: 769px) {
     /* Only load big background image on bigger screen */
     body{
-        background: #424242 url('http://andorpublic.qiniudn.com/aboutac_body_bg.jpg') no-repeat center center fixed;
+        background: #424242 url('images/body_bg.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
