@@ -11,7 +11,7 @@ github_username:  andorchen
 # Build settings
 permalink: /:year/:month/:title.html
 exclude: ["README.md", "Rakefile", "Gemfile", "Gemfile.lock", 'node_modules', 'package.json', 'gulpfile.js']
-keep_files: ['.git']
+keep_files: ['.git', 'package.json']
 timezone: '+0800'
 
 # Converter settings
