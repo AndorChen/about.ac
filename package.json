@@ -1,0 +1,18 @@
+{
+  "_aerobatic": {
+    "router": [
+      {
+        "module": "custom-errors",
+        "options": {
+          "errors": {
+            "404": "404.html",
+            "500": "500.html"
+          }
+        }
+      },
+      {
+        "module": "webpage"
+      }
+    ]
+  }
+}
