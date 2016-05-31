@@ -1,6 +1,6 @@
 ---
 layout: book
-book_category: other
+book_category: php
 ---
 
 ## 简介
