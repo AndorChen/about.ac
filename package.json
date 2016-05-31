@@ -1,5 +1,6 @@
 {
   "_aerobatic": {
+    "omitClientConfigVar": true,
     "router": [
       {
         "module": "custom-errors",
