@@ -1,5 +1,9 @@
 desc 'Deploy to bitbucket and aerobatic'
 task :deploy do
+  puts 'Push to `master`'
+  system "git push origin master"
+  puts
+  puts 'Push to `gh-pages`'
   system "bundle exec jekyll build"
   puts
   cd '_site' do
