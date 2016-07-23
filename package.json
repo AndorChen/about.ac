@@ -10,6 +10,12 @@
             "500": "500.html"
           }
         }
+      },
+      {
+        "module": "webpage",
+        "options": {
+          "canonicalRedirects": false
+        }
       }
     ]
   }
