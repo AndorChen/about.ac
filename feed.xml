@@ -5,9 +5,34 @@
     <description>安道的个人网站</description>
     <link>https://about.ac/</link>
     <atom:link href="https://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Jun 2016 06:07:35 +0000</pubDate>
-    <lastBuildDate>Fri, 03 Jun 2016 06:07:35 +0000</lastBuildDate>
+    <pubDate>Sat, 23 Jul 2016 04:17:30 +0000</pubDate>
+    <lastBuildDate>Sat, 23 Jul 2016 04:17:30 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>规范专有名词的拼写</title>
+        <description>&lt;p&gt;最近看了一些书和网文，发现专有名词的拼写不太规范。我所说的“专有名词”是指一些网站、服务和程序的名字，如 GitHub、JavaScript、WordPress 等。这些名词经常错误地拼写成 Github、Javascript、Wordpress。&lt;/p&gt;
+
+&lt;p&gt;之所以出现这样的问题，我想主要有两方面的原因。其一，不重视，觉得无所谓，有个字母大小写别人也知道说的是什么。其二，不小心拼错了。&lt;/p&gt;
+
+&lt;p&gt;第一个原因属于态度上的问题，不管哪种拼法只要别人知道是什么就行。试想，如果别人使用同音字（毕竟中文没有大小写）写你的名字，你是什么感受。我就曾经因为这个问题和别人激烈争论过。&lt;/p&gt;
+
+&lt;p&gt;第二个原因情有可原，谁人不犯错。但是，检查时要尽量发现这种低级错误。&lt;/p&gt;
+
+&lt;p&gt;其实，我们可以利用某些输入法提供的功能避免这种低级错误。比如我使用的搜狗输入法（非利益相关）就有这样的功能。我设定了几个自定义短语，这样做可以避免不小心输入错误的大小写，还能简化输入，如果想输入 JavaScript，打出 js 再按空格键即可。不要轻视这个问题，小处见真章。&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/figures/sougou.png&quot; alt=&quot;自定义短语&quot; /&gt;
+&lt;figcaption&gt;自定义短语&lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+        <pubDate>Sat, 23 Jul 2016 00:00:00 +0000</pubDate>
+        <link>https://about.ac/2016/07/normalize.html</link>
+        <guid isPermaLink="true">https://about.ac/2016/07/normalize.html</guid>
+        
+        <category>Translation</category>
+        
+        
+      </item>
     
       <item>
         <title>为 GitHub 设置 GPG 签名</title>
@@ -698,61 +723,6 @@ source --------&amp;gt; JSON --------&amp;gt; JSON --------&amp;gt; target
         <guid isPermaLink="true">https://about.ac/2015/05/apps-for-translator.html</guid>
         
         <category>Translation</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>第一个 Mac APP</title>
-        <description>&lt;p&gt;在译完一本书之后，我习惯休息几天，清空对上一本书的记忆，为翻译下一本书做好准备。昨天提交了过去两个月翻译的一本书，本准备好好休息一下，可以今早六点醒了之后就睡不着了。在网上闲逛了大半天，下午决定为自己的一个需求开发一个 Mac APP。&lt;/p&gt;
-
-&lt;p&gt;其实这个 APP 计划很久了，只是一直没动手。我给出版社翻译的书，出版之后出版社会赠送几本（一般是五本）样书给我，我自己会留一本作纪念，剩下则免费送给网友（比如&lt;a href=&quot;https://v2ex.com/t/149111&quot; title=&quot;Python 网络编程攻略&quot;&gt;这本&lt;/a&gt;和&lt;a href=&quot;https://v2ex.com/t/155524&quot; title=&quot;Flask Web 开发&quot;&gt;这本&lt;/a&gt;）。如果你看了这两个送书的帖子会发现，我之前使用的赠送规则是有缺陷的：一本的规则是先到先得，一本的规则是根据彩票开奖结果匹配楼层数。这两种赠送规则都会打击用户的参与积极性，要不来晚了就没了，要不只有一定范围内的楼层有效。所以我想开发的就是一个简单的“抽奖”程序。&lt;/p&gt;
-
-&lt;p&gt;这类程序实现起来不难，我之前用过 JavaScript 实现的“抽奖”程序。不过因为我最近对 Mac APP 开发比较感兴趣，所以决定自己动手写一个类似的程序。我规划的 UI 及操作流程是这样的：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;打开应用后，界面中显示一个标签和一个按钮&lt;/li&gt;
-  &lt;li&gt;标签用于显示“抽奖”的主题&lt;/li&gt;
-  &lt;li&gt;点击按钮后开始抽奖&lt;/li&gt;
-  &lt;li&gt;抽奖结束后弹出一个窗口，显示抽奖结果&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;在编写样板代码阶段，一切顺利，毕竟样板代码写了很多次，而且基本都一样。可是实现具体功能时却遇到了几个问题。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;如何从数组中随机选取元素&lt;/li&gt;
-  &lt;li&gt;如何实现延时操作&lt;/li&gt;
-  &lt;li&gt;如何弹出窗口&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;随机选取元素涉及到生成随机数，要使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;arc4random_uniform()&lt;/code&gt; 函数，还要做些类型转换。这一点我在以前看过的 iOS 视频教程中就知道了，可是记不住该怎么转换类型。熟悉 Ruby 语言的开发者大概都知道，在 Ruby 中 &lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt; 类有个 &lt;code class=&quot;highlighter-rouge&quot;&gt;#sample&lt;/code&gt; 方法，用于从数组中随机选取元素。如果在 Swift 中也能这么做就好了。这时我想起了之前在 GitHub 中关注的一个项目——&lt;a href=&quot;https://github.com/pNre/ExSwift&quot; title=&quot;ExSwift&quot;&gt;ExSwift&lt;/a&gt;。ExSwift 对 Swift 的原生类型做了很多扩展，实现了大量 Ruby 和 Rails 中的实用方法。很巧，ExSwift 也在 &lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt; 类上实现了 &lt;code class=&quot;highlighter-rouge&quot;&gt;sample()&lt;/code&gt; 方法（&lt;a href=&quot;https://github.com/pNre/ExSwift/blob/f1411fc6320a053afca00ef975648c975a30ca75/ExSwift/Array.swift#L407-420&quot; title=&quot;代码&quot;&gt;代码&lt;/a&gt;）。这样第一个问题解决了——找到了从数组中随机选取元素的方式。&lt;/p&gt;
-
-&lt;p&gt;下面是第二个问题。我之所以想实现延迟，是因为这个应用的功能太简单，运行的很快，就像没运行一样。为了让它看起来在背后做了很多事情，我想让结果等待一段时间再出现（在弹出窗口中）。可是怎么实现延迟呢？我首先想到的是“sleep”。可是 &lt;code class=&quot;highlighter-rouge&quot;&gt;sleep()&lt;/code&gt; 函数和 &lt;code class=&quot;highlighter-rouge&quot;&gt;NSThread.
-sleepForTimeInterval(_:)&lt;/code&gt; 方法都会导致 UI 无响应，就像假死一样。经过一番搜索之后，我知道这种效果应该使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;dispatch_after(_:_:_:)&lt;/code&gt; 函数实现。现在还剩最后一个问题了。&lt;/p&gt;
-
-&lt;p&gt;我前面一直在用“弹出”这个词，因为我以为我要实现的效果是“pop-up”。可是搜了好久都没找到相关的 API，最后才发现应该使用“提醒”（&lt;code class=&quot;highlighter-rouge&quot;&gt;NSAlert&lt;/code&gt;）。不过在使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;beginSheetModalForWindow(_:completionHandler:)&lt;/code&gt; 方法时，处理回调用了很长时间。这体现了我对 Swift 语言（尤其是闭包）的理解还很浅显。&lt;/p&gt;
-
-&lt;p&gt;大概用了三个小时，期间不断地搜索、查 API 文档和纠错，最终这个应用总算实现了规划的功能，顺利运行起来了。&lt;/p&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;
-&lt;img src=&quot;/assets/images/figures/LuckyMan.png&quot; alt=&quot;LuckyMan&quot; /&gt;
-&lt;figcaption&gt;LuckyMan&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;这是我自己规划功能、自己动手开发的第一个 Mac APP，因此特写此文，以作纪念。在开发的过程中，我学到了：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Swift 语言是基础&lt;/li&gt;
-  &lt;li&gt;大部分工作是要熟悉 Cocoa API&lt;/li&gt;
-  &lt;li&gt;Dash 买得值&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我想，再过一段时间这个应用就能派上用场了。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
-        <link>https://about.ac/2015/05/first-mac-app.html</link>
-        <guid isPermaLink="true">https://about.ac/2015/05/first-mac-app.html</guid>
-        
-        <category>Dev</category>
         
         
       </item>
