@@ -21,6 +21,7 @@ end
 
 desc 'Alias to :deploy'
 task :d => :deploy
+task :push => :deploy
 
 desc 'Alias to :preview'
 task :s => :preview
