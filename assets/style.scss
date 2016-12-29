@@ -24,9 +24,10 @@ img.border {
 }
 
 .wrapper {
-    background: #fff url('images/wrapper_bg.jpg') repeat left top;
+    background-color: #fff;
     margin: 0 auto;
     width: 50%;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
 }
 
 .inner {
@@ -408,7 +409,7 @@ img.border {
 @media (min-width: 769px) {
     /* Only load big background image on bigger screen */
     body{
-        background: #424242 url('images/body_bg.jpg') no-repeat center center fixed;
+        background: #fff url('images/body-bg.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
