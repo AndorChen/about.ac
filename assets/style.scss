@@ -213,6 +213,10 @@ img.border {
     text-align: center;
 }
 
+.entry-content figure img {
+    max-width: 100%;
+}
+
 .entry-content figcaption {
     margin: 5px 0 0;
 }
