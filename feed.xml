@@ -5,9 +5,38 @@
     <description>安道的个人网站</description>
     <link>https://about.ac/</link>
     <atom:link href="https://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Dec 2016 13:52:03 +0000</pubDate>
-    <lastBuildDate>Thu, 29 Dec 2016 13:52:03 +0000</lastBuildDate>
+    <pubDate>Sun, 01 Jan 2017 09:00:40 +0000</pubDate>
+    <lastBuildDate>Sun, 01 Jan 2017 09:00:40 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>2016 年</title>
+        <description>&lt;p&gt;今年自由翻译生活结束，又走上了工作岗位。在此之前，翻译了以下几本书：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/restful-rails-development/&quot; title=&quot;RESTful Rails Development&quot;&gt;RESTful Rails Development&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/fluent-python/&quot; title=&quot;Fluent Python&quot;&gt;Fluent Python&lt;/a&gt;（合译）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/learning-php/&quot; title=&quot;Learning PHP&quot;&gt;Learning PHP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/building-tools-with-github/&quot; title=&quot;GitHub 实践&quot;&gt;GitHub 实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/books/learning-swift/&quot; title=&quot;Learning Swift&quot;&gt;Learning Swift&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;此外，《&lt;a href=&quot;http://railstutorail-china.org&quot; title=&quot;Ruby on Rails 教程（原书第 4 版）&quot;&gt;Ruby on Rails 教程（原书第 4 版）&lt;/a&gt;》由图灵教育引进了，于是我 11 月末到 12 月初对之前的译稿做了全面修订。该书纸质版预计明年上半年出版。&lt;/p&gt;
+
+&lt;p&gt;年末启动了《&lt;a href=&quot;http://rails.guide&quot; title=&quot;Rails 指南&quot;&gt;Rails 指南&lt;/a&gt;》众筹，目前正在与 chinakr 一起翻译中，预计明年三四月份翻译完。&lt;/p&gt;
+
+&lt;p&gt;Rails 指南之后，我手上还有两本书要翻译。因为有日常工作，加上明年准备考研，如无意外不再接翻译的活了。&lt;/p&gt;
+
+&lt;p&gt;明年的计划是：考研（专硕）。我向来不在意学历，但是评职称这是硬性要求，虽然我也不在意职称“头衔”，但是工资与职称挂钩，而我向来不视金钱为粪土，所以最终决定，还是得考。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+        <link>https://about.ac/2016/12/2016.html</link>
+        <guid isPermaLink="true">https://about.ac/2016/12/2016.html</guid>
+        
+        <category>Life</category>
+        
+        
+      </item>
     
       <item>
         <title>规范专有名词的拼写</title>
@@ -629,100 +658,6 @@ source --------&amp;gt; JSON --------&amp;gt; JSON --------&amp;gt; target
         <guid isPermaLink="true">https://about.ac/2015/06/docx-hack-guide.html</guid>
         
         <category>Dev</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>翻译时使用的应用</title>
-        <description>&lt;p&gt;我的工作电脑是台 MacBook Pro。因此，本文提到的都是 OS X 系统中的应用。本文介绍我在翻译时使用的应用。我选择应用时会使用以下标准：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;首选系统内置的应用&lt;/li&gt;
-  &lt;li&gt;优先选择免费开源的工具&lt;/li&gt;
-  &lt;li&gt;使用收费软件的精简免费版&lt;/li&gt;
-  &lt;li&gt;迫不得已，再使用收费软件&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Terminal.app (bash)&lt;/h2&gt;
-
-&lt;p&gt;我的翻译流程基本上是都在命令行中完成，包括创建项目、推送 Git 仓库和提取 PDF 文件中的图像等。我习惯使用系统自带的终端，而且使用的 shell 是 bash。对日常操作来说，bash 足够了，因此我没有使用功能更强的 &lt;a href=&quot;http://www.zsh.org&quot; title=&quot;zsh 的网站&quot;&gt;zsh&lt;/a&gt; 或 &lt;a href=&quot;http://tmux.sourceforge.net/&quot; title=&quot;tmux 项目的网站&quot;&gt;tmux&lt;/a&gt; 等。&lt;/p&gt;
-
-&lt;h2&gt;Git&lt;/h2&gt;
-
-&lt;p&gt;我在命令行中最常执行的是 Git 相关的操作，因为我会为每个翻译项目创建 Git 仓库，并在远程仓库（BitBucket）中备份。我的 Git 使用 &lt;a href=&quot;http://brew.sh&quot; title=&quot;homebrew 的网站&quot;&gt;homebrew&lt;/a&gt; 管理和更新。&lt;/p&gt;
-
-&lt;h2&gt;Sublime Text&lt;/h2&gt;
-
-&lt;p&gt;翻译时，我都使用纯文本格式撰写译稿，最常使用 &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown 的网站&quot;&gt;Markdown&lt;/a&gt;，但是如果可能，我会尽量使用 &lt;a href=&quot;http://www.methods.co.nz/asciidoc/&quot; title=&quot;AsciiDoc 的网站&quot;&gt;AsciiDoc&lt;/a&gt;（转换时使用 &lt;a href=&quot;http://asciidoctor.org&quot; title=&quot;Asciidoctor 的网站&quot;&gt;Asciidoctor&lt;/a&gt;）。&lt;/p&gt;
-
-&lt;p&gt;既然是纯文本，一个简单易用的文本编辑器就足够了。我最常使用的文本编辑器是 &lt;a href=&quot;www.sublimetext.com&quot; title=&quot;Sublime Text&quot;&gt;Sublime Text&lt;/a&gt;。我从不使用专门的 Markdown 编辑器，例如 &lt;a href=&quot;http://25.io/mou/&quot; title=&quot;Mou 的网站&quot;&gt;Mou&lt;/a&gt; 或 &lt;a href=&quot;http://marked2app.com&quot; title=&quot;Marked 的网站&quot;&gt;Marked&lt;/a&gt; 等。因为专门的 Markdown 编辑器不支持某些出版社特有的句法，而且我觉得自己并不需要这些应用提供的功能（比如实时预览），所以能不多安装一个应用就不安装。&lt;/p&gt;
-
-&lt;h2&gt;Preview.app&lt;/h2&gt;
-
-&lt;p&gt;很多时候，出版社只会提供原书的 PDF 文档，所以需要一个查看 PDF 的应用。一般情况下我会使用系统内置的 Preview.app，如果需要同时打开多个 PDF 文件（需要标签页功能），我会使用 &lt;a href=&quot;https://itunes.apple.com/us/app/pdf-reader-x/id684812309&quot; title=&quot;购买 PDF Reader X&quot;&gt;PDF Reader X&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h2&gt;xpdf (pdfimages)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.foolabs.com/xpdf/&quot; title=&quot;xpdf 的网站&quot;&gt;xpdf&lt;/a&gt; 包含多个用于处理 PDF 文件的命令行工具：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pdfinfo&lt;/code&gt;：查看 PDF 的元信息&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pdffonts&lt;/code&gt;：查看 PDF 文件中使用的字体&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pdfdetach&lt;/code&gt;：提取 PDF 文件的附件&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pdftoppm&lt;/code&gt;：把 PDF 文件转换成 &lt;code class=&quot;highlighter-rouge&quot;&gt;ppm&lt;/code&gt; 格式的图像&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pdfimages&lt;/code&gt;：提取 PDF 文件中的图像&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我最常使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;pdfimages&lt;/code&gt;，把 PDF 文件中的图像提取出来（因为多数时候，出版社只会提供原书的 PDF 文档，不会提供原始文稿和图像）。Adobe Acrobat 也可以提取图像，不过这是收费应用。注意，&lt;code class=&quot;highlighter-rouge&quot;&gt;pdfimages&lt;/code&gt; 提取出来的图像是 &lt;code class=&quot;highlighter-rouge&quot;&gt;ppm&lt;/code&gt; 格式，需要转换成常见的图像格式（例如 &lt;code class=&quot;highlighter-rouge&quot;&gt;jpg&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;png&lt;/code&gt;）。&lt;/p&gt;
-
-&lt;h2&gt;ToyViewer.app&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/en/app/toyviewer/id414298354&quot; title=&quot;购买 ToyViewer&quot;&gt;ToyViewer&lt;/a&gt; 是免费的图像查看应用，支持的格式很多。我主要使用这个应用把 &lt;code class=&quot;highlighter-rouge&quot;&gt;pdfimages&lt;/code&gt; 从 PDF 文件中提取出来的 &lt;code class=&quot;highlighter-rouge&quot;&gt;ppm&lt;/code&gt; 格式图像转换成 &lt;code class=&quot;highlighter-rouge&quot;&gt;jpg&lt;/code&gt; 格式。&lt;/p&gt;
-
-&lt;p&gt;如果选择命令行工具，可以使用 &lt;a href=&quot;http://www.imagemagick.org/&quot; title=&quot;ImageMagick 的网站&quot;&gt;ImageMagick&lt;/a&gt;。不过我在使用 ImageMagick 时一直遇到问题，所以暂且使用 GUI 应用代替。有时间再解决这个问题。&lt;/p&gt;
-
-&lt;h2&gt;pandoc&lt;/h2&gt;
-
-&lt;p&gt;我一直没用到 &lt;a href=&quot;http://pandoc.org/&quot; title=&quot;pandoc 的网站&quot;&gt;pandoc&lt;/a&gt;，直到最近，一个出版社要求提供 &lt;code class=&quot;highlighter-rouge&quot;&gt;doc&lt;/code&gt; 文档，我才第一次使用 pandoc。我之所以不使用这个工具，其中一个原因是，这个工具是使用 &lt;a href=&quot;https://www.haskell.org/&quot; title=&quot;Haskell 语言的网站&quot;&gt;Haskell 语言&lt;/a&gt;开发的。&lt;/p&gt;
-
-&lt;p&gt;pandoc 是个命令行工具，作用是在 Markdown 和多种格式之间转换，其中就包含把 Markdown 转换成 &lt;code class=&quot;highlighter-rouge&quot;&gt;doc&lt;/code&gt; 格式。因为 pandoc 是使用 Haskell 语言开发的，虽然提供了很多其他语言的 API，但扩展起来依然很难。目前，我只使用 pandoc 内置的格式创建 &lt;code class=&quot;highlighter-rouge&quot;&gt;doc&lt;/code&gt; 文档。&lt;/p&gt;
-
-&lt;h2&gt;persie&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/AndorChen/persie&quot; title=&quot;persie 在 GitHub 中的仓库&quot;&gt;persie&lt;/a&gt; 是我自己开发的一个命令行工具，用于把 AsciiDoc 格式编写的文稿转换成电子书。persie 使用以下三个工具生成电子书：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.princexml.com/&quot; title=&quot;PrinceXML 的网站&quot;&gt;PrinceXML&lt;/a&gt;：生成 PDF 格式电子书。PrinceXML 最大的优势是，使用 CSS 定义 PDF 文件的格式。这是个收费软件，不过有免费试用版，而且可以终生使用（不过会在 PDF 文件的第一页加一个 LOGO，但很容易去掉）。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rubygems.org/gems/gepub&quot; title=&quot;gepub&quot;&gt;gepub&lt;/a&gt;：生成 ePub 格式电子书。这是个 Ruby gem。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.amazon.com/gp/feature.html?docId=1000765211&quot; title=&quot;KindleGen 的网站&quot;&gt;KindleGen&lt;/a&gt;：生成 mobi 格式电子书。这是 Amazon 提供的工具，部分国家或地区无法下载（需要科学上网）。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我翻译的《&lt;a href=&quot;http://railstutorial-china.org&quot; title=&quot;Ruby on Rails 教程的网站&quot;&gt;Ruby on Rails 教程&lt;/a&gt;》和自己写的《&lt;a href=&quot;https://selfstore.io/products/184/&quot; title=&quot;购买 Jekyll 小书&quot;&gt;Jekyll 小书&lt;/a&gt;》都是使用 persie 制作的电子书。&lt;/p&gt;
-
-&lt;h2&gt;Dictionary.app / Youdao.app&lt;/h2&gt;
-
-&lt;p&gt;翻译时免不了要查字典，我使用的字典类应用有两个：Dictionary.app 和 Youdao.app。Dictionary 主要用于管理术语，我会把每本书中用到的术语制成词典，这样方便以后查找。除此之外，我还把&lt;a href=&quot;http://www.microsoft.com/Language/zh-cn/Terminology.aspx&quot; title=&quot;下载微软的术语库&quot;&gt;微软的术语词库&lt;/a&gt;制成了词典。&lt;/p&gt;
-
-&lt;p&gt;制作词典的方法有两种：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;使用 Auxiliary Tools。这是 Apple 提供的命令行工具，旧版 OS X 中内置，新版系统要到开发者网站中下载。&lt;/li&gt;
-  &lt;li&gt;使用 &lt;a href=&quot;https://code.google.com/p/mac-dictionary-kit/&quot; title=&quot;Mac Dictionary Kit&quot;&gt;DictUnifier.app&lt;/a&gt;。这是 GUI 应用，用于转换 stardict 的词典，以便在 Dictionary.app 中使用。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Sparrow.app&lt;/h2&gt;
-
-&lt;p&gt;Sparrow 被 Google 收购后虽然销声匿迹了，但我觉得它仍然是 OS X 中最好用的邮件客户端。&lt;/p&gt;
-
-&lt;p&gt;翻译时经常需要与出版社或原作者联系，因此有必要使用一个顺手的邮件客户端。&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 10 May 2015 00:00:00 +0000</pubDate>
-        <link>https://about.ac/2015/05/apps-for-translator.html</link>
-        <guid isPermaLink="true">https://about.ac/2015/05/apps-for-translator.html</guid>
-        
-        <category>Translation</category>
         
         
       </item>
