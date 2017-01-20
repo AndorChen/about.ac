@@ -133,9 +133,13 @@ img.border {
     overflow: hidden;
 }
 
+.home-page .book-list {
+    text-align: center;
+}
+
 .book-list li {
-    float: left;
-    margin-right: 6px;
+    display: inline-block;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 

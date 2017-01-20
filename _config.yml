@@ -27,3 +27,20 @@ collections:
   books:
     output: true
     permalink: /:collection/:path/
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'books'
+    values:
+      layout: 'book'
+      body_class: 'book-page'
+
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+      body_class: 'single-post-page'

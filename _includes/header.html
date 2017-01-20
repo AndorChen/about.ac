@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css"/>
 </head>
-<body>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
 
 <div class="wrapper">
   <div class="inner">
@@ -23,8 +23,8 @@
 
       {% if is_home %}
       <div class="description">
-        <p>高校老师/自由翻译</p>
-        <p>college teacher/freelance translator</p>
+        <p>高校老师 / 自由翻译</p>
+        <p>college teacher / freelance translator</p>
         {% include status.html %}
       </div>
       {% endif %}
