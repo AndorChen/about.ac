@@ -8,7 +8,18 @@ body {
     color: #333;
     font-size: 14px;
     line-height: 1.6;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", STHeiti, sans-serif;
+    font-family: -apple-system,
+                 BlinkMacSystemFont,
+                 "Helvetica Neue",
+                 "Segoe UI",  // Win 8
+                 "Luxi Sans",
+                 "DejaVu Sans",
+                 Tahoma,
+                 "PingFang SC",
+                 "Hiragino Sans GB",
+                 "Microsoft Yahei",
+                 STHeiti,
+                 sans-serif;
 }
 
 a {
