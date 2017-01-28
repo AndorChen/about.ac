@@ -8,8 +8,8 @@ body {
     color: #333;
     font-size: 14px;
     line-height: 1.6;
-    font-family: -apple-system,
-                 BlinkMacSystemFont,
+    font-family: -apple-system, // for Safari and Firefox
+                 BlinkMacSystemFont, // for Chrome
                  "Helvetica Neue",
                  "Segoe UI",  // Win 8
                  "Luxi Sans",
@@ -17,8 +17,15 @@ body {
                  Tahoma,
                  "PingFang SC",
                  "Hiragino Sans GB",
-                 "Microsoft Yahei",
                  STHeiti,
+                 "Microsoft Yahei",
+                 "Source Han Sans SC",
+                 "Noto Sans CJK SC",
+                 "Source Han Sans CN",
+                 "Noto Sans SC",
+                 "Source Han Sans TC",
+                 "Noto Sans CJK TC",
+                 "WenQuanYi Micro Hei",
                  sans-serif;
 }
 
@@ -171,14 +178,14 @@ img.border {
 }
 
 .post-list li span {
-    font-family: Menlo, "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, monospace;
+    font-family: Menlo, "Droid Sans Mono", "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, monospace;
 }
 
 .websites ul {
     list-style-type: none;
     padding-left: 0;
     text-align: center;
-    font-family: Menlo, "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, monospace;
+    font-family: Menlo, "Droid Sans Mono", "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, monospace;
 }
 
 /* Entry */
