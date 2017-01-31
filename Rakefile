@@ -3,14 +3,14 @@ task :deploy do
   puts 'Push to `master`'
   system "git push origin master"
   puts
-  puts 'Push to `gh-pages`'
+  puts 'Push to `coding-pages`'
   system "bundle exec jekyll build"
   puts
   cd '_site' do
     system "git add -A"
     system "git commit -m 'update at #{Time.now.utc}'"
     puts
-    system "git push origin gh-pages"
+    system "git push origin coding-pages"
   end
 end
 
