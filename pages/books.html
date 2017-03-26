@@ -9,9 +9,9 @@ permalink: '/books/'
   {% assign category = meta['slug'] %}
   {% assign books = site.data.books[category] %}
 
-  <section class="book-list {{ category }}-book-list">
-    <h2 class="section-title"><span>{{ meta['name'] }}</span></h2>
-    <ul>
+  <div class="book-list {{ category }}-book-list">
+    <h2 class="section-subtitle">{{ meta['name'] }}</h2>
+    <div class="row">
     {% for book_hash in books %}
       {% assign book_slug = book_hash[0] %}
       {% assign book = book_hash[1] %}
@@ -21,16 +21,21 @@ permalink: '/books/'
       {% else %}
         {% assign book_url =  book_slug | append: '/' | prepend: '/books/' | prepend: site.baseurl %}
       {% endif %}
-      <li><a href="{{ book_url }}" title="{{ book.title }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book_slug }}.jpg" height="164" alt="{{ book.title }}" title="{{ book.title }}" /></a></li>
+      <div class="col-xs-12 col-sm-4 col-md-2">
+        <div class="book-info">
+          <div class="book-cover">
+            <a href="{{ book_url }}" title="{{ book.title | escape }}"><img src="{{ site.baseurl }}/assets/images/covers/{{ book_slug }}.jpg" alt="{{ book.title | escape }}" title="{{ book.title | escape }}" /></a>
+          </div>
+          <h3 class="book-title"><a href="{{ book_url }}" title="{{ book.title | escape }}">{{ book.title }}</a></h3>
+        </div>
+      </div>
 
       {% assign book_slug = nil %}
       {% assign book = nil %}
     {% endfor %}
-    </ul>
-  </section>
+    </div>
+  </div>
 
   {% assign category = nil %}
   {% assign books = nil %}
 {% endfor %}
-
-
