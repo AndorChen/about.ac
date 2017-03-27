@@ -461,6 +461,26 @@ ul.social-links li:last-child a {
   @include decorated_heading;
 }
 
+.entry-content {
+  figure {
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  figcaption {
+    margin-top: 10px;
+  }
+
+  code {
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
 .entry-tags {
   list-style-type: none;
   text-align: right;
