@@ -14,6 +14,11 @@ task :deploy do
   end
 end
 
+desc "Run gulp task minifyJS when JS files changed"
+task :minify_js do
+  system "./node_modules/gulp/bin/gulp.js minifyJS"
+end
+
 desc "Launch preview environment"
 task :preview do
   system "bundle exec jekyll s --drafts --baseurl='/aboutac' --host='0.0.0.0'"
