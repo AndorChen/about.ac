@@ -5,13 +5,19 @@
     <description>安道的个人网站</description>
     <link>https://about.ac/</link>
     <atom:link href="https://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Apr 2017 14:03:17 +0000</pubDate>
-    <lastBuildDate>Sun, 02 Apr 2017 14:03:17 +0000</lastBuildDate>
+    <pubDate>Tue, 04 Apr 2017 07:50:21 +0000</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 07:50:21 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>为 Heroku 应用添加 Let's Encrypt SSL 证书</title>
-        <description>&lt;p&gt;按：经过一番折腾，终于为一个运行在 Heroku 中的 Rails 应用添加了 Let’s Encrypt SSL 证书。做个记录，备查。&lt;/p&gt;
+        <description>&lt;div class=&quot;alert alert-info&quot;&gt;
+&lt;p&gt;&lt;strong&gt;2017 年 4 月 4 日更新：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Heroku 已经提供&lt;a href=&quot;https://devcenter.heroku.com/articles/automated-certificate-management&quot; title=&quot;Automated Certificate Management&quot;&gt;自动证书管理&lt;/a&gt;工具，能自动申请和续订 Let's Encrypt SSL 证书，无需再使用本文所述的方法自己动手操作。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;按：经过一番折腾，终于为一个运行在 Heroku 中的 Rails 应用添加了 Let’s Encrypt SSL 证书。做个记录，备查。&lt;/p&gt;
 
 &lt;p&gt;我有一个应用运行在 Heroku 中，为了兑现去年的承诺，元旦假期过后便着手为它添加 SSL 证书。首先想到的是 &lt;a href=&quot;https://letsencrypt.org/&quot; title=&quot;Let’s Encrypt&quot;&gt;Let’s Encrypt&lt;/a&gt;，毕竟免费。&lt;/p&gt;
 
