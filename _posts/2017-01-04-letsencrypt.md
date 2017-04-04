@@ -4,6 +4,12 @@ title: "为 Heroku 应用添加 Let's Encrypt SSL 证书"
 tags: ['Dev', 'Rails']
 ---
 
+<div class="alert alert-info">
+<p><strong>2017 年 4 月 4 日更新：</strong></p>
+
+<p>Heroku 已经提供<a href="https://devcenter.heroku.com/articles/automated-certificate-management" title="Automated Certificate Management">自动证书管理</a>工具，能自动申请和续订 Let's Encrypt SSL 证书，无需再使用本文所述的方法自己动手操作。</p>
+</div>
+
 按：经过一番折腾，终于为一个运行在 Heroku 中的 Rails 应用添加了 Let's Encrypt SSL 证书。做个记录，备查。
 
 我有一个应用运行在 Heroku 中，为了兑现去年的承诺，元旦假期过后便着手为它添加 SSL 证书。首先想到的是 [Let's Encrypt](https://letsencrypt.org/)，毕竟免费。
