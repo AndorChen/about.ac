@@ -405,11 +405,21 @@ ul.social-links li:last-child a {
 
 .client-list {
   color: #acacac;
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 }
 
 .site-list {
   font-family: Menlo, "Droid Sans Mono", "DejaVu Sans Mono", "Luxi Mono", "Courier New", Monaco, monospace;
   color: #acacac;
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 }
 
 .home-page p {
