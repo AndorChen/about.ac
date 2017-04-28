@@ -5,3 +5,7 @@
 - slug: cepp
   name: '中国电力出版社'
   url: 'http://www.cepp.sgcc.com.cn/'
+
+- slug: hustp
+  name: '华中科技大学出版社'
+  url: 'http://www.hustp.com/'

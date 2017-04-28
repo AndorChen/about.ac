@@ -83,11 +83,11 @@ body_class: home-page
 
     <div class="row">
       <div class="col-sm-6 col-md-6">
-        <h2 class="section-subtitle">名下网站</h2>
-        <div class="site-list">
+        <h2 class="section-subtitle">客户群</h2>
+        <div class="client-list">
           <ul>
-          {% for website in site.data.websites %}
-            <li><a href="{{ website.url }}" title="{{ website.desc | escape }}" target="_blank">{{ website.url }}</a></li>
+          {% for client in site.data.clients %}
+            <li><a href="{{ client.url }}" title="{{ client.name | escape }}" target="_blank">{{ client.name }}</a></li>
           {% endfor %}
           </ul>
           </ul>
@@ -95,11 +95,11 @@ body_class: home-page
       </div>
 
       <div class="col-sm-6 col-md-6">
-        <h2 class="section-subtitle">客户群</h2>
-        <div class="client-list">
+        <h2 class="section-subtitle">名下网站</h2>
+        <div class="site-list">
           <ul>
-          {% for client in site.data.clients %}
-            <li><a href="{{ client.url }}" title="{{ client.name | escape }}" target="_blank"><img src="{{ site.baseurl }}/assets/images/{{ client.slug }}-logo.png" alt="{{ client.name | escape }} LOGO" /></a></li>
+          {% for website in site.data.websites %}
+            <li><a href="{{ website.url }}" title="{{ website.desc | escape }}" target="_blank">{{ website.url }}</a></li>
           {% endfor %}
           </ul>
           </ul>

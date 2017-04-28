@@ -404,30 +404,7 @@ ul.social-links li:last-child a {
 }
 
 .client-list {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px 10px 0;
-
-    a {
-      display: block;
-      line-height: 50px;
-    }
-  }
-
-  img {
-    opacity: 0.8;
-    vertical-align: middle;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
+  color: #acacac;
 }
 
 .site-list {
