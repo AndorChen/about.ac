@@ -10,6 +10,9 @@
 - slug: php
   name: 'PHP 相关'
 
+- slug: css
+  name: 'CSS 相关'
+
 - slug: js
   name: 'JavaScript/Node.js 相关'
 

@@ -1,6 +1,6 @@
 ---
 layout: book
-book_category: other
+book_category: css
 ---
 
 ## 简介
