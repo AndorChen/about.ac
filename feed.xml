@@ -5,9 +5,9 @@
     <description>安道的个人网站</description>
     <link>https://about.ac/</link>
     <atom:link href="https://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Jan 2018 09:42:22 +0000</pubDate>
-    <lastBuildDate>Mon, 01 Jan 2018 09:42:22 +0000</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Thu, 18 Jan 2018 06:10:31 +0000</pubDate>
+    <lastBuildDate>Thu, 18 Jan 2018 06:10:31 +0000</lastBuildDate>
+    <generator>Jekyll v3.7.0</generator>
     
       <item>
         <title>2017 年</title>
@@ -50,7 +50,7 @@
 
 &lt;p&gt;至此，一切顺利。但是执行签发证书的命令时遇到了问题：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;heroku run rake letsencrypt:renew
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;heroku run rake letsencrypt:renew
 Running rake letsencrypt:renew on ⬢ yourapp... ⣷ connecting, run.1234
 Creating account key...Done!
 Registering with LetsEncrypt...Done!
@@ -59,8 +59,7 @@ Giving config vars &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;to change.
 Testing filename works &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;to bring up app&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...done!
 Problem verifying challenge.
 Status: pending, Error:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;执行这个命令很多遍，得到的结果都是一样，而且并没有详细的错误说明。接下来，我换用官方推荐的 &lt;a href=&quot;https://certbot.eff.org/&quot; title=&quot;certbot&quot;&gt;certbot&lt;/a&gt;，试试行不行。&lt;/p&gt;
 
@@ -68,15 +67,13 @@ Status: pending, Error:
 
 &lt;p&gt;首先，安装 certbot：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew install certbot
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;certbot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;然后手动签发：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo certbot certonly --manual
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo certbot certonly --manual
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;根据提示输入电子邮件地址和域名，然后修改控制器，添加一个响应 GET &lt;code class=&quot;highlighter-rouge&quot;&gt;/.well-known/acme-challenge/:id&lt;/code&gt; URL 的动作，渲染纯文本。详情参见&lt;a href=&quot;http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku&quot; title=&quot;这篇文章&quot;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
 
@@ -92,15 +89,13 @@ Status: pending, Error:
 
 &lt;p&gt;按照说明安装好 acme.sh 之后，我用 dns 验证试了一下：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;acme.sh --issue --dns -d example.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;acme.sh &lt;span class=&quot;nt&quot;&gt;--issue&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--dns&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; example.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;按照提示设定一条 TXT 记录，等待一会之后（让 DNS 生效），执行：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;acme.sh --renew -d example.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;acme.sh &lt;span class=&quot;nt&quot;&gt;--renew&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; example.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;还是无法通过验证，日志中给出的消息是“Dns not added”。不过，在日志中，我看到有一个指向 Let’s Encrypt API 的 URL。打开一看，正是我的验证详情。&lt;/p&gt;
 
@@ -114,7 +109,7 @@ Status: pending, Error:
 
 &lt;p&gt;certbot 和 acme.sh 都是很方便的工具，但是 letsencrypt-rails-heroku gem 跟 Heroku 集成得更好。所以更换 DNS 之后，我首先尝试的，还是它。&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;heroku run rake letsencrypt:renew
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;heroku run rake letsencrypt:renew
 Running rake letsencrypt:renew on ⬢ yourapp... up, run.8151
 Creating account key...Done!
 Registering with LetsEncrypt...Done!
@@ -125,8 +120,7 @@ Testing filename works &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;to bring up
 Giving LetsEncrypt some &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;to verify...Done!
 
 Adding new certificate...Done!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;一次成功！&lt;/p&gt;
 
@@ -138,19 +132,17 @@ Adding new certificate...Done!
 
 &lt;p&gt;还要配置 Rails 应用，在生产环境强制使用 SSL：&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# config/environments/production.rb&lt;/span&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# config/environments/production.rb&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;force_ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;如果使用邮件程序，还要把协议修改成 &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;：&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# config/environments/production.rb&lt;/span&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# config/environments/production.rb&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;action_mailer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;default_url_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;host: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'example.com'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;protocol: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'https'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
         <link>https://about.ac/2017/01/letsencrypt.html</link>
@@ -225,17 +217,15 @@ Adding new certificate...Done!
 
 &lt;p&gt;使用 Homebrew 安装 GPG 命令行工具 gnupg：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew install gpg
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gpg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3&gt;第 2 步：生成 GPG 密钥&lt;/h3&gt;
 
 &lt;p&gt;执行下述命令生成 GPG 密钥：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gpg --gen-key
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--gen-key&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;在生成的过程中：&lt;/p&gt;
 
@@ -255,22 +245,20 @@ Adding new certificate...Done!
 
 &lt;p&gt;执行下述命令，查看可用的 GPG 密钥：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gpg --list-keys
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--list-keys&lt;/span&gt;
 /Users/userA/.gnupg/pubring.gpg
--------------------------------
+&lt;span class=&quot;nt&quot;&gt;-------------------------------&lt;/span&gt;
 pub   4096R/4A667092 2016-04-16
 uid                  Your Name &amp;lt;your-name@gmail.com&amp;gt;
 sub   4096R/48E027A6 2016-04-16
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;其中，&lt;code class=&quot;highlighter-rouge&quot;&gt;4A667092&lt;/code&gt; 是 GPG 密钥的 ID。&lt;/p&gt;
 
 &lt;p&gt;执行下属命令，输出指定的 GPG 公钥：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gpg --armor --export &amp;lt;GPG-ID&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--armor&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--export&lt;/span&gt; &amp;lt;GPG-ID&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;把 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;GPG-ID&amp;gt;&lt;/code&gt; 替换成具体的 ID。在输出的内容中，从“—–BEGIN PGP PUBLIC KEY BLOCK—–”复制到“—–END PGP PUBLIC KEY BLOCK—–”。打开 &lt;a href=&quot;https://github.com/settings/keys&quot; title=&quot;GitHub 设置密钥的网页&quot;&gt;GitHub 设置密钥的网页&lt;/a&gt;，粘贴 GPG 密钥。&lt;/p&gt;
 
@@ -280,28 +268,26 @@ sub   4096R/48E027A6 2016-04-16
 
 &lt;p&gt;在 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.gitconfig&lt;/code&gt; 文件中添加下述设置（如果集中管理 dotfiles，则在相应的文件中添加）：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[user]
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[user]
   ...
   signingkey = &amp;lt;GPG-ID&amp;gt;
 ...
 [commit]
   gpgsign = true
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3&gt;第 5 步：签名提交&lt;/h3&gt;
 
 &lt;p&gt;按照常规的方式提交，Git 会询问私钥的密码，输入即可。&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &lt;span class=&quot;s1&quot;&gt;'&amp;lt;commit message&amp;gt;'&lt;/span&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;commit message&amp;gt;'&lt;/span&gt;
 
 You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;for
 &lt;/span&gt;user: &lt;span class=&quot;s2&quot;&gt;&quot;Your Name &amp;lt;your-name@gmail.com&amp;gt;&quot;&lt;/span&gt;
 4096-bit RSA key, ID 4A667092, created 2016-04-16
 
 ...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
         <link>https://about.ac/2016/04/github-with-gpg-signature.html</link>
@@ -405,7 +391,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;这也是一个核心概念。你可以把 ePub 电子书的扩展名改为 &lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt;，然后解压。你会看到解压得到的基本上就是个简单的静态网站：有 XHTML 文件，有图像，有样式表。如下所示：&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── META-INF/
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── META-INF/
 ├── OEBPS
 │   ├── chapter1.xhtml
 │   ├── chapter2.xhtml
@@ -416,8 +402,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 │   ├── package.opf
 │   └── toc.ncx
 └── mimetype
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;当然，这个网站与我们平常所说的网站有所不同，这是由 Web 浏览器与 ePub 阅读器之间的功能差异造成的。例如，在 ePub 电子书中基本不能使用 JavaScript，对 SVG 的支持有限，只能使用部分 CSS 属性。不过，ePub 电子书可以嵌入字体。&lt;/p&gt;
 
@@ -429,7 +414,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;ePub 阅读器一般都会使用特殊的交互方式显示目录，但不会自己去解析内容，再生成目录。所以我们要在 ePub 文件中加入目录，让阅读器读取。如果内容较多，想显示次级目录，比如“3.2 节”，一定要设定目录的层级，不要把所有目录都放在相同的层级。指定目录层级的方式是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素中嵌套 &lt;code class=&quot;highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素，如下所示：&lt;/p&gt;
 
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;navMap&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;navMap&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;navPoint&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;navLabel&amp;gt;&lt;/span&gt;
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;text&amp;gt;&lt;/span&gt;第 1 章&lt;span class=&quot;nt&quot;&gt;&amp;lt;/text&amp;gt;&lt;/span&gt;
@@ -449,8 +434,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch2.html#ch_2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navPoint&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/navMap&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2&gt;不要把整本书都放在一个 XHTML 文件里&lt;/h2&gt;
 
@@ -460,7 +444,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;ePub 阅读器就像 Web 浏览器一样，会内置默认的样式。为了更好的掌控，实现较为统一的视觉效果，建议在样式表开头重置样式。比如说：&lt;/p&gt;
 
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;applet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;iframe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;applet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;iframe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;pre&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;abbr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;acronym&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;big&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;cite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;del&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;dfn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;kbd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;samp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;small&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
@@ -475,18 +459,16 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
   &lt;span class=&quot;nl&quot;&gt;vertical-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2&gt;按章“换页”&lt;/h2&gt;
 
 &lt;p&gt;ePub 电子书虽然没有“页”这个概念，却可以换页（严格来说应该是“换屏”）。从视觉上来看，换页就是新起一屏显示内容，让相对独立的内容（例如两章）不连在一起。一般来说，建议每章结束后换页，使用下述 CSS 代码实现：&lt;/p&gt;
 
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.chapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.chapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;page-break-after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;always&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2&gt;字体&lt;/h2&gt;
 
@@ -496,9 +478,8 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;如果指定了字体，而不是让阅读器自行判断该使用哪个字体，在 iBooks 中会遇到一个问题：没使用指定的字体。这个问题的解决方法是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;.opf&lt;/code&gt; 文件中加入下述元素：&lt;/p&gt;
 
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:specified-fonts&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:specified-fonts&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;添加这个属性后，你会发现，在 iBooks 的外观设置中，字体项目下多了一个“Original”。这个选项的意思是，使用电子书中指定的字体。&lt;/p&gt;
 
@@ -520,11 +501,10 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;我平常看书喜欢用多看（手机和平板），但是&lt;a href=&quot;/2014/06/duokan-xhtml-entities.html&quot; title=&quot;多看对 XHTML 实体的支持并不好&quot;&gt;多看对 XHTML 实体的支持并不好&lt;/a&gt;，有些特殊的符号显示不出来。这时就要专门针对多看编写样式：&lt;/p&gt;
 
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.symbol&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.symbol&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'DK-SYMBOL'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DK-SYMBOL&lt;/code&gt; 是多看自带的字体，用于显示一些特殊的字体。&lt;/p&gt;
 
@@ -587,7 +567,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;其实 Word 提供了这种功能——分节。不过在代码层级，实现起来有点复杂。根据 WordProcessingML 的定义，文档最后一节的相关属性在 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:body&lt;/code&gt; 元素中最后一个 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 元素中定义，而之前每一节的相关属性都在各节最后一个段落（&lt;code class=&quot;highlighter-rouge&quot;&gt;w:p&lt;/code&gt;）的属性中定义，如下述代码所示：&lt;/p&gt;
 
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:body&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:body&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;&amp;lt;!--第一节--&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
@@ -616,8 +596,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
         ...
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:sectPr&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:body&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;pandoc 所用的模板没有为最后一节指定任何属性，即只有 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;w:sectPr/&amp;gt;&lt;/code&gt;。所以，要想办法设置最后一节的属性，还要在每个一级标题之前的段落属性里插入 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/code&gt; 元素。这个好办，使用相关的 XML 处理库就行。如果使用 Ruby，可以用 &lt;a href=&quot;https://rubygems.org/gems/nokogiri&quot; title=&quot;nokogiri&quot;&gt;nokogiri&lt;/a&gt;。XML 的具体处理方法本文不再赘述。&lt;/p&gt;
 
@@ -631,13 +610,12 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;从上可以看出，我们需要把这个元素的值设为 &lt;code class=&quot;highlighter-rouge&quot;&gt;eachSect&lt;/code&gt;，即开始新的一节时重新从头开始为脚注编号。最终设置的 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 如下：&lt;/p&gt;
 
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:footnotePr&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:numRestart&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;w:val=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;eachSect&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:footnotePr&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:sectPr&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;如果想每页单独编号，可以把 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:numRestart&lt;/code&gt; 的值设为 &lt;code class=&quot;highlighter-rouge&quot;&gt;eachPage&lt;/code&gt;。&lt;/p&gt;
 </description>
