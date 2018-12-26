@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '3.8.4'
+gem 'jekyll', '3.8.5'
 gem 'rake'
 gem 'bootstrap-sass', '3.3.7'
 
