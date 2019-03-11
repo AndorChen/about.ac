@@ -1,16 +1,16 @@
-desc 'Deploy to bitbucket and aerobatic'
+desc 'Deploy to GitHub Pages'
 task :deploy do
   puts 'Push to `master`'
   system "git push origin master"
   puts
-  puts 'Push to `coding-pages`'
+  puts 'Push to `gh-pages`'
   system "bundle exec jekyll build"
   puts
   cd '_site' do
     system "git add -A"
     system "git commit -m 'update at #{Time.now.utc}'"
     puts
-    system "git push origin coding-pages"
+    system "git push origin gh-pages"
   end
 end
 
