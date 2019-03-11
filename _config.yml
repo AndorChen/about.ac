@@ -10,7 +10,7 @@ github_username:  andorchen
 
 # Build settings
 permalink: /:year/:month/:title.html
-exclude: ["README.md", "Rakefile", "Gemfile", "Gemfile.lock", 'node_modules', 'package.json', 'gulpfile.js', 'tmp']
+exclude: ["README.md", "Rakefile", "Gemfile", "Gemfile.lock", 'node_modules', 'package.json', 'gulpfile.js', 'tmp', 'favicon.png', 'favicon.psd']
 keep_files: ['.git', '.nojekyll']
 timezone: '+0800'
 
