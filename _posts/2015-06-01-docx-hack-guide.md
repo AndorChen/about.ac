@@ -4,7 +4,7 @@ title: docx 文件定制指南
 tags: ['Dev']
 ---
 
-我在“[翻译时使用的应用]({{site.baseurl}}{% post_url 2015-05-10-apps-for-translator%})”一文中提到，因为最近翻译的一本书要求提供 `docx` 文件，所以我第一次使用了 [pandoc](http://pandoc.org/)。
+我在“[翻译时使用的应用]({% post_url 2015-05-10-apps-for-translator%})”一文中提到，因为最近翻译的一本书要求提供 `docx` 文件，所以我第一次使用了 [pandoc](http://pandoc.org/)。
 
 Pandoc 是个很强大的工具，能在多种文件格式之间相互转换。不过，我使用 Pandoc 只是为了把 Markdown 文件转换成 `docx` 文件，以便提供给出版社。Pandoc 能很好地完成这项工作，不过转换得到的 `docx` 文件格式不符合我的要求，所以最近几天稍微研究了定制样式的问题。
 

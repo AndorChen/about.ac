@@ -6,10 +6,10 @@ tags: ['Dev']
 
 在我的电子书制作过程中，[Asciidoc](http://www.methods.co.nz/asciidoc/) 是书写文稿的语言，由此生成三种格式的电子书：PDF，ePub 和 mobi。不过，出版社多数要求提供 .doc(x) 格式的文件，也就是 Word 文档。这时用 Asciidoc 就没那么方便了。
 
-但我还是喜欢用轻量级的纯文本书写语言，为此，之前我一直使用 Markdown，然后经由 [pandoc](https://pandoc.org) 生成 Word 文档。在这个过程中，要对生成的文档做些[定制]({{ site.baseurl }}{% post_url 2015-06-01-docx-hack-guide %})。
+但我还是喜欢用轻量级的纯文本书写语言，为此，之前我一直使用 Markdown，然后经由 [pandoc](https://pandoc.org) 生成 Word 文档。在这个过程中，要对生成的文档做些[定制]({% post_url 2015-06-01-docx-hack-guide %})。
 
 ```
-           pandoc        
+           pandoc
 Markdown ---------> Word
 ```
 
@@ -29,14 +29,14 @@ Asciidoc ---------> PDF ---------> Word
 - RTF（Word 2000+）
 - .doc 文档（Word 2003+）
 - .docx 文档（Word 2007+）
-- .odt 文档（OpenOffice） 
+- .odt 文档（OpenOffice）
 
 它的主要优点是与 Prince 很像，都把样式表应用到纯文本文件上，生成相应格式的文档。Prince 生成的是 PDF 文档，XMLmind 生成的是 Word 文档；Prince 用的是 CSS 样式表，而 XMLmind 用的是在 FO 基础上定制的一种专用样式表。
 
 放在整个过程中看，使用 Prince 生成 PDF 文档时，介于 Asciidoc 和 PDF 之间的是 (X)HTML，而对 XMLmind 来说，位于中间的是 XSL-FO。虽然中间多了一步，但这也不失为一种可行的方式。
 
 ```
-                            XMLmind      
+                            XMLmind
 Asciidoc ---------> XSL-FO ---------> Word
 ```
 

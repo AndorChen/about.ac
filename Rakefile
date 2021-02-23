@@ -21,7 +21,7 @@ end
 
 desc "Launch preview environment"
 task :preview do
-  system "bundle exec jekyll s --drafts --baseurl='/aboutac' --host='0.0.0.0'"
+  system "bundle exec jekyll s --drafts --port='4200'"
 end
 
 desc 'Alias to :deploy'
