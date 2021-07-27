@@ -5,9 +5,9 @@
     <description>安道的个人网站</description>
     <link>https://about.ac/</link>
     <atom:link href="https://about.ac/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Apr 2020 11:56:43 +0000</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2020 11:56:43 +0000</lastBuildDate>
-    <generator>Jekyll v3.8.6</generator>
+    <pubDate>Tue, 27 Jul 2021 05:34:04 +0000</pubDate>
+    <lastBuildDate>Tue, 27 Jul 2021 05:34:04 +0000</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>Asciidoc 转 Word 文档</title>
@@ -15,7 +15,7 @@
 
 &lt;p&gt;但我还是喜欢用轻量级的纯文本书写语言，为此，之前我一直使用 Markdown，然后经由 &lt;a href=&quot;https://pandoc.org&quot; title=&quot;pandoc&quot;&gt;pandoc&lt;/a&gt; 生成 Word 文档。在这个过程中，要对生成的文档做些&lt;a href=&quot;/2015/06/docx-hack-guide.html&quot; title=&quot;定制&quot;&gt;定制&lt;/a&gt;。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;           pandoc        
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;           pandoc
 Markdown ---------&amp;gt; Word
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -23,7 +23,7 @@ Markdown ---------&amp;gt; Word
 
 &lt;p&gt;前期，我采用的方法是先生成 PDF 文档，然后利用转换工具，把 PDF 文档转换成 Word 文档。这方面的软件很多，不过结果不太尽如人意，出版社的编辑经常抱怨格式混乱。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;           Prince        转换工具
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;           Prince        转换工具
 Asciidoc ---------&amp;gt; PDF ---------&amp;gt; Word
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -42,7 +42,7 @@ Asciidoc ---------&amp;gt; PDF ---------&amp;gt; Word
 
 &lt;p&gt;放在整个过程中看，使用 Prince 生成 PDF 文档时，介于 Asciidoc 和 PDF 之间的是 (X)HTML，而对 XMLmind 来说，位于中间的是 XSL-FO。虽然中间多了一步，但这也不失为一种可行的方式。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;                            XMLmind      
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;                            XMLmind
 Asciidoc ---------&amp;gt; XSL-FO ---------&amp;gt; Word
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -73,7 +73,7 @@ Asciidoc ---------&amp;gt; XSL-FO ---------&amp;gt; Word
 
 &lt;h3&gt;使用 letsencrypt-rails-heroku gem&lt;/h3&gt;
 
-&lt;p&gt;首先，把 letsencrypt-rails-heroku gem 添加到 &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; 中，然后 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;。按照说明添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;Letsencrypt::Middleware&lt;/code&gt; 中间件，再配置几个环境变量。最后，把应用部署到 Heroku 中。&lt;/p&gt;
+&lt;p&gt;首先，把 letsencrypt-rails-heroku gem 添加到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; 中，然后 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;。按照说明添加 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Letsencrypt::Middleware&lt;/code&gt; 中间件，再配置几个环境变量。最后，把应用部署到 Heroku 中。&lt;/p&gt;
 
 &lt;p&gt;至此，一切顺利。但是执行签发证书的命令时遇到了问题：&lt;/p&gt;
 
@@ -99,10 +99,10 @@ Status: pending, Error:
 
 &lt;p&gt;然后手动签发：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo certbot certonly --manual
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo certbot certonly --manual
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;根据提示输入电子邮件地址和域名，然后修改控制器，添加一个响应 GET &lt;code class=&quot;highlighter-rouge&quot;&gt;/.well-known/acme-challenge/:id&lt;/code&gt; URL 的动作，渲染纯文本。详情参见&lt;a href=&quot;http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku&quot; title=&quot;这篇文章&quot;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;根据提示输入电子邮件地址和域名，然后修改控制器，添加一个响应 GET &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/.well-known/acme-challenge/:id&lt;/code&gt; URL 的动作，渲染纯文本。详情参见&lt;a href=&quot;http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku&quot; title=&quot;这篇文章&quot;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;但是验证阶段无法通过，提示 DNS A 记录查询失败。&lt;/p&gt;
 
@@ -155,7 +155,7 @@ Adding new certificate...Done!
 
 &lt;h3&gt;后续配置&lt;/h3&gt;
 
-&lt;p&gt;证书签发好之后，要按照 Heroku 的说明，把自定义域名指向新的地址：&lt;code class=&quot;highlighter-rouge&quot;&gt;example.com.herokudns.com&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;证书签发好之后，要按照 Heroku 的说明，把自定义域名指向新的地址：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;example.com.herokudns.com&lt;/code&gt;。&lt;/p&gt;
 
 &lt;p&gt;还要配置 Rails 应用，在生产环境强制使用 SSL：&lt;/p&gt;
 
@@ -164,7 +164,7 @@ Adding new certificate...Done!
 &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;force_ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;如果使用邮件程序，还要把协议修改成 &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;如果使用邮件程序，还要把协议修改成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https&lt;/code&gt;：&lt;/p&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# config/environments/production.rb&lt;/span&gt;
 
@@ -251,22 +251,22 @@ uid                  Your Name &amp;lt;your-name@gmail.com&amp;gt;
 sub   4096R/48E027A6 2016-04-16
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;其中，&lt;code class=&quot;highlighter-rouge&quot;&gt;4A667092&lt;/code&gt; 是 GPG 密钥的 ID。&lt;/p&gt;
+&lt;p&gt;其中，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4A667092&lt;/code&gt; 是 GPG 密钥的 ID。&lt;/p&gt;
 
 &lt;p&gt;执行下属命令，输出指定的 GPG 公钥：&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--armor&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--export&lt;/span&gt; &amp;lt;GPG-ID&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;把 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;GPG-ID&amp;gt;&lt;/code&gt; 替换成具体的 ID。在输出的内容中，从“—–BEGIN PGP PUBLIC KEY BLOCK—–”复制到“—–END PGP PUBLIC KEY BLOCK—–”。打开 &lt;a href=&quot;https://github.com/settings/keys&quot; title=&quot;GitHub 设置密钥的网页&quot;&gt;GitHub 设置密钥的网页&lt;/a&gt;，粘贴 GPG 密钥。&lt;/p&gt;
+&lt;p&gt;把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;GPG-ID&amp;gt;&lt;/code&gt; 替换成具体的 ID。在输出的内容中，从“—–BEGIN PGP PUBLIC KEY BLOCK—–”复制到“—–END PGP PUBLIC KEY BLOCK—–”。打开 &lt;a href=&quot;https://github.com/settings/keys&quot; title=&quot;GitHub 设置密钥的网页&quot;&gt;GitHub 设置密钥的网页&lt;/a&gt;，粘贴 GPG 密钥。&lt;/p&gt;
 
 &lt;h3&gt;第 4 步：设置 Git&lt;/h3&gt;
 
 &lt;p&gt;最后要设置 Git，让 Git 使用指定的 GPG 密钥，并让 Git 在提交时使用 GPG 密钥签名。&lt;/p&gt;
 
-&lt;p&gt;在 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.gitconfig&lt;/code&gt; 文件中添加下述设置（如果集中管理 dotfiles，则在相应的文件中添加）：&lt;/p&gt;
+&lt;p&gt;在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.gitconfig&lt;/code&gt; 文件中添加下述设置（如果集中管理 dotfiles，则在相应的文件中添加）：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[user]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[user]
   ...
   signingkey = &amp;lt;GPG-ID&amp;gt;
 ...
@@ -356,7 +356,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;h2&gt;ePub 文件是小型的静态网站&lt;/h2&gt;
 
-&lt;p&gt;这也是一个核心概念。你可以把 ePub 电子书的扩展名改为 &lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt;，然后解压。你会看到解压得到的基本上就是个简单的静态网站：有 XHTML 文件，有图像，有样式表。如下所示：&lt;/p&gt;
+&lt;p&gt;这也是一个核心概念。你可以把 ePub 电子书的扩展名改为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.zip&lt;/code&gt;，然后解压。你会看到解压得到的基本上就是个简单的静态网站：有 XHTML 文件，有图像，有样式表。如下所示：&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── META-INF/
 ├── OEBPS
@@ -379,7 +379,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;h2&gt;提供目录&lt;/h2&gt;
 
-&lt;p&gt;ePub 阅读器一般都会使用特殊的交互方式显示目录，但不会自己去解析内容，再生成目录。所以我们要在 ePub 文件中加入目录，让阅读器读取。如果内容较多，想显示次级目录，比如“3.2 节”，一定要设定目录的层级，不要把所有目录都放在相同的层级。指定目录层级的方式是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素中嵌套 &lt;code class=&quot;highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素，如下所示：&lt;/p&gt;
+&lt;p&gt;ePub 阅读器一般都会使用特殊的交互方式显示目录，但不会自己去解析内容，再生成目录。所以我们要在 ePub 文件中加入目录，让阅读器读取。如果内容较多，想显示次级目录，比如“3.2 节”，一定要设定目录的层级，不要把所有目录都放在相同的层级。指定目录层级的方式是，在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素中嵌套 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;navPoint&lt;/code&gt; 元素，如下所示：&lt;/p&gt;
 
 &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;navMap&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;navPoint&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ch1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -439,11 +439,11 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;h2&gt;字体&lt;/h2&gt;
 
-&lt;p&gt;ePub 阅读器底层的操作系统（例如 iOS，Android 和各种定制的 ROM）往往会提供不同的字体，因此不能期望读者的系统中一定有某个字体。设置字体时要指定通用字体族（&lt;code class=&quot;highlighter-rouge&quot;&gt;serif&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sans-serif&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;monospace&lt;/code&gt;），让阅读器或底层系统判断要使用哪个字体。当然，我们也可以指定各种系统中常用的字体，提供更好的阅读体验。&lt;/p&gt;
+&lt;p&gt;ePub 阅读器底层的操作系统（例如 iOS，Android 和各种定制的 ROM）往往会提供不同的字体，因此不能期望读者的系统中一定有某个字体。设置字体时要指定通用字体族（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;serif&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sans-serif&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;monospace&lt;/code&gt;），让阅读器或底层系统判断要使用哪个字体。当然，我们也可以指定各种系统中常用的字体，提供更好的阅读体验。&lt;/p&gt;
 
-&lt;p&gt;如果十分想保持一致的阅读体验，还可以使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;@font-face&lt;/code&gt; 嵌入字体。但是要考虑嵌入的字体会不会让电子书的体积变得特别大，影响传输速度。&lt;/p&gt;
+&lt;p&gt;如果十分想保持一致的阅读体验，还可以使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@font-face&lt;/code&gt; 嵌入字体。但是要考虑嵌入的字体会不会让电子书的体积变得特别大，影响传输速度。&lt;/p&gt;
 
-&lt;p&gt;如果指定了字体，而不是让阅读器自行判断该使用哪个字体，在 iBooks 中会遇到一个问题：没使用指定的字体。这个问题的解决方法是，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;.opf&lt;/code&gt; 文件中加入下述元素：&lt;/p&gt;
+&lt;p&gt;如果指定了字体，而不是让阅读器自行判断该使用哪个字体，在 iBooks 中会遇到一个问题：没使用指定的字体。这个问题的解决方法是，在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.opf&lt;/code&gt; 文件中加入下述元素：&lt;/p&gt;
 
 &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ibooks:specified-fonts&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/meta&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -456,7 +456,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 &lt;/figure&gt;
 &lt;h2&gt;字号&lt;/h2&gt;
 
-&lt;p&gt;我想你一定有这样的经历——调整电子书的文字大小。这种情况经常出现，因此，不要使用固定字号，例如 &lt;code class=&quot;highlighter-rouge&quot;&gt;12px&lt;/code&gt;，而要使用便于缩放的字号单位。ePub 电子书的字号一般建议使用百分比为单位，比如 &lt;code class=&quot;highlighter-rouge&quot;&gt;80%&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;我想你一定有这样的经历——调整电子书的文字大小。这种情况经常出现，因此，不要使用固定字号，例如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;12px&lt;/code&gt;，而要使用便于缩放的字号单位。ePub 电子书的字号一般建议使用百分比为单位，比如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;80%&lt;/code&gt;。&lt;/p&gt;
 
 &lt;h2&gt;为标题加序号&lt;/h2&gt;
 
@@ -473,7 +473,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DK-SYMBOL&lt;/code&gt; 是多看自带的字体，用于显示一些特殊的字体。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DK-SYMBOL&lt;/code&gt; 是多看自带的字体，用于显示一些特殊的字体。&lt;/p&gt;
 
 &lt;h2&gt;其他&lt;/h2&gt;
 
@@ -532,7 +532,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 
 &lt;p&gt;我之前已经从样式上区别了各章（方法参见《&lt;a href=&quot;/2015/06/docx-hack-guide.html&quot; title=&quot;docx 文件定制指南&quot;&gt;docx 文件定制指南&lt;/a&gt;》），即在一级标题之前换页。这只是“表面功夫”，Word 看到的仍是一个没有结构划分的文档。为了实现脚注按章编号，首先要想办法让 Word 知道每一章在哪里开始，在哪里结束，也就是从“语义”上实现分章。&lt;/p&gt;
 
-&lt;p&gt;其实 Word 提供了这种功能——分节。不过在代码层级，实现起来有点复杂。根据 WordProcessingML 的定义，文档最后一节的相关属性在 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:body&lt;/code&gt; 元素中最后一个 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 元素中定义，而之前每一节的相关属性都在各节最后一个段落（&lt;code class=&quot;highlighter-rouge&quot;&gt;w:p&lt;/code&gt;）的属性中定义，如下述代码所示：&lt;/p&gt;
+&lt;p&gt;其实 Word 提供了这种功能——分节。不过在代码层级，实现起来有点复杂。根据 WordProcessingML 的定义，文档最后一节的相关属性在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:body&lt;/code&gt; 元素中最后一个 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 元素中定义，而之前每一节的相关属性都在各节最后一个段落（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:p&lt;/code&gt;）的属性中定义，如下述代码所示：&lt;/p&gt;
 
 &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:body&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;&amp;lt;!--第一节--&amp;gt;&lt;/span&gt;
@@ -565,17 +565,17 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:body&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;pandoc 所用的模板没有为最后一节指定任何属性，即只有 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;w:sectPr/&amp;gt;&lt;/code&gt;。所以，要想办法设置最后一节的属性，还要在每个一级标题之前的段落属性里插入 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/code&gt; 元素。这个好办，使用相关的 XML 处理库就行。如果使用 Ruby，可以用 &lt;a href=&quot;https://rubygems.org/gems/nokogiri&quot; title=&quot;nokogiri&quot;&gt;nokogiri&lt;/a&gt;。XML 的具体处理方法本文不再赘述。&lt;/p&gt;
+&lt;p&gt;pandoc 所用的模板没有为最后一节指定任何属性，即只有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;w:sectPr/&amp;gt;&lt;/code&gt;。所以，要想办法设置最后一节的属性，还要在每个一级标题之前的段落属性里插入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/code&gt; 元素。这个好办，使用相关的 XML 处理库就行。如果使用 Ruby，可以用 &lt;a href=&quot;https://rubygems.org/gems/nokogiri&quot; title=&quot;nokogiri&quot;&gt;nokogiri&lt;/a&gt;。XML 的具体处理方法本文不再赘述。&lt;/p&gt;
 
-&lt;p&gt;不过，要如何设置每一节的属性才能让脚注按章编号呢？按照 WordProcessingML 的定义，脚注的属性放在 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:footnotePr&lt;/code&gt; 元素中，控制编号方式的是 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:numRestart&lt;/code&gt; 元素。这个元素的值可以设为下述三个值中的一个：&lt;/p&gt;
+&lt;p&gt;不过，要如何设置每一节的属性才能让脚注按章编号呢？按照 WordProcessingML 的定义，脚注的属性放在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:footnotePr&lt;/code&gt; 元素中，控制编号方式的是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:numRestart&lt;/code&gt; 元素。这个元素的值可以设为下述三个值中的一个：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;continuous&lt;/code&gt;（默认值）&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eachSect&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eachPage&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;continuous&lt;/code&gt;（默认值）&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eachSect&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eachPage&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;从上可以看出，我们需要把这个元素的值设为 &lt;code class=&quot;highlighter-rouge&quot;&gt;eachSect&lt;/code&gt;，即开始新的一节时重新从头开始为脚注编号。最终设置的 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 如下：&lt;/p&gt;
+&lt;p&gt;从上可以看出，我们需要把这个元素的值设为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eachSect&lt;/code&gt;，即开始新的一节时重新从头开始为脚注编号。最终设置的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 如下：&lt;/p&gt;
 
 &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:footnotePr&amp;gt;&lt;/span&gt;
@@ -584,7 +584,7 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:sectPr&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;如果想每页单独编号，可以把 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:numRestart&lt;/code&gt; 的值设为 &lt;code class=&quot;highlighter-rouge&quot;&gt;eachPage&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;如果想每页单独编号，可以把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:numRestart&lt;/code&gt; 的值设为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eachPage&lt;/code&gt;。&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
         <link>https://about.ac/2015/08/docx-footnotes-numbering.html</link>
@@ -615,15 +615,15 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
     
       <item>
         <title>docx 文件定制指南</title>
-        <description>&lt;p&gt;我在“&lt;a href=&quot;/2015/05/apps-for-translator.html&quot; title=&quot;翻译时使用的应用&quot;&gt;翻译时使用的应用&lt;/a&gt;”一文中提到，因为最近翻译的一本书要求提供 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件，所以我第一次使用了 &lt;a href=&quot;http://pandoc.org/&quot; title=&quot;pandoc&quot;&gt;pandoc&lt;/a&gt;。&lt;/p&gt;
+        <description>&lt;p&gt;我在“&lt;a href=&quot;/2015/05/apps-for-translator.html&quot; title=&quot;翻译时使用的应用&quot;&gt;翻译时使用的应用&lt;/a&gt;”一文中提到，因为最近翻译的一本书要求提供 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件，所以我第一次使用了 &lt;a href=&quot;http://pandoc.org/&quot; title=&quot;pandoc&quot;&gt;pandoc&lt;/a&gt;。&lt;/p&gt;
 
-&lt;p&gt;Pandoc 是个很强大的工具，能在多种文件格式之间相互转换。不过，我使用 Pandoc 只是为了把 Markdown 文件转换成 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件，以便提供给出版社。Pandoc 能很好地完成这项工作，不过转换得到的 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件格式不符合我的要求，所以最近几天稍微研究了定制样式的问题。&lt;/p&gt;
+&lt;p&gt;Pandoc 是个很强大的工具，能在多种文件格式之间相互转换。不过，我使用 Pandoc 只是为了把 Markdown 文件转换成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件，以便提供给出版社。Pandoc 能很好地完成这项工作，不过转换得到的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件格式不符合我的要求，所以最近几天稍微研究了定制样式的问题。&lt;/p&gt;
 
-&lt;h2&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 格式简介&lt;/h2&gt;
+&lt;h2&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 格式简介&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 是微软为 Word 软件开发的文件格式，其背后是一个国际标准——&lt;a href=&quot;http://officeopenxml.com/&quot; title=&quot;Office Open XML&quot;&gt;Office Open XML&lt;/a&gt;（简称 OOXML）。&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 其实是打包文件，把扩展名从 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 改为 &lt;code class=&quot;highlighter-rouge&quot;&gt;zip&lt;/code&gt; 就能使用解压软件打开，看到其中的内容。解压后的文件结构如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 是微软为 Word 软件开发的文件格式，其背后是一个国际标准——&lt;a href=&quot;http://officeopenxml.com/&quot; title=&quot;Office Open XML&quot;&gt;Office Open XML&lt;/a&gt;（简称 OOXML）。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 其实是打包文件，把扩展名从 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 改为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zip&lt;/code&gt; 就能使用解压软件打开，看到其中的内容。解压后的文件结构如下所示：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
 ├── [Content_Types].xml
 ├── _rels
 ├── docProps
@@ -645,19 +645,19 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
     └── webSettings.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;可以看出，大多数都是 XML 文件。我们主要关注其中三个文件：&lt;code class=&quot;highlighter-rouge&quot;&gt;word/document.xml&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;word/styles.xml&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;word/fontTable.xml&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;可以看出，大多数都是 XML 文件。我们主要关注其中三个文件：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;word/document.xml&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;word/styles.xml&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;word/fontTable.xml&lt;/code&gt;。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;document.xml&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的内容&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的样式&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fontTable.xml&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件用到的的字体&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.xml&lt;/code&gt;：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的内容&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt;：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的样式&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontTable.xml&lt;/code&gt;：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件用到的的字体&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件基本上做到了表现和内容分离。&lt;code class=&quot;highlighter-rouge&quot;&gt;document.xml&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 可以比作 Web 中的 HTML 和 CSS。定制样式时，我们基本上不用修改内容，也就是 &lt;code class=&quot;highlighter-rouge&quot;&gt;document.xml&lt;/code&gt; 文件。下面着重介绍 &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 文件。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件基本上做到了表现和内容分离。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.xml&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 可以比作 Web 中的 HTML 和 CSS。定制样式时，我们基本上不用修改内容，也就是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.xml&lt;/code&gt; 文件。下面着重介绍 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 文件。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 文件的作用相当于 Web 中的 CSS，只不过这是 XML 文件，而且也不使用 CSS 规则定义样式。下面是一个样式示例：&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 文件的作用相当于 Web 中的 CSS，只不过这是 XML 文件，而且也不使用 CSS 规则定义样式。下面是一个样式示例：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;w:style w:styleId=&quot;BodyText&quot; w:type=&quot;paragraph&quot;&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;w:style w:styleId=&quot;BodyText&quot; w:type=&quot;paragraph&quot;&amp;gt;
     &amp;lt;w:name w:val=&quot;Body Text&quot;/&amp;gt;
     &amp;lt;w:basedOn w:val=&quot;Normal&quot;/&amp;gt;
     &amp;lt;w:link w:val=&quot;BodyTextChar&quot;/&amp;gt;
@@ -671,13 +671,13 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 &amp;lt;/w:style&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;w:styleId&lt;/code&gt; 属性的值是内部 ID，&lt;code class=&quot;highlighter-rouge&quot;&gt;document.xml&lt;/code&gt; 文件中的结构需要什么样式，就引用这个 ID 的值，就像是 CSS 中的选择符一样。&lt;code class=&quot;highlighter-rouge&quot;&gt;w:type&lt;/code&gt; 属性是样式的类型，一般只会用到 &lt;code class=&quot;highlighter-rouge&quot;&gt;paragraph&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;character&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;table&lt;/code&gt;。&lt;code class=&quot;highlighter-rouge&quot;&gt;w:name&lt;/code&gt; 元素中 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 属性的值是这个样式在 GUI 应用（Word，Pages 或 OpenOffice 等）中显示的名称。&lt;code class=&quot;highlighter-rouge&quot;&gt;w:basedOn&lt;/code&gt; 元素中 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 的值是这个样式继承的其他样式 ID；这个元素很重要，用于实现块级元素的样式继承。&lt;code class=&quot;highlighter-rouge&quot;&gt;w:link&lt;/code&gt; 元素中 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 的值也是这个样式继承的其他样式 ID，不过这个元素继承的是行内元素的样式。&lt;code class=&quot;highlighter-rouge&quot;&gt;w:pPr&lt;/code&gt; 元素设定的是段落样式，其中 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:spacing&lt;/code&gt; 元素用于设置段前和段后距离，单位是二十分之一英寸。&lt;code class=&quot;highlighter-rouge&quot;&gt;w:rPr&lt;/code&gt; 元素用于设置段落中行内元素的样式，其中 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:rFonts&lt;/code&gt; 元素用于设置字体（可以分别设置中西文字体），&lt;code class=&quot;highlighter-rouge&quot;&gt;w:sz&lt;/code&gt; 元素用于设置字号，单位是二分之一点（pt）。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:styleId&lt;/code&gt; 属性的值是内部 ID，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.xml&lt;/code&gt; 文件中的结构需要什么样式，就引用这个 ID 的值，就像是 CSS 中的选择符一样。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:type&lt;/code&gt; 属性是样式的类型，一般只会用到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;paragraph&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;character&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;table&lt;/code&gt;。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:name&lt;/code&gt; 元素中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 属性的值是这个样式在 GUI 应用（Word，Pages 或 OpenOffice 等）中显示的名称。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:basedOn&lt;/code&gt; 元素中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 的值是这个样式继承的其他样式 ID；这个元素很重要，用于实现块级元素的样式继承。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:link&lt;/code&gt; 元素中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 的值也是这个样式继承的其他样式 ID，不过这个元素继承的是行内元素的样式。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:pPr&lt;/code&gt; 元素设定的是段落样式，其中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:spacing&lt;/code&gt; 元素用于设置段前和段后距离，单位是二十分之一英寸。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:rPr&lt;/code&gt; 元素用于设置段落中行内元素的样式，其中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:rFonts&lt;/code&gt; 元素用于设置字体（可以分别设置中西文字体），&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:sz&lt;/code&gt; 元素用于设置字号，单位是二分之一点（pt）。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的样式规则乍看起来很复杂，其实也比较易于理解。我想真正让人觉得难懂的，是 XML 结构。虽然如此，我还是不建议直接手写样式。你可以先在 Word 中通过 GUI 创建样式，然后解压 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件，修改样式，或者把样式复制出来，方便以后重用。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的样式规则乍看起来很复杂，其实也比较易于理解。我想真正让人觉得难懂的，是 XML 结构。虽然如此，我还是不建议直接手写样式。你可以先在 Word 中通过 GUI 创建样式，然后解压 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件，修改样式，或者把样式复制出来，方便以后重用。&lt;/p&gt;
 
-&lt;p&gt;另一个可能需要修改的文件是 &lt;code class=&quot;highlighter-rouge&quot;&gt;fontTable.xml&lt;/code&gt;。这个文件定义 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件中用到的所有字体。下面是一个字体定义示例：&lt;/p&gt;
+&lt;p&gt;另一个可能需要修改的文件是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontTable.xml&lt;/code&gt;。这个文件定义 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件中用到的所有字体。下面是一个字体定义示例：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;w:font w:name=&quot;宋体&quot;&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;w:font w:name=&quot;宋体&quot;&amp;gt;
     &amp;lt;w:altName w:val=&quot;SimSun&quot;/&amp;gt;
     &amp;lt;w:panose1 w:val=&quot;02010600030101010101&quot;/&amp;gt;
     &amp;lt;w:charset w:val=&quot;86&quot;/&amp;gt;
@@ -687,18 +687,18 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 &amp;lt;/w:font&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;字体的定义看起来比样式简单，其实有很多属性的值是使用某种机制生成的，例如 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:panose1&lt;/code&gt; 元素的 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 属性，因此不要自己动手编写。同样，也是先在 Word 中定义好，然后将其复制出来。&lt;/p&gt;
+&lt;p&gt;字体的定义看起来比样式简单，其实有很多属性的值是使用某种机制生成的，例如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:panose1&lt;/code&gt; 元素的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:val&lt;/code&gt; 属性，因此不要自己动手编写。同样，也是先在 Word 中定义好，然后将其复制出来。&lt;/p&gt;
 
 &lt;h2&gt;定制方式&lt;/h2&gt;
 
-&lt;p&gt;如果只需要定制 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的样式，可以准备好 &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;fontTable.xml&lt;/code&gt; 文件，然后替换掉 Pandoc 生成的 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件中的这两个文件。例如，在命令行中可以执行下述命令替换：&lt;/p&gt;
+&lt;p&gt;如果只需要定制 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的样式，可以准备好 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;styles.xml&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontTable.xml&lt;/code&gt; 文件，然后替换掉 Pandoc 生成的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件中的这两个文件。例如，在命令行中可以执行下述命令替换：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zip -r sample.docx word/styles.xml word/fontTable.xml
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zip -r sample.docx word/styles.xml word/fontTable.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;下面举个定义样式的例子。在一本书中，每一章一般都新起一页，而不是和前一章的内容连在一起。也就是说，新的一章要换页。在 OOXML 中，换页主要由两种方式，这里我们要使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:pageBreakBefore&lt;/code&gt; 元素。后面再介绍另一种方式。按照 Pandoc 的生成方式，一章的标题一般是一级标题，所以我们可以在一级标题的样式中加入 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:pageBreakBefore&lt;/code&gt; 元素，在一级标题之前换页，如下所示：&lt;/p&gt;
+&lt;p&gt;下面举个定义样式的例子。在一本书中，每一章一般都新起一页，而不是和前一章的内容连在一起。也就是说，新的一章要换页。在 OOXML 中，换页主要由两种方式，这里我们要使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:pageBreakBefore&lt;/code&gt; 元素。后面再介绍另一种方式。按照 Pandoc 的生成方式，一章的标题一般是一级标题，所以我们可以在一级标题的样式中加入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:pageBreakBefore&lt;/code&gt; 元素，在一级标题之前换页，如下所示：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;w:style w:styleId=&quot;Heading1&quot; w:type=&quot;paragraph&quot;&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;w:style w:styleId=&quot;Heading1&quot; w:type=&quot;paragraph&quot;&amp;gt;
     &amp;lt;w:name w:val=&quot;Heading 1&quot;/&amp;gt;
     &amp;lt;w:pPr&amp;gt;
       &amp;lt;w:pageBreakBefore/&amp;gt;
@@ -706,44 +706,44 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
 &amp;lt;/w:style&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;加入这个样式后，在 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的每个一级标题之前都会换页。&lt;/p&gt;
+&lt;p&gt;加入这个样式后，在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件的每个一级标题之前都会换页。&lt;/p&gt;
 
 &lt;h2&gt;过滤器&lt;/h2&gt;
 
 &lt;p&gt;有时我们需要手动强制换页，这时该怎么做呢？答案是使用&lt;a href=&quot;http://pandoc.org/scripting.html&quot; title=&quot;过滤器&quot;&gt;过滤器&lt;/a&gt;。Pandoc 提供了强大的过滤器机制，方便使用者定制。Pandoc 转换文件的过程如下所示：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        pandoc         filter         pandoc
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        pandoc         filter         pandoc
 source --------&amp;gt; JSON --------&amp;gt; JSON --------&amp;gt; target
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;因此，我们可以使用过滤器修改 Pandoc 生成的 JSON 中间格式。Pandoc 的过滤器有 &lt;a href=&quot;http://github.com/jgm/pandocfilters&quot; title=&quot;Python API&quot;&gt;Python API&lt;/a&gt;、&lt;a href=&quot;https://github.com/vinai/pandocfilters-php&quot; title=&quot;PHP API&quot;&gt;PHP API&lt;/a&gt; 和 &lt;a href=&quot;https://github.com/mvhenderson/pandoc-filter-node&quot; title=&quot;Node/JavaScript API&quot;&gt;Node/JavaScript API&lt;/a&gt;。不过我对这些语言都不熟悉，所以自己写了一个“简陋”的 &lt;a href=&quot;https://gist.github.com/AndorChen/a07c591fed685fb7a80c&quot; title=&quot;Ruby API&quot;&gt;Ruby API&lt;/a&gt;。&lt;/p&gt;
 
-&lt;p&gt;下面说明怎么使用过滤器实现手动换页。假设我们在 Markdown 文件中输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--PAGEBREAK--&amp;gt;&lt;/code&gt; 时是想换页。&lt;/p&gt;
+&lt;p&gt;下面说明怎么使用过滤器实现手动换页。假设我们在 Markdown 文件中输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;!--PAGEBREAK--&amp;gt;&lt;/code&gt; 时是想换页。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/usr/bin/env ruby
 
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pandocfilter'&lt;/span&gt;
+require 'pandocfilter'
 
-&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'RawBlock'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;!--PAGEBREAK--&amp;gt;'&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;xml&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;%(&amp;lt;w:p&amp;gt;&amp;lt;w:r&amp;gt;&amp;lt;w:br w:type=&quot;page&quot;/&amp;gt;&amp;lt;/w:r&amp;gt;&amp;lt;/w:p&amp;gt;)&lt;/span&gt;
+filter = lambda do |key, value, format, meta|
+  if key == 'RawBlock' &amp;amp;&amp;amp; value[1] == '&amp;lt;!--PAGEBREAK--&amp;gt;'
+    xml = %(&amp;lt;w:p&amp;gt;&amp;lt;w:r&amp;gt;&amp;lt;w:br w:type=&quot;page&quot;/&amp;gt;&amp;lt;/w:r&amp;gt;&amp;lt;/w:p&amp;gt;)
 
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PandocFilter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;raw_block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'openxml'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    return PandocFilter::Node.raw_block('openxml', xml)
+  end
+end
 
-&lt;span class=&quot;no&quot;&gt;PandocFilter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;process&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;
+PandocFilter.process &amp;amp;filter
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;在这个过滤器中，我们把 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--PAGEBREAK--&amp;gt;&lt;/code&gt; 替换成 OOXML 格式的元素（&lt;code class=&quot;highlighter-rouge&quot;&gt;raw_block&lt;/code&gt; 方法创建的是 &lt;a href=&quot;http://hackage.haskell.org/package/pandoc-types-1.12.4.3/docs/Text-Pandoc-Definition.html#v:RawBlock&quot; title=&quot;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;RawBlock&amp;lt;/code&amp;gt; 元素&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RawBlock&lt;/code&gt; 元素&lt;/a&gt;）。这个元素表示一个段落，但没有内容。换页的关键是 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:br&lt;/code&gt; 元素，当 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:type&lt;/code&gt; 属性的值为 &lt;code class=&quot;highlighter-rouge&quot;&gt;page&lt;/code&gt; 时表示换页。&lt;/p&gt;
+&lt;p&gt;在这个过滤器中，我们把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;!--PAGEBREAK--&amp;gt;&lt;/code&gt; 替换成 OOXML 格式的元素（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;raw_block&lt;/code&gt; 方法创建的是 &lt;a href=&quot;http://hackage.haskell.org/package/pandoc-types-1.12.4.3/docs/Text-Pandoc-Definition.html#v:RawBlock&quot; title=&quot;&amp;lt;code class=&amp;quot;language-plaintext highlighter-rouge&amp;quot;&amp;gt;RawBlock&amp;lt;/code&amp;gt; 元素&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RawBlock&lt;/code&gt; 元素&lt;/a&gt;）。这个元素表示一个段落，但没有内容。换页的关键是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:br&lt;/code&gt; 元素，当 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w:type&lt;/code&gt; 属性的值为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;page&lt;/code&gt; 时表示换页。&lt;/p&gt;
 
 &lt;p&gt;除了前面举的几个例子之外，我还做了其他定制，这里就不再一一介绍了。&lt;/p&gt;
 
 &lt;h2&gt;总结&lt;/h2&gt;
 
-&lt;p&gt;虽然我现在基本上实现了所需的 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件样式，但使用 Markdown + Pandoc 的方式还是让我觉得别扭。Pandoc 虽然很强大，相对也易于定制，但是 Markdown 有其局限性。Markdown 是为了在 Web 中快速书写而创造的，不是为了写书稿。写书稿首选当然是 &lt;a href=&quot;http://www.methods.co.nz/asciidoc/&quot; title=&quot;AsciiDoc&quot;&gt;AsciiDoc&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;虽然我现在基本上实现了所需的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 文件样式，但使用 Markdown + Pandoc 的方式还是让我觉得别扭。Pandoc 虽然很强大，相对也易于定制，但是 Markdown 有其局限性。Markdown 是为了在 Web 中快速书写而创造的，不是为了写书稿。写书稿首选当然是 &lt;a href=&quot;http://www.methods.co.nz/asciidoc/&quot; title=&quot;AsciiDoc&quot;&gt;AsciiDoc&lt;/a&gt;。&lt;/p&gt;
 
-&lt;p&gt;如果有时间的话，我会开发一个 AsciiDoc 到 &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt; 的转换程序。当然，这是一个愿景，要知道，&lt;a href=&quot;http://www.ecma-international.org/publications/standards/Ecma-376.htm&quot; title=&quot;OOXML 规范&quot;&gt;OOXML 规范&lt;/a&gt;（ECMA-376）可是超过五千页啊。&lt;/p&gt;
+&lt;p&gt;如果有时间的话，我会开发一个 AsciiDoc 到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt; 的转换程序。当然，这是一个愿景，要知道，&lt;a href=&quot;http://www.ecma-international.org/publications/standards/Ecma-376.htm&quot; title=&quot;OOXML 规范&quot;&gt;OOXML 规范&lt;/a&gt;（ECMA-376）可是超过五千页啊。&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
         <link>https://about.ac/2015/06/docx-hack-guide.html</link>
