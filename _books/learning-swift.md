@@ -3,11 +3,11 @@ layout: book
 book_category: other
 ---
 
-## 简介
+## 关于本书
 
 本书分为四部分，涵盖以下内容：Swift 基础知识：学习 Swift 的面向对象特性，以及各种开发工具。OS X 应用开发：规划应用，处理文档，然后构建各项功能。iOS 应用开发：使用多媒体、联系人、位置、通知和 iCloud 构建一个功能完善的 iOS 记事本应用。高级应用扩展：支持 Apple Watch，学习如何调试、监控和测试全部三个 Swift 应用。
 
-## 作者
+## 作者简介
 
 **Paris Buttfield-Addison** 是一位作者，还是 Secret Lab（与 Jon 联合创建）的游戏设计师。他是计算机博士，还有中世纪史学位。Paris 的个人网站地址是 _www.paris.id.au_，Twitter 账号是 @parisba。
 
@@ -15,7 +15,7 @@ book_category: other
 
 **Tim Nugent** 自称是移动应用开发者、游戏设计师、博士生，现在甚至自称是作者。他一直忙于避免别人发现他，在此之外，他会设计和创建小应用和游戏，但是不让任何人使用。为了写这么一小段个人简介，他花了相当长的时间。他尝试以诙谐的文字引用科幻小说，但是最终放弃了。Tim 的 Twitter 账号是 @The_McJones。
 
-## 目录
+## 内容目录
 
 -   前言
 -   第一部分 Swift 基础

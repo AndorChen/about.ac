@@ -3,17 +3,17 @@ layout: book
 book_category: js
 ---
 
-## 简介
+## 关于本书
 
 JavaScript 是一门小型编程语言，但它能做到的事可不少。JavaScript 曾经主要用于增加 Web 浏览器窗口的交互性，现在已经发展成构建强大而健壮的应用的重要工具。这是一本从实际出发的书，适合新手和有经验的 JavaScript 开发人员阅读，学习如何使用 JavaScript 语言创建 API，以及 Web、移动和桌面应用。
 
 本书作者 Adam D. Scott 是一名工程主管，他将带领你学习 Node.js、GraphQL、React、React Native 和 Electron 等技术。本书非常适合想要构建全栈应用的开发人员，以及志向高远、想自创公司的 Web 开发初学者阅读。本书详细说明了如何创建一个能适应各种平台的 CRUD 风格的应用。
 
-## 作者
+## 作者简介
 
 **Adam D. Scott** 生活在美国康涅狄格州，是一名工程经理、Web 开发者和教育工作者。他目前在美国消费者金融保护局担任 Web 开发主管，与才华横溢的团队一起专注于构建开源 Web 应用。此外，他从事教育工作也有十多年了，他教授和编写了一系列技术主题的课程。他的作品有 WordPress for Education 一书（Packt, 2012）、Introduction to Modern Front-End Development 视频教程（O’Reilly, 2015）和 Ethical Web Development 系列报告（O’Reilly, 2016–2017）。
 
-## 目录
+## 内容目录
 
 - 序
 - 前言
@@ -53,7 +53,7 @@ JavaScript 是一门小型编程语言，但它能做到的事可不少。JavaSc
 - 2020.04.04 翻译完成
 - 2020.04.06 校对完成
 - 2020.04.06 交稿
-- xxxx.xx.xx 出版
+- 2020.12.01 出版
 
 ## 词汇表
 

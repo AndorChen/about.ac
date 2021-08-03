@@ -3,7 +3,7 @@ layout: book
 book_category: js
 ---
 
-## 简介
+## 关于本书
 
 如果你想学习如何构建高效运行的 React 应用，这本书正适合你。如果你是 Web 开发者或软件工程师，知道 JavaScript、CSS 和 HTML 在浏览器中的运行方式，本书特别适合你。这一版全面更新，道出了编写现代化 React 代码的最佳实践和最佳模式。阅读本书无须事先了解 React，也不用知道函数式 JavaScript。
 
@@ -19,11 +19,11 @@ Alex Banks 和 Eve Porcello 编制的学习路线将教会你如何创建 UI，�
 
 前端社区正缺少这样一本 React 书籍。Alex 和 Eve 不仅深入探讨了 React，还介绍了 JavaScript 基本概念、测试、状态管理，等等。而且，两位作者的语言浅显易懂，不失幽默。我力荐这本书。
 
-## 作者
+## 作者简介
 
 Alex Banks 和 Eve Porcello 是软件工程师、培训讲师，还是北加州一家课程开发公司 Moon Highway 的联合创始人。他们为 LinkedIn Learning 和 egghead.io 编制课程，经常在开发者大会上发表演讲，并在遍布世界各地的研讨会上培训工程人员。
 
-## 目录
+## 内容目录
 
 - 前言
 - 第 1 章 初始 React

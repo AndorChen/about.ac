@@ -49,11 +49,11 @@ layout: default
           <ul>
             {% if book.signed_version %}<li><a href="{{ site.baseurl }}/buy/" title="购买译者签名版">译者签名版</a></li>{% endif %}
             {% if book.ebook_url %}<li><a href="{{ book.ebook_url }}" title="购买电子书" target="_blank">电子书</a></li>{% endif %}
-            {% if book.tmall_url %}<li><a href="{{ book.tmall_url }}" title="到天猫旗舰店购买" target="_blank">天猫旗舰店</a></li>{% endif %}
-            {% if book.amazon_url %}<li><a href="{{ book.amazon_url }}" title="到亚马逊购买" target="_blank">亚马逊</a></li>{% endif %}
             {% if book.jd_url %}<li><a href="{{ book.jd_url }}" title="到京东购买" target="_blank">京东</a></li>{% endif %}
-            {% if book.china_pub_url %}<li><a href="{{ book.china_pub_url }}" title="到 China Pub 购买" target="_blank">China Pub</a></li>{% endif %}
+            {% if book.tmall_url %}<li><a href="{{ book.tmall_url }}" title="到天猫旗舰店购买" target="_blank">天猫旗舰店</a></li>{% endif %}
             {% if book.dangdang_url %}<li><a href="{{ book.dangdang_url }}" title="到当当网购买" target="_blank">当当网</a></li>{% endif %}
+            {% if book.china_pub_url %}<li><a href="{{ book.china_pub_url }}" title="到 China Pub 购买" target="_blank">China Pub</a></li>{% endif %}
+            {% if book.amazon_url %}<li><a href="{{ book.amazon_url }}" title="到亚马逊购买" target="_blank">亚马逊</a></li>{% endif %}
           </ul>
           {% endif %}
         </aside>

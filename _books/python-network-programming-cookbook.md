@@ -7,7 +7,7 @@ book_category: python
 
 这本书是Python网络编程方面的探索性指南，涉及了很多网络协议，例如TCP/UDP、HTTP/HTTPS、FTP、SMTP、POP3、IMAP、CGI等。Python功能强大且具交互性，用来开发解决实际问题的脚本是一种享受，比如处理网络和系统管理操作、开发Web应用、与本地和远程网络交互、捕获并分析低层网络数据包，等等。本书主要的目的是教你如何动手处理这些任务，因此不会牵涉太多理论，而是专注实践。
 
-## 作者
+## 作者简介
 
 **M. O. Faruque Sarker博士**是一位软件架构师，也是一位开发运维工程师，目前在英国伦敦大学学院（University College London，简称 UCL）工作。最近几年，他主持开发了很多Python软件项目，其中一个项目是在UCL使用IPython Notebook服务实现的网页版科学计算框架。他是多种开源技术方面的专家，比如说在线学习、Web应用平台、敏捷软件开发，以及IT服务管理方法（例如，DSDM Atern和ITIL服务管理框架）。
 

@@ -3,17 +3,17 @@ layout: book
 book_category: other
 ---
 
-## 简介
+## 关于本书
 
 Java 语言经典名著最新版，涵盖 Java 8。本书是 Java 老手“更上一层楼”的必读之作，也是 Java 新手登堂入室的快捷指引。这一版删掉了之前与在线文档重复的 API 参考部分，但针对现代 Java API 及最佳实战进行了深入浅出的讲解和示范。
 
-## 作者
+## 作者简介
 
 **Benjamin J. Evans** 是 jClarity 的联合创始人。jClarity 是是个初创公司，致力于向开发和运维团队提供性能工具。他是 LJC（伦敦 Java 用户组）的组织者，还是 JCP（Java Community Process）执行委员会的成员，帮助定义 Java 生态系统的标准。他获得过 Java Champion 奖和 JavaOne Rockstar 奖。他与人合著了《Java程序员修炼之道》（The Well-Grounded Java Developer）。他经常做公开演讲，涉及的话题包括 Java 平台、性能、并发等相关主题。Ben 在剑桥大学获得了数学硕士学位。
 
 **David Flanagan** 是一位计算机程序员，他花了大量时间编写关于 Java 和 JavaScript 的书。O'Reilly 出版由他撰写的书包括：《Java权威技术手册》，《Java Examples in a Nutshell》，《Java Foundation Classes in a Nutshell》，《JavaScript: The Definitive Guide》和《JavaScript Pocket Reference》。David 在麻省理工学院获得了计算机科学与工程学士学位。他和妻儿住在太平洋西北地区，在华盛顿州西雅图市和英属哥伦比亚省温哥华市之间。
 
-## 目录
+## 内容目录
 
 点击链接可试读部分章节。
 
@@ -41,11 +41,11 @@ Java 语言经典名著最新版，涵盖 Java 8。本书是 Java 老手“更�
 
 ## 大事记
 
-- 2014.12.04-05 试译；
-- 2014.12.08 开始翻译；
-- 2015.01.29 初译完成；
-- 2015.02.05 校正完成，提交审核；
-- 2015.11.20 电子书发布；
+- 2014.12.04-05 试译
+- 2014.12.08 开始翻译
+- 2015.01.29 初译完成
+- 2015.02.05 校正完成，提交审核
+- 2015.11.20 电子书发布
 
 ## 词汇表
 

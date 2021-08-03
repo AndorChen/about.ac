@@ -3,7 +3,7 @@ layout: book
 book_category: js
 ---
 
-## 简介
+## 关于本书
 
 你肯定听使用动态类型语言的程序员讲过，随着代码行数和工程师数量的增多，弹性伸缩将越来越难。正是出于这方面的考虑，Facebook、Google 和 Microsoft 为 JavaScript 和 Python 套了一层渐进式静态类型。本书展示其中一种类型套层，即 TypeScript 的独特之处。借助 TypeScript 强大的静态类型系统，编程将变成一件充满乐趣的事。
 
@@ -15,11 +15,11 @@ book_category: js
 - **探讨高级话题**：理解 TypeScript 复杂的类型系统，学习如何安全地处理错误和构建异步程序
 - **联系实际应用**：在你钟爱的前后端框架中使用 TypeScript，把现有的 JavaScript 项目迁移到 TypeScript，以及在生产环境中运行 TypeScript 应用
 
-## 作者
+## 作者简介
 
 **Boris Cherny** 就职于 Facebook，是工程和产品部门主管。他曾在风投公司、广告技术公司和一些初创公司工作，这其中很多公司都已不复存在。他喜欢研究编程语言、代码合成和静态分析，乐于构建让人钟爱的用户体验。工作之余，他负责组织旧金山的 TypeScript 线下聚会；闲暇时光，则在自己的博客中写写文章（performancejs.com）。他的 GitHub 个人主页是 https://github.com/bcherny。
 
-## 目录
+## 内容目录
 
 - 前言
 - 第 1 章 导言
@@ -42,10 +42,6 @@ book_category: js
 - 附录 E 三斜线指令
 - 附录 F 安全相关的 TSC 编译器标志
 - 附录 G TSX
-
-## 勘误
-
-加工中。
 
 ## 大事记
 
