@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <title><% if page.body_class != 'home-page' %><%= page.title.html_safe %> - <% end %><%= metadata.title %></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="renderer" content="webkit" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="<%= metadata.description %>" />
+  <meta name="author" content="<%= metadata.author %>" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <%= feed_meta %>
+  <link rel="stylesheet" href="<%= asset_path :css %>" />
+  <script src="<%= asset_path :js %>" defer></script>
+  <%= live_reload_dev_js %>
+</head>
+<body class="bg-dracula-darker text-dracula-light<% if page.body_class %><%= " #{page.body_class}" %><% end %>">
+
+<div class="px-6 py-8 md:px-16 lg:px-24 lg:py-16">
+  
+  <header class="max-w-prose<% if page.body_class == 'home-page' %> mt-20<% end %> mb-12">
+    <div class="flex flex-row">
+      <div class="basis-<% if page.body_class == 'home-page' %>1/4<% else %>1/6<% end %> flex-auto"><a href="/" title="<%= metadata.author %>"><img src="/assets/images/painting.png" alt="Andor's Avatar" class="rounded-full <% if page.body_class == 'home-page' %>w-48<% else %>w-32<% end %>" /></a></div>
+      <% if page.body_class != 'home-page' %><div class="basis-5/6 flex-auto self-center"><span class="pl-8 text-4xl font-medium"><a href="/" title="<%= metadata.author %>"><%= metadata.author %></a></span></div><% end %>
+    </div>
+  </header>
+
+  <main>

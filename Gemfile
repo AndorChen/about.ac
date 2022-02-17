@@ -1,10 +1,6 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'jekyll', '4.2.0'
-gem 'rake'
-gem 'bootstrap-sass', '3.4.1'
-gem 'kramdown-parser-gfm'
-
-group :jekyll_plugins do
-  gem 'jekyll-sitemap'
-end
+gem 'bridgetown', '~> 1.0.0.beta2'
+gem 'puma', '~> 5.5'
+gem 'bridgetown-feed', group: 'bridgetown_plugins'

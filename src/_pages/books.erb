@@ -1,0 +1,17 @@
+---
+layout: page
+title: 图书
+body_class: 'books-page'
+permalink: '/books/'
+---
+
+<p>以下列出我翻译的 <%= site.data.books.size - 1 %> 本书，自己写的 1 本书，点击书名可查看详细信息。</p>
+<ul>
+  <% site.data.books.sort_by(&:date).reverse.each do |book| %>
+  <li><span class="font-mono"><%= book.date.strftime "%Y-%m" %></span> 
+    <% if book.url != '#' %>
+      <a href="<%= book.url %>" title="<%= book.title %>" class="text-dracula-<%= book.color%> no-underline hover:underline" target="_blank" rel="noopener"><%= book.title %></a>
+    <% else %>
+      <span class="text-dracula-<%= book.color%>"><%= book.title %></span><% end %><% if book.status %>【<%= book.status %> 】<% end %></li>
+  <% end %>
+</ul>
