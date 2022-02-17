@@ -1,266 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://about.ac/books/agile-rails5/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/building-tools-with-github/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/css-definitive-guide-4th/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/css-manual-4th/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/docker-up-and-running-2nd/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/docker-up-and-running/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/flask-web-development-2nd/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/flask-web-development/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/fluent-python/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/identity-and-data-security/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/java-nutshell-6th/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/javascript-cookbook-3rd/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/javascript-everywhere/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/js-app-design/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/learning-angularjs/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/learning-php-mysql-javascript-5th/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/learning-php-mysql-javascript-6th/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/learning-php/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/learning-react-2nd/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/learning-swift/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/modern-php/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/programming-typescript/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/python-for-devops/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/python-network-programming-cookbook/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/python-tdd-2nd/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/python-tdd/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/books/restful-rails-development/</loc>
-<lastmod>2021-08-03T04:35:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2010/07/brightly-html.html</loc>
-<lastmod>2010-07-31T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/01/alter-wordpress-date-archives-url-structure.html</loc>
-<lastmod>2012-01-29T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/01/disable-wordpress-toolbar.html</loc>
-<lastmod>2012-01-29T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/02/wordpress-i18n-l10n.html</loc>
-<lastmod>2012-02-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/04/wordpress-solve-custom-role-can-not-access-admin.html</loc>
-<lastmod>2012-04-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/04/install-ruby-with-rbenv.html</loc>
-<lastmod>2012-04-19T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/04/how-to-learn-ruby.html</loc>
-<lastmod>2012-04-20T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/05/nosql-book-review.html</loc>
-<lastmod>2012-05-27T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/05/metaprogruby-book-review.html</loc>
-<lastmod>2012-05-29T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/06/understanding-m17n.html</loc>
-<lastmod>2012-06-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/06/semantic-versioning.html</loc>
-<lastmod>2012-06-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2012/06/separator.html</loc>
-<lastmod>2012-06-22T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2013/03/ebook-toolset.html</loc>
-<lastmod>2013-03-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2013/05/rails-new.html</loc>
-<lastmod>2013-05-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2014/06/duokan-xhtml-entities.html</loc>
-<lastmod>2014-06-22T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2014/07/dnsmasq.html</loc>
-<lastmod>2014-07-29T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2014/11/mavericks.html</loc>
-<lastmod>2014-11-15T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/02/translation-process.html</loc>
-<lastmod>2015-02-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/04/duokanify.html</loc>
-<lastmod>2015-04-06T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/05/first-mac-app.html</loc>
-<lastmod>2015-05-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/05/apps-for-translator.html</loc>
-<lastmod>2015-05-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/06/docx-hack-guide.html</loc>
-<lastmod>2015-06-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/07/translate-urls.html</loc>
-<lastmod>2015-07-30T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/08/docx-footnotes-numbering.html</loc>
-<lastmod>2015-08-03T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/08/stem.html</loc>
-<lastmod>2015-08-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/09/epub-best-practices.html</loc>
-<lastmod>2015-09-13T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2015/11/rails-tutorial-report.html</loc>
-<lastmod>2015-11-04T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2016/04/github-with-gpg-signature.html</loc>
-<lastmod>2016-04-16T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2016/07/normalize.html</loc>
-<lastmod>2016-07-23T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2017/01/letsencrypt.html</loc>
-<lastmod>2017-01-04T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/2018/09/asciidoc-docx.html</loc>
-<lastmod>2018-09-26T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://about.ac/404</loc>
-</url>
-<url>
-<loc>https://about.ac/500</loc>
-</url>
-<url>
-<loc>https://about.ac/about/</loc>
-</url>
-<url>
-<loc>https://about.ac/archive/</loc>
-</url>
-<url>
-<loc>https://about.ac/books/</loc>
-</url>
-<url>
-<loc>https://about.ac/buy/</loc>
-</url>
-<url>
-<loc>https://about.ac/contact/</loc>
-</url>
-<url>
-<loc>https://about.ac/</loc>
-</url>
-<url>
-<loc>https://about.ac/tags/</loc>
-</url>
-<url>
-<loc>https://about.ac/google4770273421765284.html</loc>
-<lastmod>2015-10-27T03:28:25+00:00</lastmod>
-</url>
+
+      <url>
+        <loc>https://about.ac/2018/09/asciidoc-docx.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2017/01/letsencrypt.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2016/07/normalize.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2016/04/github-with-gpg-signature.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/11/rails-tutorial-report.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/09/epub-best-practices.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/08/stem.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/08/docx-footnotes-numbering.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/07/translate-urls.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/06/docx-hack-guide.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/05/apps-for-translator.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/05/first-mac-app.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/04/duokanify.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2015/02/translation-process.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2014/11/mavericks.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2014/07/dnsmasq.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2014/06/duokan-xhtml-entities.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2013/05/rails-new.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2013/03/ebook-toolset.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/06/separator.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/06/semantic-versioning.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/06/understanding-m17n.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/05/metaprogruby-book-review.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/05/nosql-book-review.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/04/how-to-learn-ruby.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/04/install-ruby-with-rbenv.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/04/wordpress-solve-custom-role-can-not-access-admin.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/02/wordpress-i18n-l10n.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/01/disable-wordpress-toolbar.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2012/01/alter-wordpress-date-archives-url-structure.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/2010/07/brightly-html.html</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/archive/</loc>
+        <lastmod>2022-02-17T15:16:19+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/books/</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+      <url>
+        <loc>https://about.ac/uses/</loc>
+        <lastmod>2022-02-17T14:37:02+08:00</lastmod>
+      </url>
+
+
 </urlset>
