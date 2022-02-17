@@ -48,7 +48,7 @@ task :deploy do
   puts 'Push to `gh-pages`'
   system 'bundle exec rake build'
   puts
-  cd 'out' do
+  cd 'output' do
     system "git add -A"
     system "git commit -m 'update at #{Time.now.utc}'"
     puts
