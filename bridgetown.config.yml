@@ -18,7 +18,7 @@ url: 'https://about.ac'
 # base_path: '/'
 permalink: /:year/:month/:slug.*
 template_engine: liquid
-keep_files: ['.git', '.nojekyll', 'CNAME', '_bridgetown']
+include: ['.nojekyll']
 timezone: 'Asia/Chongqing'
 strict_front_matter: true
 template_engine: erb
