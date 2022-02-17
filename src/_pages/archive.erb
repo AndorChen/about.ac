@@ -18,6 +18,6 @@ permalink: '/archive/'
 
 <ul>
   <% collections.posts.resources.each do |post| %>
-  <li><span class="font-mono"><%= post.data.date.strftime "%Y-%m" %></span> <a href="<%= "#{post.relative_url}.html" %>" title="<%= post.data.title %>" class="<%= colors.sample %> no-underline hover:underline"><%= post.data.title %></a></li>
+  <li><span class="font-mono"><%= post.data.date.strftime "%Y-%m" %></span> <a href="<%= post.relative_url %>" title="<%= post.data.title %>" class="<%= colors.sample %> no-underline hover:underline"><%= post.data.title %></a></li>
   <% end %>
 </ul>
