@@ -40,13 +40,18 @@ namespace :frontend do
   end
 end
 
-#
-# Add your own Rake tasks here! You can use `environment` as a prerequisite
-# in order to write automations or other commands requiring a loaded site.
-#
-# task :my_task => :environment do
-#   puts site.root_dir
-#   automation do
-#     say_status :rake, "I'm a Rake tast =) #{site.config.url}"
-#   end
-# end
+desc 'Deploy to GitHub Pages'
+task :deploy do
+  puts 'Push to `master`'
+  system 'git push origin master'
+  puts
+  puts 'Push to `gh-pages`'
+  system 'bundle exec rake build'
+  puts
+  cd 'out' do
+    system "git add -A"
+    system "git commit -m 'update at #{Time.now.utc}'"
+    puts
+    system 'git push origin gh-pages'
+  end
+end
