@@ -41,17 +41,22 @@ namespace :frontend do
 end
 
 desc 'Deploy to GitHub Pages'
-task :deploy do
-  puts 'Push to `master`'
-  system 'git push origin master'
-  puts
-  puts 'Push to `gh-pages`'
-  system 'bundle exec rake build'
-  puts
-  cd 'output' do
-    system "git add -A"
-    system "git commit -m 'update at #{Time.now.utc}'"
-    puts
-    system 'git push origin gh-pages'
+task :deploy => ["deploy:push_master", :build, "deploy:push_gh_pages"] do
+
+end
+
+namespace :deploy do
+  task :push_master do
+    puts 'Push to `master`'
+    system 'git push origin master'
+  end
+
+  task :push_gh_pages do
+    puts 'Push to `gh_pages`'
+    cd 'output' do
+      system 'git add -A'
+      system "git commit -m 'update at #{Time.now.utc}'"
+      system 'git push origin gh-pages'
+    end
   end
 end
