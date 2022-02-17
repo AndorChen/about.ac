@@ -1,7 +1,3 @@
-_site/
-.jekyll-metadata
-.jekyll-cache/
-.sass-cache
-node_modules/
-tmp/
-*.psd
+.bridgetown-cache
+output
+node_modules
