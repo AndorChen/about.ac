@@ -11,7 +11,7 @@ task :server do
 end
 
 desc "Build the Bridgetown site for deployment"
-task :build => [:clean, "frontend:build"] do
+task :build => "frontend:build" do
   ENV["BRIDGETOWN_ENV"] = "production"
   Bridgetown::Commands::Build.start
 end
