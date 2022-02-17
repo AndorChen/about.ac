@@ -1,0 +1,179 @@
+- title: 'Jekyll 小书'
+  date: 2016-08-04
+  url: 'https://flapybooks.com/products/jekyll-book'
+  color: 'orange'
+
+- title: 'Rails 5 敏捷开发'
+  date: 2018-01-01
+  url: 'https://item.jd.com/12281409.html'
+  color: 'orange'
+
+# - title: 'Rails 程序部署之道'
+#   date: 
+#   url: '#'
+#   color: 'orange'
+
+- title: 'Rails 指南'
+  date: 2017-12-28
+  url: 'https://flapybooks.com/products/railsguides'
+  color: 'orange'
+
+- title: 'Ruby on Rails 教程'
+  date: 2021-03-19
+  url: 'https://flapybooks.com/products/railstutorial6th'
+  color: 'orange'
+
+- title: 'RESTful Rails Development（中文版）'
+  date: 2017-02-01
+  url: 'https://item.jd.com/12137592.html'
+  color: 'orange'
+
+- title: '使用 RSpec 测试 Rails 应用'
+  date: 2018-02-04
+  url: 'https://flapybooks.com/products/rspeconrails'
+  color: 'orange'
+
+- title: 'Python 网络编程攻略'
+  date: 2014-11-17
+  url: 'https://www.ituring.com.cn/book/1484'
+  color: 'cyan'
+
+- title: 'Flask Web 开发'
+  date: 2014-12-10
+  url: 'https://www.ituring.com.cn/book/1449'
+  color: 'cyan'
+
+- title: 'Flask Web 开发（第 2 版）'
+  date: 2018-08-24
+  url: 'https://www.ituring.com.cn/book/2463'
+  color: 'cyan'
+
+- title: '流畅的 Python'
+  date: 2017-05-08
+  url: 'https://www.ituring.com.cn/book/1564'
+  color: 'cyan'
+
+- title: '精通 Django'
+  date: 2017-04-28
+  url: '#'
+  color: 'cyan'
+
+- title: 'Python for DevOps'
+  date: 2022-03-01
+  url: '#'
+  color: 'cyan'
+  status: '未出版'
+
+- title: 'Python 测试驱动开发'
+  date: 2018-07-04
+  url: 'https://www.ituring.com.cn/book/2052'
+  color: 'cyan'
+
+- title: 'Python Web 开发：测试驱动方法'
+  date: 2015-10-10
+  url: 'https://www.ituring.com.cn/book/1486'
+  color: 'cyan'
+
+- title: 'Django 基础教程'
+  date: 2018-05-23
+  url: 'https://flapybooks.com/products/tangowithdjango'
+  color: 'cyan'
+
+- title: 'PHP、MySQL 与 JavaScript 学习手册（第五版）'
+  date: 2020-11-01
+  url: 'https://item.jd.com/13028104.html'
+  color: 'purple'
+
+- title: 'PHP、MySQL 与 JavaScript 学习手册（第六版）'
+  date: 2022-03-01
+  url: '#'
+  color: 'purple'
+  status: '未出版'
+
+- title: 'PHP 学习手册'
+  date: 2017-05-01
+  url: 'https://item.jd.com/12207392.html'
+  color: 'purple'
+
+- title: 'Modern PHP（中文版）'
+  date: 2015-09-01
+  url: 'https://item.jd.com/11786541.html'
+  color: 'purple'
+
+- title: 'CSS 权威指南（第四版）'
+  date: 2019-05-01
+  url: 'https://item.jd.com/12510935.html'
+  color: 'pink'
+
+- title: 'CSS 实战手册（第四版）'
+  date: 2016-10-01
+  url: 'https://item.jd.com/12053508.html'
+  color: 'pink'
+
+- title: 'JavaScript 经典实例（第三版）'
+  date: 2022-03-01
+  url: '#'
+  color: 'yellow'
+  status: 未出版
+
+- title: 'JavaScript 全栈开发实战'
+  date: 2020-12-01
+  url: 'https://item.jd.com/12769875.html'
+  color: 'yellow'
+
+- title: 'JavaScript Web 应用开发'
+  date: 2015-10-10
+  url: 'https://www.ituring.com.cn/book/1636'
+  color: 'yellow'
+
+- title: 'AngularJS 学习手册'
+  date: 2015-11-01
+  url: 'https://item.jd.com/11817920.html'
+  color: 'yellow'
+
+- title: 'React 学习手册（第二版）'
+  date: 2021-06-01
+  url: 'https://item.jd.com/12875787.html'
+  color: 'yellow'
+
+- title: 'TypeScript 编程'
+  date: 2020-07-01
+  url: 'https://item.jd.com/12685323.html'
+  color: 'yellow'
+
+- title: 'GitHub 实践'
+  date: 2016-11-18
+  url: 'https://www.ituring.com.cn/book/1820'
+  color: 'green'
+
+- title: 'Docker 即学即用（第二版）'
+  date: 2019-08-01
+  url: 'https://item.jd.com/12683788.html'
+  color: 'green'
+
+- title: 'Docker 即学即用'
+  date: 2015-12-01
+  url: 'https://item.jd.com/11843336.html'
+  color: 'green'
+
+- title: 'Java技术手册（第6版）'
+  date: 2015-11-23
+  url: 'https://www.ituring.com.cn/book/1554'
+  color: 'green'
+
+- title: 'Swift 学习手册'
+  date: 2017-03-01
+  url: 'https://item.jd.com/12144094.html'
+  color: 'green'
+
+- title: 'PowerShell 实战'
+  date: 2022-03-01
+  url: 'https://www.ituring.com.cn/book/2927'
+  color: 'green'
+  status: '未出版'
+
+- title: 'Learning MySQL, Second Edition'
+  date: 2023-01-01
+  url: '#'
+  color: 'green'
+  status: '翻译中'

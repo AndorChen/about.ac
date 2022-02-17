@@ -1,0 +1,23 @@
+---
+layout: page
+title: '文章归档'
+body_class: 'archive-page'
+permalink: '/archive/'
+---
+
+<% colors = ['text-dracula-blue', 
+             'text-dracula-cyan',
+             'text-dracula-green',
+             'text-dracula-orange',
+             'text-dracula-pink',
+             'text-dracula-purple',
+             'text-dracula-red',
+             'text-dracula-yellow'
+             ]
+%>
+
+<ul>
+  <% collections.posts.resources.each do |post| %>
+  <li><span class="font-mono"><%= post.data.date.strftime "%Y-%m" %></span> <a href="<%= "#{post.relative_url}.html" %>" title="<%= post.data.title %>" class="<%= colors.sample %> no-underline hover:underline"><%= post.data.title %></a></li>
+  <% end %>
+</ul>

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="mb-4">
+  <a href="/" title="首页">首页</a> // <a href="/archive/" title="文章归档">文章归档</a>
+</div>
+
+<% colors = ['text-dracula-blue', 
+             'text-dracula-cyan',
+             'text-dracula-green',
+             'text-dracula-orange',
+             'text-dracula-pink',
+             'text-dracula-purple',
+             'text-dracula-red',
+             'text-dracula-yellow'
+             ]
+%>
+
+<article class="prose prose-invert">
+  <header>
+    <h1 class="<%= colors.sample %>"><%= page.data.title %></h1>
+    <p>（发布于 <%= page.data.date.strftime '%Y 年 %-m 月 %-d 日' %>）</p>
+  </header>
+
+  <main>
+    <%= content %>
+  </main>
+
+  <footer>
+    <p class="mt-20 text-center">~~~ EoF. 感谢阅读！~~~</p>
+  </footer>
+</article>
