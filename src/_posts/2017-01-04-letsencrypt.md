@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "为 Heroku 应用添加 Let's Encrypt SSL 证书"
-color: yellow
 tags: ['Dev', 'Rails']
 ---
 

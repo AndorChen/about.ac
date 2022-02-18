@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Asciidoc 转 Word 文档
-color: red
 tags: ['Dev']
 ---
 
