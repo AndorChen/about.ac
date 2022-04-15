@@ -7,4 +7,5 @@ gem 'puma', '~> 5.6'
 group 'bridgetown_plugins' do
   gem 'bridgetown-feed'
   gem 'bridgetown-sitemap'
+  # gem 'bridgetown-minify-html'
 end
