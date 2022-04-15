@@ -18,7 +18,7 @@
   url: 'https://flapybooks.com/products/railsguides'
   color: 'orange'
 
-- title: 'Ruby on Rails 教程'
+- title: 'Ruby on Rails 教程（原书第 6 版）'
   date: 2021-03-19
   url: 'https://flapybooks.com/products/railstutorial6th'
   color: 'orange'
@@ -59,7 +59,7 @@
   color: 'cyan'
 
 - title: 'Python for DevOps'
-  date: 2022-03-01
+  date: 2099-12-31
   url: '#'
   color: 'cyan'
   status: '未出版'
@@ -85,7 +85,7 @@
   color: 'purple'
 
 - title: 'PHP、MySQL 与 JavaScript 学习手册（第六版）'
-  date: 2022-03-01
+  date: 2099-12-31
   url: '#'
   color: 'purple'
   status: '未出版'
@@ -111,7 +111,7 @@
   color: 'pink'
 
 - title: 'JavaScript 经典实例（第三版）'
-  date: 2022-03-01
+  date: 2099-12-31
   url: '#'
   color: 'yellow'
   status: 未出版
@@ -167,13 +167,19 @@
   color: 'green'
 
 - title: 'PowerShell 实战'
-  date: 2022-03-01
+  date: 2099-12-31
   url: 'https://www.ituring.com.cn/book/2927'
   color: 'green'
   status: '未出版'
 
 - title: 'Learning MySQL, Second Edition'
-  date: 2023-01-01
+  date: 2099-12-31
   url: '#'
   color: 'green'
+  status: '翻译中'
+
+- title: '流畅的 Python（第 2 版）'
+  date: 2099-12-31
+  url: '#'
+  color: 'cyan'
   status: '翻译中'
