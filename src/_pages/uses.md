@@ -26,6 +26,7 @@ permalink: '/uses/'
 ## 软件
 
 - 操作系统：Windows 10（主力），macOS High Sierra
+- 网络冲浪：Google Chrome
 - 编辑器：Visual Studio Code
 - 终端：Windows Terminal，WSL2，Ubuntu 20.04
 - 词典：欧路词典

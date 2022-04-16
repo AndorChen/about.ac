@@ -1,7 +1,14 @@
+- title: 'Ruby on Rails 教程（原书第 2 版）'
+  date: 2013-05-01
+  url: 'https://flapybooks.com/products/railstutorial6th'
+  color: 'orange'
+  note: '缘起'
+
 - title: 'Jekyll 小书'
   date: 2016-08-04
   url: 'https://flapybooks.com/products/jekyll-book'
   color: 'orange'
+  note: '拙作'
 
 - title: 'Rails 5 敏捷开发'
   date: 2018-01-01

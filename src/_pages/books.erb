@@ -13,6 +13,6 @@ permalink: '/books/'
     <% if book.url != '#' %>
       <a href="<%= book.url %>" title="<%= book.title %>" class="text-dracula-<%= book.color%> no-underline hover:underline" target="_blank" rel="noopener"><%= book.title %></a>
     <% else %>
-      <span class="text-dracula-<%= book.color%>"><%= book.title %></span><% end %><% if book.status %>【<%= book.status %> 】<% end %></li>
+      <span class="text-dracula-<%= book.color%>"><%= book.title %></span><% end %><% if book.status %>【<%= book.status %> 】<% end %><% if book.note %>&larr; <%= book.note %><% end%></li>
   <% end %>
 </ul>
