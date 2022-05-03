@@ -179,11 +179,11 @@
   color: 'green'
   status: '未出版'
 
-- title: 'Learning MySQL, Second Edition'
+- title: 'MySQL 学习手册（第二版）'
   date: 2099-12-31
   url: '#'
   color: 'green'
-  status: '翻译中'
+  status: '未出版'
 
 - title: '流畅的 Python（第 2 版）'
   date: 2099-12-31
