@@ -174,10 +174,9 @@
   color: 'green'
 
 - title: 'PowerShell 实战'
-  date: 2099-12-31
+  date: 2022-05-24
   url: 'https://www.ituring.com.cn/book/2927'
   color: 'green'
-  status: '未出版'
 
 - title: 'MySQL 学习手册（第二版）'
   date: 2099-12-31
