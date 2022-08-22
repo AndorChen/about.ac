@@ -10,7 +10,7 @@ permalink: '/uses/'
 ## 硬件
 
 - 显示器：Philips 275E
-- 显示器支架：北狐 LDT13-C012
+- 显示器支架：几本书 <del>北狐 LDT13-C012</del>
 - 屏幕挂灯：Yeelight YLTD001
 - 机箱：Thermaltake 启航者 S5 黑色
 - 电源：CoolerMaster GX550
@@ -29,6 +29,6 @@ permalink: '/uses/'
 - 网络冲浪：Google Chrome
 - 编辑器：Visual Studio Code
 - 终端：Windows Terminal，WSL2，Ubuntu 20.04
-- 词典：欧路词典
+- 词典：goldendict <del>欧路词典</del>
 - PDF 阅读器：SumatraPDF
 - 日常办公：Office 365
