@@ -188,4 +188,16 @@
   date: 2099-12-31
   url: '#'
   color: 'cyan'
+  status: '未出版'
+
+- title: 'TypeScript 学习手册'
+  date: 2099-12-31
+  url: '#'
+  color: 'yellow'
   status: '翻译中'
+
+- title: 'Python in a Nutshell, 4th Edition'
+  date: 2099-12-31
+  url: '#'
+  color: 'cyan'
+  status: '待定'
