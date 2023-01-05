@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-01-05T20:04:16+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">邮票上的物理学史（四）</title><link href="https://about.ac/2023/01/physics-stamps-four.html" rel="alternate" type="text/html" title="邮票上的物理学史（四）" /><published>2023-01-05T00:00:00+08:00</published><updated>2023-01-05T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-05-physics-stamps-four.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-four.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-01-05T20:07:31+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">邮票上的物理学史（四）</title><link href="https://about.ac/2023/01/physics-stamps-four.html" rel="alternate" type="text/html" title="邮票上的物理学史（四）" /><published>2023-01-05T00:00:00+08:00</published><updated>2023-01-05T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-05-physics-stamps-four.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-four.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
 
 &lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;4. 文艺复兴和达·芬奇&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;4-1，1999，英国，GB 1839，确立时间&lt;/li&gt;
-  &lt;li&gt;4-2，1992，德国，DE B734，回转塔钟&lt;/li&gt;
-  &lt;li&gt;4-3，1952，意大利，IT 601，达·芬奇&lt;/li&gt;
-  &lt;li&gt;4-4，1952，法国，FR 682，达·芬奇&lt;/li&gt;
-  &lt;li&gt;4-5，1969，阿尔巴尼亚，AL 1218，达·芬奇&lt;/li&gt;
-  &lt;li&gt;4-6，1938，意大利，IT 404，达·芬奇&lt;/li&gt;
-  &lt;li&gt;4-7，1952，波兰，PL B73，达·芬奇&lt;/li&gt;
-  &lt;li&gt;4-8，1996，古巴，CU 3716，达·芬奇&lt;/li&gt;
-  &lt;li&gt;4-9，1983，圣马力诺，SM 1046，达·芬奇设计的直升飞机（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1982”错误&lt;/strong&gt;）&lt;/li&gt;
-  &lt;li&gt;4-10，1948，列支敦士登，LI C24，达·芬奇&lt;/li&gt;
-  &lt;li&gt;4-11，1969，阿尔巴尼亚，AL 1220，达·芬奇设计的直升飞机&lt;/li&gt;
-  &lt;li&gt;4-12，1977，圣马力诺，SM 908，达·芬奇设计的直升飞机&lt;/li&gt;
-  &lt;li&gt;4-13，2000，冈比亚，GM 2180a，达·芬奇设计的直升飞机&lt;/li&gt;
-  &lt;li&gt;4-14，1970，尼日尔，NE C126，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;4-15，1990，东德，DD 2800，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;4-16，1987，柬埔寨，KH 800，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;4-17，1992，柬埔寨，KH 1217，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;4-18，1966，厄瓜多尔，EC 757B，达·芬奇和开普勒&lt;/li&gt;
-  &lt;li&gt;4-19，2000，波兰，PL 3495，人体比例图（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1999”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图4-1，1999，英国，GB 1839，确立时间&lt;/li&gt;
+  &lt;li&gt;图4-2，1992，德国，DE B734，回转塔钟&lt;/li&gt;
+  &lt;li&gt;图4-3，1952，意大利，IT 601，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-4，1952，法国，FR 682，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-5，1969，阿尔巴尼亚，AL 1218，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-6，1938，意大利，IT 404，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-7，1952，波兰，PL B73，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-8，1996，古巴，CU 3716，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-9，1983，圣马力诺，SM 1046，达·芬奇设计的直升飞机（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1982”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图4-10，1948，列支敦士登，LI C24，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-11，1969，阿尔巴尼亚，AL 1220，达·芬奇设计的直升飞机&lt;/li&gt;
+  &lt;li&gt;图4-12，1977，圣马力诺，SM 908，达·芬奇设计的直升飞机&lt;/li&gt;
+  &lt;li&gt;图4-13，2000，冈比亚，GM 2180a，达·芬奇设计的直升飞机&lt;/li&gt;
+  &lt;li&gt;图4-14，1970，尼日尔，NE C126，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-15，1990，东德，DD 2800，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-16，1987，柬埔寨，KH 800，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-17，1992，柬埔寨，KH 1217，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-18，1966，厄瓜多尔，EC 757B，达·芬奇和开普勒&lt;/li&gt;
+  &lt;li&gt;图4-19，2000，波兰，PL 3495，人体比例图（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1999”错误&lt;/strong&gt;）&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>安道</name></author><category term="Stamps" /></entry><entry><title type="html">邮票上的物理学史（三）</title><link href="https://about.ac/2023/01/physics-stamps-three.html" rel="alternate" type="text/html" title="邮票上的物理学史（三）" /><published>2023-01-04T00:00:00+08:00</published><updated>2023-01-04T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-04-physics-stamps-three.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-three.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
 
 &lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
