@@ -1,32 +1,268 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-01-05T20:07:31+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">邮票上的物理学史（四）</title><link href="https://about.ac/2023/01/physics-stamps-four.html" rel="alternate" type="text/html" title="邮票上的物理学史（四）" /><published>2023-01-05T00:00:00+08:00</published><updated>2023-01-05T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-05-physics-stamps-four.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-four.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-01-07T20:22:28+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">邮票上的物理学史（5-9）</title><link href="https://about.ac/2023/01/physics-stamps-two.html" rel="alternate" type="text/html" title="邮票上的物理学史（5-9）" /><published>2023-01-07T00:00:00+08:00</published><updated>2023-01-07T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-07-physics-stamps-two.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-two.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
 
 &lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;4. 文艺复兴和达·芬奇&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;5. 哥白尼的日心说&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;图4-1，1999，英国，GB 1839，确立时间&lt;/li&gt;
-  &lt;li&gt;图4-2，1992，德国，DE B734，回转塔钟&lt;/li&gt;
-  &lt;li&gt;图4-3，1952，意大利，IT 601，达·芬奇&lt;/li&gt;
-  &lt;li&gt;图4-4，1952，法国，FR 682，达·芬奇&lt;/li&gt;
-  &lt;li&gt;图4-5，1969，阿尔巴尼亚，AL 1218，达·芬奇&lt;/li&gt;
-  &lt;li&gt;图4-6，1938，意大利，IT 404，达·芬奇&lt;/li&gt;
-  &lt;li&gt;图4-7，1952，波兰，PL B73，达·芬奇&lt;/li&gt;
-  &lt;li&gt;图4-8，1996，古巴，CU 3716，达·芬奇&lt;/li&gt;
-  &lt;li&gt;图4-9，1983，圣马力诺，SM 1046，达·芬奇设计的直升飞机（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1982”错误&lt;/strong&gt;）&lt;/li&gt;
-  &lt;li&gt;图4-10，1948，列支敦士登，LI C24，达·芬奇&lt;/li&gt;
-  &lt;li&gt;图4-11，1969，阿尔巴尼亚，AL 1220，达·芬奇设计的直升飞机&lt;/li&gt;
-  &lt;li&gt;图4-12，1977，圣马力诺，SM 908，达·芬奇设计的直升飞机&lt;/li&gt;
-  &lt;li&gt;图4-13，2000，冈比亚，GM 2180a，达·芬奇设计的直升飞机&lt;/li&gt;
-  &lt;li&gt;图4-14，1970，尼日尔，NE C126，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;图4-15，1990，东德，DD 2800，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;图4-16，1987，柬埔寨，KH 800，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;图4-17，1992，柬埔寨，KH 1217，达·芬奇设计的滑翔机&lt;/li&gt;
-  &lt;li&gt;图4-18，1966，厄瓜多尔，EC 757B，达·芬奇和开普勒&lt;/li&gt;
-  &lt;li&gt;图4-19，2000，波兰，PL 3495，人体比例图（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1999”错误&lt;/strong&gt;）&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>安道</name></author><category term="Stamps" /></entry><entry><title type="html">邮票上的物理学史（三）</title><link href="https://about.ac/2023/01/physics-stamps-three.html" rel="alternate" type="text/html" title="邮票上的物理学史（三）" /><published>2023-01-04T00:00:00+08:00</published><updated>2023-01-04T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-04-physics-stamps-three.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-three.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
+  &lt;li&gt;图5-1：1953，波兰，PL 578、579，哥白尼诞生480年&lt;/li&gt;
+  &lt;li&gt;图5-2：1953，中国，纪25.4-2，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-3：1957，法国，FR 857，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-4：1955，苏联，SU 1752，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-5：1969，波兰，PL 1659~1661，哥白尼诞生500年（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中图题“400周年”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-6：1970，波兰，PL 1745~1747，哥白尼就读的3所意大利大学（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中图题“400周年”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-7：1971，波兰，PL 1818~1821，与哥白尼关系密切的几处地点（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中图题“400周年”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-8：1972，波兰，PL 1915~1918、PL B127，哥白尼诞生500年（第四套）（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中图题“400周年”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-9：1973，波兰，PL 1956~1960，哥白尼诞生500年（第五套）（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中图题“400周年”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-10：1972，波兰，PL 1944、1945，哥白尼普票&lt;/li&gt;
+  &lt;li&gt;图5-11：1973，波兰，PL B129，邮票日（哥白尼）&lt;/li&gt;
+  &lt;li&gt;图5-12：1923，波兰，PL 192、194，最早的哥白尼邮票（&lt;strong class=&quot;text-dracula-red&quot;&gt;最早？&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-13：1951，波兰，PL 515，波兰科学大会（哥白尼）&lt;/li&gt;
+  &lt;li&gt;图5-14：1955，波兰，PL 672，华沙的哥白尼塑像&lt;/li&gt;
+  &lt;li&gt;图5-15：1959，波兰，PL 885，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-16：1961，波兰，PL 982，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-17：1964，波兰，PL 1229，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-18：1992，波兰，PL 3079，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-19：1993，波兰，PL 3158，哥白尼逝世450年&lt;/li&gt;
+  &lt;li&gt;图5-20：1942，德占波兰，PL NB23，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-21：1943，德占波兰，PL NB27，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-22：1973，西德，DE 1104，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-23：1973，东德，DD 1461，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-24：1973，苏联，SU 4060，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-25：1974，法国，FR 1416，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-26：1973，匈牙利，HU 2218，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-27：1973，罗马尼亚，RO 2405，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-28：1973，保加利亚，BG 2086，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-29：1973，阿尔巴尼亚，AL 1481~1486，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-30：1973，梵蒂冈，VA 537~540，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-31：1973，蒙古，MN 723~725，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-32：1973，越南，VN 691、692，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-33：1973，叙利亚，SY 670，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-34：1973，印度，IN 587，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-35：1973，巴基斯坦，PK 336，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-36：1974，孟加拉，BD 61、62，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-37：1974，马尔代夫，MV 480~487、488，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-38：1974，喀麦隆，CM C220，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-39：1973，中非，CF C116，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-40：1973，刚果，CG C160，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-41：1974，马尔加什（&lt;strong class=&quot;text-dracula-red&quot;&gt;今马达加斯加&lt;/strong&gt;），MG C121，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-42：1973，马里，ML C178，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-43：1973，乍得，TD C154，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-44：1973，科摩罗，KM C56，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-45：1973，尼日尔，NE C221，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-46：1973，达荷美（&lt;strong class=&quot;text-dracula-red&quot;&gt;今贝宁&lt;/strong&gt;），DY C185、C186，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-47：1974，赤道几内亚，GQ 74-01~74-09，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-48：1973，卢旺达，RW 565~571，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-49：1973，布隆迪，BI 434，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-50：1973，利比里亚，LR 653~658、C200，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-51：1973，几内亚，GN 653~658，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-52：1973，美国，US 1488，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-53：1973，墨西哥，MX C416，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-54：1974，哥伦比亚，CO C593，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-55：1973，委内瑞拉，VE 1015a，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-56：1973，乌拉圭，UY 870，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-57：1974，智利，CL B6，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-58：1973，巴西，BR 1301，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-59：1973，古巴，CU 1799~1801、1802，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-60：1974，海地，HT C420、HT 680、681、HT C415~C419，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;图5-61：1969，也门，Michel YE-AR 904，Spoutnik 3和哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-62：1973，法属阿法尔和伊萨领地，FR-AI C83，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-63：1975，捷克斯洛伐克，CS 2027，空间研究国际合作（哥白尼）&lt;/li&gt;
+  &lt;li&gt;图5-64：1982，圣马力诺，SM 1022，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-65：1979，科摩罗，KM 411，哥白尼和旅行者1号&lt;/li&gt;
+  &lt;li&gt;图5-66：1988，科摩罗，KM B4b，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-67：1985，中非，CF 759，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-68：1993，蒙古，Michel MN 2466，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-69：1993，加蓬，GA 772，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-70：1993，马尔代夫，MV 1880、1881、1882，哥白尼逝世450年&lt;/li&gt;
+  &lt;li&gt;图5-71：1994，尼加拉瓜，NI 1985a，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-72：1994，尼加拉瓜，Michel NI 3308，哥白尼（&lt;strong class=&quot;text-dracula-red&quot;&gt;小型张内芯编号，Colnect未列出小型张&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-73：1994，巴拉圭，PY 2495，哥白尼&lt;/li&gt;
+  &lt;li&gt;图5-74：2000，安哥拉，AO 1150n，1543宇宙新理论&lt;/li&gt;
+  &lt;li&gt;图5-75：2000，几内亚，GN 1862g，哥白尼（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“2001”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图5-76：1998，保加利亚，BG 4058，布鲁诺诞生450年&lt;/li&gt;
+  &lt;li&gt;图5-77：2000，意大利，IT 2375，布鲁诺逝世400年&lt;/li&gt;
+  &lt;li&gt;图5-78：1974，圣皮埃尔岛和密克隆岛，PM C56，哥白尼诞生500年&lt;/li&gt;
+  &lt;li&gt;N/A：1965，巴拉圭，PY 876a、Michel PY BL70，爱因斯坦和伽利略&lt;/li&gt;
+  &lt;li&gt;图5-79：1965，巴拉圭，PY 871~878，科学家&lt;/li&gt;
+  &lt;li&gt;图5-80：1965，巴拉圭，Michel PY 1439~1446，科学家（&lt;strong class=&quot;text-dracula-red&quot;&gt;图5-79的无齿版&lt;/strong&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;6. 第谷·布拉赫和开普勒&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图6-1：1946，丹麦，DK 300，第谷诞生400年&lt;/li&gt;
+  &lt;li&gt;图6-2：1973，丹麦，DK 524，第谷发现新星&lt;/li&gt;
+  &lt;li&gt;图6-3：1995，丹麦，DK 1035、1036，天文堡和第谷的仪器&lt;/li&gt;
+  &lt;li&gt;图6-4：1995，瑞典，SE 2149、2150，天文堡和第谷的仪器&lt;/li&gt;
+  &lt;li&gt;图6-5：1985，尼加拉瓜，NI 1486，第谷的地下观测室&lt;/li&gt;
+  &lt;li&gt;图6-6：1996，捷克，CZ 2996，第谷在布拉格&lt;/li&gt;
+  &lt;li&gt;图6-7：1971，阿森松，AC 140，第谷天文堡&lt;/li&gt;
+  &lt;li&gt;图6-8：1994，尼加拉瓜，NI 1985b，第谷&lt;/li&gt;
+  &lt;li&gt;图6-9：1986，柬埔寨，KH 705，太阳系、哥白尼、伽利略和第谷&lt;/li&gt;
+  &lt;li&gt;图6-10：1969，也门，Michel YE-AR 913，探险者6号和第谷&lt;/li&gt;
+  &lt;li&gt;图6-11：1953，奥地利，AT B282，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-12：1990，塞拉利昂，SL 1167a，开普勒第一定律和第二定律&lt;/li&gt;
+  &lt;li&gt;图6-13：1991，格林纳达，GD 1999a，开普勒第一定律和第二定律&lt;/li&gt;
+  &lt;li&gt;图6-14：1971，东德，DD 1275，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-15：1971，西德，DE 1072，开普勒诞生400年&lt;/li&gt;
+  &lt;li&gt;图6-16：1971，墨西哥，MX C379，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-17：1971，罗马尼亚，RO 2309，天文堡和开普勒&lt;/li&gt;
+  &lt;li&gt;图6-18：1983，罗马尼亚，RO 3135a，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-19：1971，达荷美，DY C142、C143，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-20：1980，贝宁，BJ 501、502，开普勒逝世350年&lt;/li&gt;
+  &lt;li&gt;图6-21：1972，富查伊拉，Michel FU 826A~831A，开普勒诞生400年&lt;/li&gt;
+  &lt;li&gt;图6-22：1980，马里，ML C388、C389，开普勒逝世350年&lt;/li&gt;
+  &lt;li&gt;图6-23：1980，蒙古，MN C145，开普勒逝世350年&lt;/li&gt;
+  &lt;li&gt;图6-24：1980，朝鲜，KP 1985、Michel KP BL82A，开普勒逝世350年&lt;/li&gt;
+  &lt;li&gt;图6-25：1980，匈牙利，HU 2667，开普勒逝世350年&lt;/li&gt;
+  &lt;li&gt;图6-26：1981，布隆迪，Michel BI 1580，开普勒逝世350年&lt;/li&gt;
+  &lt;li&gt;图6-27：1969，也门，Michel YE-AR 908，月球2号和开普勒&lt;/li&gt;
+  &lt;li&gt;图6-28：1988，科摩罗，KM B4c，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-29：1994，几内亚，GN 1262a，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-30：1994，巴拉圭，PY 2496，开普勒&lt;/li&gt;
+  &lt;li&gt;图6-31：2001，莫桑比克（&lt;strong class=&quot;text-dracula-red&quot;&gt;据查，此枚为非法邮票&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图6-32：2000，塞拉利昂，SL 2254j，开普勒发表新天文学&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;7. 伽利略&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图7-1：1964，意大利，IT 888、889，伽利略诞生400年&lt;/li&gt;
+  &lt;li&gt;图7-2：1964，匈牙利，HU 1592，伽利略诞生400年&lt;/li&gt;
+  &lt;li&gt;图7-3：1982，圣马力诺，SM 1030，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-4：1987，阿尔巴尼亚，AL 2243，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-5：1942，意大利，IT 419~422，伽利略生平&lt;/li&gt;
+  &lt;li&gt;图7-6：1988，冈比亚，GM 799，纪念《关于两大世界体系的对话》出版350年&lt;/li&gt;
+  &lt;li&gt;图7-7：2000，爱尔兰，IE 1219f，伽利略晚年&lt;/li&gt;
+  &lt;li&gt;图7-8：1966，厄瓜多尔，EC 750B，伽利略和摆&lt;/li&gt;
+  &lt;li&gt;图7-9：1973，意大利，IT 1117，比萨斜塔&lt;/li&gt;
+  &lt;li&gt;图7-10：1991，多米尼克，DM 1366（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行国家“多米尼加”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图7-11：1991，中国，JP.29.(1-1)，发现“惯性质量和引力质量等价”400年（&lt;strong class=&quot;text-dracula-red&quot;&gt;明信片&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图7-12：1995，意大利，IT 2048，佛罗伦萨第14届国际相对论大会&lt;/li&gt;
+  &lt;li&gt;图7-13：1983，意大利，IT 1558，欧罗巴·科学发现·伽利略&lt;/li&gt;
+  &lt;li&gt;图7-14：1964，罗马尼亚，RO 1647，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-15：1994，直布罗陀，GI 656，伽利略早期折射望远镜&lt;/li&gt;
+  &lt;li&gt;图7-16：2000，几内亚，GN 1862f，伽利略（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“2001”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图7-17：1971，阿森松，AC 141，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-18：1999，圣文森特和格林纳丁斯，VC 2696，伽利略（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中未标发行年份，Colnect未列&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图7-19：1964，苏联，SU 2986，伽利略诞生400年&lt;/li&gt;
+  &lt;li&gt;图7-20：1964，捷克斯洛伐克，CS 1231，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-21：1984，吉布提，DJ C207、C208，伽利略的望远镜375年&lt;/li&gt;
+  &lt;li&gt;图7-22：1990，塞拉利昂，SL 1167b，伽利略手绘的月面图&lt;/li&gt;
+  &lt;li&gt;图7-23：1991，格林纳达，GD 1999b，伽利略手绘的月面图&lt;/li&gt;
+  &lt;li&gt;图7-24：1988，马尔代夫，MV 1271，伽利略置身行星队伍中&lt;/li&gt;
+  &lt;li&gt;图7-25：2000，塞拉利昂，SL 2254o，1632年伽利略证明地球绕太阳旋转&lt;/li&gt;
+  &lt;li&gt;图7-26：1992，西撒哈拉解放阵线，非法邮票无编号，伽利略逝世350年&lt;/li&gt;
+  &lt;li&gt;图7-27：1969，也门王国，Michel YE-K 862A，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-28：1970，尼日尔，NE C125，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-29：1971，墨西哥，MX C378，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-30：1979，科摩罗，KM 409，伽利略和旅行者1号&lt;/li&gt;
+  &lt;li&gt;图7-31：1984，中非，CF 657，伽利略和阿丽亚娜运载火箭&lt;/li&gt;
+  &lt;li&gt;图7-32：1985，中非，CF 760，伽利略和维京飞行器&lt;/li&gt;
+  &lt;li&gt;图7-33：1988，科摩罗，KM B4a，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-34：1994，尼加拉瓜，NI 1985c，伽利略&lt;/li&gt;
+  &lt;li&gt;图7-35：1933，意大利，IT D16，伽利略（管道邮票）&lt;/li&gt;
+  &lt;li&gt;图7-36：1945，意大利，IT D18，伽利略（管道邮票）&lt;/li&gt;
+  &lt;li&gt;图7-37：1988，东德，DD 2655，《伽利略传》作者布莱希特&lt;/li&gt;
+  &lt;li&gt;图7-38：1994，梵蒂冈，VA 954，伽利略的成就&lt;/li&gt;
+  &lt;li&gt;图7-39：1942，比利时，BE B321，荷兰数学家和物理学家斯蒂文&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;文中还提到一些邮票，没有给出图示，下面列出。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1965，巴拿马，有齿：PA C334a 无齿：Michel PA BL37，伽利略诞生400年&lt;/li&gt;
+  &lt;li&gt;1969，布隆迪，BI 295，伽利略画像&lt;/li&gt;
+  &lt;li&gt;1969，也门，Michel YE-AR 907，月球3号和伽利略&lt;/li&gt;
+  &lt;li&gt;1971，阿治曼，Michel AJ 993EB，伽利略&lt;/li&gt;
+  &lt;li&gt;1985，尼加拉瓜，NI 1489，伽利略、牛顿等人的望远镜&lt;/li&gt;
+  &lt;li&gt;1986，莱索托，LS 526，美国加州帕洛马尔山观象台Hale望远镜和伽利略头像&lt;/li&gt;
+  &lt;li&gt;1986，柬埔寨，同图6-9&lt;/li&gt;
+  &lt;li&gt;1986，老挝，LA 731，连票，右票为伽利略头像&lt;/li&gt;
+  &lt;li&gt;1992，安提瓜和巴布达，AG 1606，发明家伽利略&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;8. 真空和大气压&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图8-1：1958，意大利，IT 754，托里拆利&lt;/li&gt;
+  &lt;li&gt;图8-2：1959，苏联，SU 2165，托里拆利诞生350年&lt;/li&gt;
+  &lt;li&gt;图8-3：1983，圣马力诺，SM 1043，托里拆利（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1982”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图8-4：1944，法国，FR B181，帕斯卡&lt;/li&gt;
+  &lt;li&gt;图8-5：1962，法国，FR 1038，帕斯卡&lt;/li&gt;
+  &lt;li&gt;图8-6：1973，摩纳哥，MC 875，帕斯卡诞生350年&lt;/li&gt;
+  &lt;li&gt;图8-7：1936，德意志帝国，DE 472，居里克&lt;/li&gt;
+  &lt;li&gt;图8-8：1977，东德，DD 1793，居里克和马德堡半球&lt;/li&gt;
+  &lt;li&gt;图8-9：1969，东德，DD 1146、B154，民主德国建国20周年全国邮展，图一：马德堡居里克塑像，图二：马德堡半球实验场面&lt;/li&gt;
+  &lt;li&gt;图8-10：2002，德国，DE 2181，居里克诞生400年（马德堡半球实验场面）&lt;/li&gt;
+  &lt;li&gt;图8-11：1981，爱尔兰，IE 492，玻意耳和空气泵&lt;/li&gt;
+  &lt;li&gt;图8-12：1987，格林纳达，GD 1537，玻意耳&lt;/li&gt;
+  &lt;li&gt;图8-13：1962，法国，FR B359，帕潘&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;9. 笛卡尔和惯性原理&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图9-1：1996，法国，FR 2512，笛卡尔&lt;/li&gt;
+  &lt;li&gt;图9-2：1996，摩纳哥，MC 2015，笛卡尔诞生400年&lt;/li&gt;
+  &lt;li&gt;图9-3：1996，阿尔巴尼亚，AL 2516，笛卡尔&lt;/li&gt;
+  &lt;li&gt;图9-4：1937，法国，FR 330，《方法谈》出版300年（书名印错，随后重新发行）&lt;/li&gt;
+  &lt;li&gt;图9-5：1937，法国，FR 331，《方法谈》出版300年&lt;/li&gt;
+  &lt;li&gt;图9-6：2000，塞拉利昂，SL 2254n，笛卡尔“我思故我在”&lt;/li&gt;
+  &lt;li&gt;图9-7：2000，格林纳达，GD 2932k，笛卡尔逝世&lt;/li&gt;
+  &lt;li&gt;图9-8：1961，罗马尼亚，RO 1443，弗兰西斯·培根&lt;/li&gt;
+  &lt;li&gt;图9-9：2000，塞拉利昂，SL 2254d，弗兰西斯·培根&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>安道</name></author><category term="Stamps" /></entry><entry><title type="html">邮票上的物理学史（1-4）</title><link href="https://about.ac/2023/01/physics-stamps-one.html" rel="alternate" type="text/html" title="邮票上的物理学史（1-4）" /><published>2023-01-05T00:00:00+08:00</published><updated>2023-01-05T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-05-physics-stamps-one.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-one.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
 
 &lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;1. 希腊古典时期&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图1-1：1994，希腊，GR 1784，米利都的泰勒斯&lt;/li&gt;
+  &lt;li&gt;图1-2：1961，罗马尼亚，RO 1442，赫拉克利特（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1981”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图1-3：1988，法国，FR 2101～2104，四元素&lt;/li&gt;
+  &lt;li&gt;图1-4：1966，列支敦士登，LI 406～409，保护环境（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1994”错误，但是1994年确有一套 4 枚邮票主题为“四元素”，LI 1039～1042&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图1-5：1982，联合国，左：NT-NY 372，右：NT-WN 25，保护环境及四元素&lt;/li&gt;
+  &lt;li&gt;图1-6：1972，瑞士，CH 554，保护环境及四元素&lt;/li&gt;
+  &lt;li&gt;图1-7：1983，圣马力诺，SM 1045，毕达哥拉斯（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1982”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图1-8：1955，希腊，GR 582～585，毕达哥拉斯&lt;/li&gt;
+  &lt;li&gt;图1-9：1972，苏里南，SR B189，毕达哥拉斯定理&lt;/li&gt;
+  &lt;li&gt;图1-10：1971，尼加拉瓜，NI C762，毕达哥拉斯定理&lt;/li&gt;
+  &lt;li&gt;图1-11：1969，苏联，SU 3682，太空中的地球照片&lt;/li&gt;
+  &lt;li&gt;图1-12：1983，希腊，GR 1469，德谟克利特&lt;/li&gt;
+  &lt;li&gt;图1-13：1961，希腊，GR 716、717，德谟克利特原子核研究中心落成&lt;/li&gt;
+  &lt;li&gt;图1-14：1956，希腊，GR RA91，亚里士多德&lt;/li&gt;
+  &lt;li&gt;图1-15：1978，希腊，GR 1257~1260，亚里士多德逝世2300周年&lt;/li&gt;
+  &lt;li&gt;图1-16：1986，梵蒂冈，VA 777、778，教廷科学院50周年&lt;/li&gt;
+  &lt;li&gt;图1-17：2000，安哥拉，AO 1150b，最后的圣约&lt;/li&gt;
+  &lt;li&gt;图1-18：1978，塞浦路斯，CY 505，亚里士多德&lt;/li&gt;
+  &lt;li&gt;图1-19：1978，墨西哥，MX C579、C580，亚里士多德逝世2300周年&lt;/li&gt;
+  &lt;li&gt;图1-20：1978，马里，ML 315，亚里士多德逝世2300周年&lt;/li&gt;
+  &lt;li&gt;图1-21：1986，西班牙，ES 2491，亚里士多德&lt;/li&gt;
+  &lt;li&gt;图1-22：1996，乌拉圭，UY 1628，亚里士多德&lt;/li&gt;
+  &lt;li&gt;图1-24：1997，澳门，MO 902a、903，风水五行&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;2. 希腊化时期&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图2-1，1992，希腊，GR 1742，马其顿与亚里士多德&lt;/li&gt;
+  &lt;li&gt;图2-2，1992，希腊，GR 1743，亚历山大大帝&lt;/li&gt;
+  &lt;li&gt;图2-3，1988，马尔代夫，MV 1269，欧几里得&lt;/li&gt;
+  &lt;li&gt;图2-4，1982，圣马力诺，SM 1021，阿基米德&lt;/li&gt;
+  &lt;li&gt;图2-5，1983，希腊，GR 1460，浮力定律&lt;/li&gt;
+  &lt;li&gt;图2-6，1983，意大利，IT 1559，螺旋泵&lt;/li&gt;
+  &lt;li&gt;图2-7，1971，尼加拉瓜，NI C765，杠杆原理&lt;/li&gt;
+  &lt;li&gt;图2-8，1963，西班牙，ES 1159，里贝拉画的阿基米德&lt;/li&gt;
+  &lt;li&gt;图2-9，1973，东德，DD 1501，费蒂画的阿基米德&lt;/li&gt;
+  &lt;li&gt;图2-10，1980，希腊，GR 1350、1351，阿里斯塔克诞生2300周年&lt;/li&gt;
+  &lt;li&gt;图2-11，1965，希腊，GR 835，希帕克斯&lt;/li&gt;
+  &lt;li&gt;图2-12，1969，也门，Michel YE-AR 903，天文学家托勒密&lt;/li&gt;
+  &lt;li&gt;图2-13，1973，布隆迪，BI 433，托勒密的宇宙体系&lt;/li&gt;
+  &lt;li&gt;图2-14，2000，中国，2000-20（6-5）J，墨子&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;3. 中世纪&lt;/strong&gt;&lt;/p&gt;
 
@@ -60,57 +296,30 @@
   &lt;li&gt;1971，卡塔尔，QA 235，伊本·海塞姆&lt;/li&gt;
   &lt;li&gt;1973，巴基斯坦，PK 357、358，比鲁尼&lt;/li&gt;
   &lt;li&gt;1998，突尼斯，TN 1171，伊本·拉希德&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>安道</name></author><category term="Stamps" /></entry><entry><title type="html">邮票上的物理学史（二）</title><link href="https://about.ac/2023/01/physics-stamps-two.html" rel="alternate" type="text/html" title="邮票上的物理学史（二）" /><published>2023-01-03T00:00:00+08:00</published><updated>2023-01-03T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-03-physics-stamps-two.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-two.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;2. 希腊化时期&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;4. 文艺复兴和达·芬奇&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;图2-1，1992，希腊，GR 1742，马其顿与亚里士多德&lt;/li&gt;
-  &lt;li&gt;图2-2，1992，希腊，GR 1743，亚历山大大帝&lt;/li&gt;
-  &lt;li&gt;图2-3，1988，马尔代夫，MV 1269，欧几里得&lt;/li&gt;
-  &lt;li&gt;图2-4，1982，圣马力诺，SM 1021，阿基米德&lt;/li&gt;
-  &lt;li&gt;图2-5，1983，希腊，GR 1460，浮力定律&lt;/li&gt;
-  &lt;li&gt;图2-6，1983，意大利，IT 1559，螺旋泵&lt;/li&gt;
-  &lt;li&gt;图2-7，1971，尼加拉瓜，NI C765，杠杆原理&lt;/li&gt;
-  &lt;li&gt;图2-8，1963，西班牙，ES 1159，里贝拉画的阿基米德&lt;/li&gt;
-  &lt;li&gt;图2-9，1973，东德，DD 1501，费蒂画的阿基米德&lt;/li&gt;
-  &lt;li&gt;图2-10，1980，希腊，GR 1350、1351，阿里斯塔克诞生2300周年&lt;/li&gt;
-  &lt;li&gt;图2-11，1965，希腊，GR 835，希帕克斯&lt;/li&gt;
-  &lt;li&gt;图2-12，1969，也门，Michel YE-AR 903，天文学家托勒密&lt;/li&gt;
-  &lt;li&gt;图2-13，1973，布隆迪，BI 433，托勒密的宇宙体系&lt;/li&gt;
-  &lt;li&gt;图2-14，2000，中国，2000-20（6-5）J，墨子&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>安道</name></author><category term="Stamps" /></entry><entry><title type="html">邮票上的物理学史（一）</title><link href="https://about.ac/2023/01/physics-stamps-one.html" rel="alternate" type="text/html" title="邮票上的物理学史（一）" /><published>2023-01-02T00:00:00+08:00</published><updated>2023-01-02T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-01-02-physics-stamps-one.md</id><content type="html" xml:base="https://about.ac/2023/01/physics-stamps-one.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
-
-&lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;1. 希腊古典时期&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;图1-1：1994，希腊，GR 1784，米利都的泰勒斯&lt;/li&gt;
-  &lt;li&gt;图1-2：1961，罗马尼亚，RO 1442，赫拉克利特（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1981”错误&lt;/strong&gt;）&lt;/li&gt;
-  &lt;li&gt;图1-3：1988，法国，FR 2101～2104，四元素&lt;/li&gt;
-  &lt;li&gt;图1-4：1966，列支敦士登，LI 406～409，保护环境（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1994”错误，但是1994年确有一套 4 枚邮票主题为“四元素”，LI 1039～1042&lt;/strong&gt;）&lt;/li&gt;
-  &lt;li&gt;图1-5：1982，联合国，左：NT-NY 372，右：NT-WN 25，保护环境及四元素&lt;/li&gt;
-  &lt;li&gt;图1-6：1972，瑞士，CH 554，保护环境及四元素&lt;/li&gt;
-  &lt;li&gt;图1-7：1983，圣马力诺，SM 1045，毕达哥拉斯（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1982”错误&lt;/strong&gt;）&lt;/li&gt;
-  &lt;li&gt;图1-8：1955，希腊，GR 582～585，毕达哥拉斯&lt;/li&gt;
-  &lt;li&gt;图1-9：1972，苏里南，SR B189，毕达哥拉斯定理&lt;/li&gt;
-  &lt;li&gt;图1-10：1971，尼加拉瓜，NI C762，毕达哥拉斯定理&lt;/li&gt;
-  &lt;li&gt;图1-11：1969，苏联，SU 3682，太空中的地球照片&lt;/li&gt;
-  &lt;li&gt;图1-12：1983，希腊，GR 1469，德谟克利特&lt;/li&gt;
-  &lt;li&gt;图1-13：1961，希腊，GR 716、717，德谟克利特原子核研究中心落成&lt;/li&gt;
-  &lt;li&gt;图1-14：1956，希腊，GR RA91，亚里士多德&lt;/li&gt;
-  &lt;li&gt;图1-15：1978，希腊，GR 1257~1260，亚里士多德逝世2300周年&lt;/li&gt;
-  &lt;li&gt;图1-16：1986，梵蒂冈，VA 777、778，教廷科学院50周年&lt;/li&gt;
-  &lt;li&gt;图1-17：2000，安哥拉，AO 1150b，最后的圣约&lt;/li&gt;
-  &lt;li&gt;图1-18：1978，塞浦路斯，CY 505，亚里士多德&lt;/li&gt;
-  &lt;li&gt;图1-19：1978，墨西哥，MX C579、C580，亚里士多德逝世2300周年&lt;/li&gt;
-  &lt;li&gt;图1-20：1978，马里，ML 315，亚里士多德逝世2300周年&lt;/li&gt;
-  &lt;li&gt;图1-21：1986，西班牙，ES 2491，亚里士多德&lt;/li&gt;
-  &lt;li&gt;图1-22：1996，乌拉圭，UY 1628，亚里士多德&lt;/li&gt;
-  &lt;li&gt;图1-24：1997，澳门，MO 902a、903，风水五行&lt;/li&gt;
+  &lt;li&gt;图4-1，1999，英国，GB 1839，确立时间&lt;/li&gt;
+  &lt;li&gt;图4-2，1992，德国，DE B734，回转塔钟&lt;/li&gt;
+  &lt;li&gt;图4-3，1952，意大利，IT 601，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-4，1952，法国，FR 682，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-5，1969，阿尔巴尼亚，AL 1218，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-6，1938，意大利，IT 404，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-7，1952，波兰，PL B73，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-8，1996，古巴，CU 3716，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-9，1983，圣马力诺，SM 1046，达·芬奇设计的直升飞机（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1982”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图4-10，1948，列支敦士登，LI C24，达·芬奇&lt;/li&gt;
+  &lt;li&gt;图4-11，1969，阿尔巴尼亚，AL 1220，达·芬奇设计的直升飞机&lt;/li&gt;
+  &lt;li&gt;图4-12，1977，圣马力诺，SM 908，达·芬奇设计的直升飞机&lt;/li&gt;
+  &lt;li&gt;图4-13，2000，冈比亚，GM 2180a，达·芬奇设计的直升飞机&lt;/li&gt;
+  &lt;li&gt;图4-14，1970，尼日尔，NE C126，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-15，1990，东德，DD 2800，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-16，1987，柬埔寨，KH 800，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-17，1992，柬埔寨，KH 1217，达·芬奇设计的滑翔机&lt;/li&gt;
+  &lt;li&gt;图4-18，1966，厄瓜多尔，EC 757B，达·芬奇和开普勒&lt;/li&gt;
+  &lt;li&gt;图4-19，2000，波兰，PL 3495，人体比例图（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1999”错误&lt;/strong&gt;）&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>安道</name></author><category term="Stamps" /></entry><entry><title type="html">Asciidoc 转 Word 文档</title><link href="https://about.ac/2018/09/asciidoc-docx.html" rel="alternate" type="text/html" title="Asciidoc 转 Word 文档" /><published>2018-09-26T00:00:00+08:00</published><updated>2018-09-26T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2018-09-26-asciidoc-docx.md</id><content type="html" xml:base="https://about.ac/2018/09/asciidoc-docx.html">&lt;p&gt;在我的电子书制作过程中，&lt;a href=&quot;http://www.methods.co.nz/asciidoc/&quot;&gt;Asciidoc&lt;/a&gt; 是书写文稿的语言，由此生成三种格式的电子书：PDF，ePub 和 mobi。不过，出版社多数要求提供 .doc(x) 格式的文件，也就是 Word 文档。这时用 Asciidoc 就没那么方便了。&lt;/p&gt;
 
 &lt;p&gt;但我还是喜欢用轻量级的纯文本书写语言，为此，之前我一直使用 Markdown，然后经由 &lt;a href=&quot;https://pandoc.org&quot;&gt;pandoc&lt;/a&gt; 生成 Word 文档。在这个过程中，要对生成的文档做些&lt;a href=&quot;{% post_url 2015-06-01-docx-hack-guide %}&quot;&gt;定制&lt;/a&gt;。&lt;/p&gt;
@@ -512,4 +721,79 @@ You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;f
   &lt;li&gt;不要定义大块背景色；&lt;/li&gt;
   &lt;li&gt;脚注加上返回链接；&lt;/li&gt;
   &lt;li&gt;尽量不使用某个阅读器专属的功能；&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>安道</name></author><category term="eBook" /></entry></feed>
+&lt;/ul&gt;</content><author><name>安道</name></author><category term="eBook" /></entry><entry><title type="html">在电子书中渲染公式</title><link href="https://about.ac/2015/08/stem.html" rel="alternate" type="text/html" title="在电子书中渲染公式" /><published>2015-08-14T00:00:00+08:00</published><updated>2015-08-14T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2015-08-14-stem.md</id><content type="html" xml:base="https://about.ac/2015/08/stem.html">&lt;p&gt;昨天更新了《&lt;a href=&quot;http://railstutorial-china.org&quot;&gt;Ruby on Rails 教程&lt;/a&gt;》，这次更新最大的变化是对公式的处理方式。这本书有一节用了几个公式，我使用的电子书工具链之前不支持转换公式，所以只能做些简单的处理：使用上下标。后来越看越不舒服，因此前几天抽空实现了 LaTex 式的显示效果。&lt;/p&gt;
+
+&lt;p&gt;公式一直是我的电子书工具链所缺乏的功能之一，我也一直想解决，不过苦于没有合适的方法。前几天，O’Reilly 电子书方面的负责人（Sanders Kleinfeld）分享了&lt;a href=&quot;http://diagramcenter.org/webinars.html#mmlc&quot;&gt;他们的处理方式&lt;/a&gt;，勾起了我解决这个问题的欲望。&lt;/p&gt;
+
+&lt;p&gt;按照 Sanders 的分享，我首先尝试使用 &lt;a href=&quot;https://www.mathmlcloud.org/&quot;&gt;MathML Cloud&lt;/a&gt;。不过这个服务提供的 API 不规范，尝试过程中多次遇到问题。这个服务的实现方式是&lt;a href=&quot;https://github.com/benetech/mmlc-api&quot;&gt;开源&lt;/a&gt;的，不过自己搭建很麻烦，又是 MongoDB，又是 Redis 的，所以我放弃了这个方案。&lt;/p&gt;
+
+&lt;p&gt;随后我试着搜索，看有没有纯 Ruby 的解决方案，毕竟我的工具链是使用 Ruby 编写的。在 GitHub 中搜索，找到了 &lt;a href=&quot;https://github.com/gjtorikian/mathematical&quot;&gt;mathematical&lt;/a&gt;。这个 gem 为了提升“速度”，用了两个 C 语言扩展。正是这两个扩展让我放弃使用这个 gem。因为用到了 C 扩展，所以安装之前要先安装一些库，不过对于“新手”来说，这个过程像念咒语一样，根本不得要领，开发者说安装什么跟着做就是了，然而有时跟着做也没用。环境的差异害死人！在这个 gem 开发者的帮助下，成功编译了 C 扩展，可是使用过程中又遇到了问题：无法生成 SVG 和 png 图像。自己尝试解决无果后，我就放弃了这个 gem。&lt;/p&gt;
+
+&lt;p&gt;这时，我又想起了 MathML Cloud，既然这个服务的实现方式是开源的，不妨看看它是如何渲染公式的。看了&lt;a href=&quot;https://github.com/benetech/mmlc-api/blob/1daa756cc68a2ab5b535410b3f968c9257e2400c/package.json#L26&quot;&gt;代码&lt;/a&gt;，发现 MathML Cloud 使用的是 &lt;a href=&quot;https://github.com/mathjax/MathJax-node&quot;&gt;MathJax-node&lt;/a&gt;。&lt;a href=&quot;https://www.mathjax.org/&quot;&gt;MathJax&lt;/a&gt; 应该是目前最成熟的公式解决方案，既然有 Node.js 版，集成到我的工具链中就不难了，因为 MathJax-node 提供了 CLI。经过一番编程之后，最终顺利把 MathJax-node 集成到我的工具链中。&lt;/p&gt;
+
+&lt;p&gt;目前我是这样处理公式的：书稿中使用 LaTex 句法写公式（纯文本，便于管理），生成电子书时为不同的电子书格式生成不同格式的图像&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PDF 和 HTML 格式用 SVG&lt;/li&gt;
+  &lt;li&gt;ePub 和 mobi 格式用 png&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这么做遵循了“渐进增强”原则，因为 PDF 骨子里就是“矢量”的，最适合使用 SVG，而且目前大多数主流浏览器都支持 SVG，所以 HTML 格式也用了 SVG。但是 ePub 阅读器和 Kindle 等对 SVG 的支持并不好，只能使用图像；虽然缩放时的体验不好，但是至少还能辨识公式的内容。&lt;/p&gt;
+
+&lt;p&gt;P.S. 我的电子书工具链是 &lt;a href=&quot;https://rubygems.org/gems/persie&quot;&gt;persie&lt;/a&gt;。这个工具之前是开源的，现在已经闭源，不过以前的版本仍然可以下载安装。&lt;/p&gt;</content><author><name>安道</name></author><category term="eBook" /></entry><entry><title type="html">docx 文件脚注的编号</title><link href="https://about.ac/2015/08/docx-footnotes-numbering.html" rel="alternate" type="text/html" title="docx 文件脚注的编号" /><published>2015-08-03T00:00:00+08:00</published><updated>2015-08-03T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2015-08-03-docx-footnotes-numbering.md</id><content type="html" xml:base="https://about.ac/2015/08/docx-footnotes-numbering.html">&lt;p&gt;最近，使用 &lt;a href=&quot;http://pandoc.org/&quot;&gt;pandoc&lt;/a&gt; 生成 docx 文件遇到一个问题。默认情况下，一个文档中的所有脚注是按顺序标号的。这其实没什么问题，因为“语义”上讲，这就是正确的编号方法。但是，我想实现的是“按章”编号。&lt;/p&gt;
+
+&lt;p&gt;我之前已经从样式上区别了各章（方法参见《&lt;a href=&quot;{% post_url 2015-06-01-docx-hack-guide %}&quot;&gt;docx 文件定制指南&lt;/a&gt;》），即在一级标题之前换页。这只是“表面功夫”，Word 看到的仍是一个没有结构划分的文档。为了实现脚注按章编号，首先要想办法让 Word 知道每一章在哪里开始，在哪里结束，也就是从“语义”上实现分章。&lt;/p&gt;
+
+&lt;p&gt;其实 Word 提供了这种功能——分节。不过在代码层级，实现起来有点复杂。根据 WordProcessingML 的定义，文档最后一节的相关属性在 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:body&lt;/code&gt; 元素中最后一个 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 元素中定义，而之前每一节的相关属性都在各节最后一个段落（&lt;code class=&quot;highlighter-rouge&quot;&gt;w:p&lt;/code&gt;）的属性中定义，如下述代码所示：&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--第一节--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:pPr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:sectPr&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:pPr&amp;gt;&lt;/span&gt;
+        ...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--第二节--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:pPr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:sectPr&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:pPr&amp;gt;&lt;/span&gt;
+        ...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--最后一节--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:p&amp;gt;&lt;/span&gt;...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/span&gt;
+        ...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:sectPr&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:body&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;pandoc 所用的模板没有为最后一节指定任何属性，即只有 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;w:sectPr/&amp;gt;&lt;/code&gt;。所以，要想办法设置最后一节的属性，还要在每个一级标题之前的段落属性里插入 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/code&gt; 元素。这个好办，使用相关的 XML 处理库就行。如果使用 Ruby，可以用 &lt;a href=&quot;https://rubygems.org/gems/nokogiri&quot;&gt;nokogiri&lt;/a&gt;。XML 的具体处理方法本文不再赘述。&lt;/p&gt;
+
+&lt;p&gt;不过，要如何设置每一节的属性才能让脚注按章编号呢？按照 WordProcessingML 的定义，脚注的属性放在 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:footnotePr&lt;/code&gt; 元素中，控制编号方式的是 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:numRestart&lt;/code&gt; 元素。这个元素的值可以设为下述三个值中的一个：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;continuous&lt;/code&gt;（默认值）&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eachSect&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eachPage&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;从上可以看出，我们需要把这个元素的值设为 &lt;code class=&quot;highlighter-rouge&quot;&gt;eachSect&lt;/code&gt;，即开始新的一节时重新从头开始为脚注编号。最终设置的 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:sectPr&lt;/code&gt; 如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;w:sectPr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:footnotePr&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;w:numRestart&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;w:val=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;eachSect&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:footnotePr&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/w:sectPr&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果想每页单独编号，可以把 &lt;code class=&quot;highlighter-rouge&quot;&gt;w:numRestart&lt;/code&gt; 的值设为 &lt;code class=&quot;highlighter-rouge&quot;&gt;eachPage&lt;/code&gt;。&lt;/p&gt;</content><author><name>安道</name></author><category term="Dev" /></entry></feed>
