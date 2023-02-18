@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-02-06T20:39:09+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">邮票上的物理学史（17-24）</title><link href="https://about.ac/2023/02/physics-stamps-five.html" rel="alternate" type="text/html" title="邮票上的物理学史（17-24）" /><published>2023-02-04T00:00:00+08:00</published><updated>2023-02-04T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-02-04-physics-stamps-five.md</id><content type="html" xml:base="https://about.ac/2023/02/physics-stamps-five.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-02-18T12:33:48+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">邮票上的物理学史（25-26）</title><link href="https://about.ac/2023/02/physics-stamps-six.html" rel="alternate" type="text/html" title="邮票上的物理学史（25-26）" /><published>2023-02-18T00:00:00+08:00</published><updated>2023-02-18T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-02-18-physics-stamps-six.md</id><content type="html" xml:base="https://about.ac/2023/02/physics-stamps-six.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
+
+&lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;25. 热力学的宏观理论&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图25-1：1982，瑞典，SE 1402，摄尔修斯&lt;/li&gt;
+  &lt;li&gt;图25-2：2000，尼维斯，KN-N 1185k，摄尔修斯&lt;/li&gt;
+  &lt;li&gt;图25-3：1928，荷兰，NL B34，布尔哈夫（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1927”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图25-4：1938，荷兰，NL B107，布尔哈夫&lt;/li&gt;
+  &lt;li&gt;图25-5：1999，英国，GB 1840，工人（瓦特发现蒸汽动力）&lt;/li&gt;
+  &lt;li&gt;图25-6：1986，阿尔巴尼亚，AL 2205c，瓦特&lt;/li&gt;
+  &lt;li&gt;图25-7：1986，马里，ML 538，瓦特诞生250年&lt;/li&gt;
+  &lt;li&gt;图25-8：1996，古巴，CU 3718，瓦特&lt;/li&gt;
+  &lt;li&gt;图25-9：2000，马尔代夫，MV 2421d，瓦特&lt;/li&gt;
+  &lt;li&gt;图25-10：1987，格林纳达，GD 1538，瓦特&lt;/li&gt;
+  &lt;li&gt;图25-11：2002，塞拉利昂，SL 2517e，瓦特&lt;/li&gt;
+  &lt;li&gt;图25-12：1984，匈牙利，HU 2840，节约能源&lt;/li&gt;
+  &lt;li&gt;图25-13：1976，葡萄牙，PT 1315～1319，能源&lt;/li&gt;
+  &lt;li&gt;图25-14：1997，瑞士，CH 1000～1003，能源&lt;/li&gt;
+  &lt;li&gt;图25-15：1950，东德，DD 62，亥姆霍兹&lt;/li&gt;
+  &lt;li&gt;图25-16：1971，西柏林，DE 9N314，亥姆霍兹&lt;/li&gt;
+  &lt;li&gt;图25-17：1994，德国，DE 1867，亥姆霍兹、人眼结构和颜色三角形&lt;/li&gt;
+  &lt;li&gt;图25-18：1994，希腊，GR 1785，卡拉西奥多里&lt;/li&gt;
+  &lt;li&gt;图25-19：1952，西德，DE 688，奥托和煤气内燃机&lt;/li&gt;
+  &lt;li&gt;图25-20：1964，西德，DE 894，奥托-兰根发明发动机100年&lt;/li&gt;
+  &lt;li&gt;图25-21：1936，德国，DE 470，戴姆勒&lt;/li&gt;
+  &lt;li&gt;图25-22：1998，加纳，Michel GH 2839、2840，戴姆勒&lt;/li&gt;
+  &lt;li&gt;图25-23：1958，西德，DE 783，狄塞耳和柴油内燃机&lt;/li&gt;
+  &lt;li&gt;图25-24：1958，萨尔地区，DE-SL 312，狄塞耳和柴油内燃机&lt;/li&gt;
+  &lt;li&gt;图25-25：1993，马尔加什，MG 1100k，狄塞耳&lt;/li&gt;
+  &lt;li&gt;图25-26：1997，德国，DE 1977，狄塞耳发动机100年&lt;/li&gt;
+  &lt;li&gt;图25-27：1994，直布罗陀，GI 655，狄塞耳的第一台柴油机&lt;/li&gt;
+  &lt;li&gt;图25-28：1993，马尔加什，MG 1100j，帕森斯&lt;/li&gt;
+  &lt;li&gt;图25-29：1950，东德，DD 65，能斯脱&lt;/li&gt;
+  &lt;li&gt;图25-30：1980，瑞典，SE 1344，1920年诺贝尔化学奖得主能斯脱&lt;/li&gt;
+  &lt;li&gt;图25-31：1995，尼加拉瓜，NI 2135d，能斯脱&lt;/li&gt;
+  &lt;li&gt;图25-32：2003，挪威，NO 1373，昂萨格&lt;/li&gt;
+  &lt;li&gt;图25-33：1995，马尔代夫，Michel MV 2505，昂萨格&lt;/li&gt;
+  &lt;li&gt;图25-34：1981，联合国，NT-NY 348、349，新能源和可再生能源&lt;/li&gt;
+  &lt;li&gt;图25-35：2004，德国，DE B930，新能源&lt;/li&gt;
+  &lt;li&gt;图25-36：1980，上沃尔特，BF 531、532，太阳能&lt;/li&gt;
+  &lt;li&gt;图25-37：1982，美国，US 2006，太阳能&lt;/li&gt;
+  &lt;li&gt;图25-38：1981，西德，DE 1354，太阳能板&lt;/li&gt;
+  &lt;li&gt;图25-39：2001，比利时，BE 1781b，风能&lt;/li&gt;
+  &lt;li&gt;图25-40：1979，西德，DE 1305，节能&lt;/li&gt;
+  &lt;li&gt;图25-41：1981，以色列，IL 774、775，节能和利用太阳能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;文中还提到一些邮票，没有给出图示，下面列出。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;P159第3段末尾：1986，瓦利斯和富图纳群岛，WF 341，瓦特&lt;/li&gt;
+  &lt;li&gt;P159第3段末尾：1992，安提瓜和巴布达，AG 1605B，瓦特&lt;/li&gt;
+  &lt;li&gt;P159第3段末尾：1993，巴布达，BX 1367，瓦特&lt;/li&gt;
+  &lt;li&gt;P160末段中部：1980，瑞典，SE 1313～1317，可再生能源&lt;/li&gt;
+  &lt;li&gt;P160末段中部：1980，巴西，BR 1680～1683，替代能源&lt;/li&gt;
+  &lt;li&gt;P160末段中部：1982，多米尼加，DO 858～863，节约能源&lt;/li&gt;
+  &lt;li&gt;P160末段中部：1988，印度，IN 1200，太阳能&lt;/li&gt;
+  &lt;li&gt;P160末段中部：1988，新西兰，NZ 890～893，新能源发电&lt;/li&gt;
+  &lt;li&gt;P163首段中部：1986，中非，CF 837，狄塞耳（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1988”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;P163首段中部：1993，古巴，CU 3477，狄塞耳&lt;/li&gt;
+  &lt;li&gt;P163首段中部：1997，格林纳丁斯，FIXME&lt;/li&gt;
+  &lt;li&gt;P163首段中部：1997，乌拉圭，UY 1700d，狄塞耳&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong class=&quot;text-dracula-orange&quot;&gt;26. 热学的微观理论&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图26-1：1951，法国，FR B260，盖吕萨克&lt;/li&gt;
+  &lt;li&gt;图26-2：1983，中非，CF 610，盖吕萨克乘气球升空&lt;/li&gt;
+  &lt;li&gt;图26-3：1981，奥地利，AT 1184，玻尔兹曼逝世75年&lt;/li&gt;
+  &lt;li&gt;图26-4：1971，尼加拉瓜，NI C763，玻尔兹曼熵公式&lt;/li&gt;
+  &lt;li&gt;图26-5：1993，荷兰，NL 841，范德瓦尔斯&lt;/li&gt;
+  &lt;li&gt;图26-6：1970，瑞典，SE 879，1910年诺贝尔奖得主（右：范德瓦尔斯）&lt;/li&gt;
+  &lt;li&gt;图26-7：1998，乍得，TD 733，范德瓦尔斯（&lt;strong class=&quot;text-dracula-red&quot;&gt;书中发行年份“1997”错误&lt;/strong&gt;）&lt;/li&gt;
+  &lt;li&gt;图26-8：1995，马尔代夫，Michel MV 2528，范德瓦尔斯&lt;/li&gt;
+  &lt;li&gt;图26-9：2002，格林纳达，GD 3274d，范德瓦尔斯&lt;/li&gt;
+  &lt;li&gt;图26-10：1974，匈牙利，HU 2312，谢格奈&lt;/li&gt;
+  &lt;li&gt;图26-11：1994，斯洛伐克，SK 178，谢格奈&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;P167首段末尾提到，美国将在2005年发行吉布斯的邮票：2005，美国，US 3907。&lt;/p&gt;</content><author><name>安道</name></author><category term="Stamps" /></entry><entry><title type="html">邮票上的物理学史（17-24）</title><link href="https://about.ac/2023/02/physics-stamps-five.html" rel="alternate" type="text/html" title="邮票上的物理学史（17-24）" /><published>2023-02-04T00:00:00+08:00</published><updated>2023-02-04T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-02-04-physics-stamps-five.md</id><content type="html" xml:base="https://about.ac/2023/02/physics-stamps-five.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
 
 &lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
 
@@ -1290,80 +1373,4 @@ Adding new certificate...Done!
 
 &lt;p&gt;其实，我们可以利用某些输入法提供的功能避免这种低级错误。比如我使用的搜狗输入法（非利益相关）就有这样的功能。我设定了几个自定义短语，这样做可以避免不小心输入错误的大小写，还能简化输入，如果想输入 JavaScript，打出 js 再按空格键即可。不要轻视这个问题，小处见真章。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/figures/sougou.png&quot; alt=&quot;自定义短语&quot; /&gt;&lt;/p&gt;</content><author><name>安道</name></author><category term="Translation" /></entry><entry><title type="html">为 GitHub 设置 GPG 签名</title><link href="https://about.ac/2016/04/github-with-gpg-signature.html" rel="alternate" type="text/html" title="为 GitHub 设置 GPG 签名" /><published>2016-04-16T00:00:00+08:00</published><updated>2016-04-16T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2016-04-16-github-with-gpg-signature.md</id><content type="html" xml:base="https://about.ac/2016/04/github-with-gpg-signature.html">&lt;p&gt;GitHub 前几天支持 GPG 签名验证提交了（&lt;a href=&quot;https://github.com/blog/2144-gpg-signature-verification&quot; title=&quot;GPG signature verification&quot;&gt;via&lt;/a&gt;），今天对我的 GitHub 账户做了相应的设置，本文记录过程备考。&lt;/p&gt;
-
-&lt;h3&gt;第 1 步：安装 GPG 命令行工具&lt;/h3&gt;
-
-&lt;p&gt;使用 Homebrew 安装 GPG 命令行工具 gnupg：&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gpg
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3&gt;第 2 步：生成 GPG 密钥&lt;/h3&gt;
-
-&lt;p&gt;执行下述命令生成 GPG 密钥：&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--gen-key&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;在生成的过程中：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;询问密钥种类时按回车键，选择默认类型（RSA and RSA）；&lt;/li&gt;
-  &lt;li&gt;询问密钥大小时，输入“4096”；&lt;/li&gt;
-  &lt;li&gt;询问密钥有效期时按回车键，使用默认值，即永不过期；&lt;/li&gt;
-  &lt;li&gt;输入“y”确认上述设置；&lt;/li&gt;
-  &lt;li&gt;输入真实姓名和电子邮件地址，“Comment”可留空；&lt;/li&gt;
-  &lt;li&gt;输入“O”确认；&lt;/li&gt;
-  &lt;li&gt;输入保护私钥的密码；&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上信息设置完毕后，等待程序生成密钥。&lt;/p&gt;
-
-&lt;h3&gt;第 3 步：添加 GPG 公钥&lt;/h3&gt;
-
-&lt;p&gt;执行下述命令，查看可用的 GPG 密钥：&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--list-keys&lt;/span&gt;
-/Users/userA/.gnupg/pubring.gpg
-&lt;span class=&quot;nt&quot;&gt;-------------------------------&lt;/span&gt;
-pub   4096R/4A667092 2016-04-16
-uid                  Your Name &amp;lt;your-name@gmail.com&amp;gt;
-sub   4096R/48E027A6 2016-04-16
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;其中，&lt;code class=&quot;highlighter-rouge&quot;&gt;4A667092&lt;/code&gt; 是 GPG 密钥的 ID。&lt;/p&gt;
-
-&lt;p&gt;执行下属命令，输出指定的 GPG 公钥：&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--armor&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--export&lt;/span&gt; &amp;lt;GPG-ID&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;把 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;GPG-ID&amp;gt;&lt;/code&gt; 替换成具体的 ID。在输出的内容中，从“—–BEGIN PGP PUBLIC KEY BLOCK—–”复制到“—–END PGP PUBLIC KEY BLOCK—–”。打开 &lt;a href=&quot;https://github.com/settings/keys&quot;&gt;GitHub 设置密钥的网页&lt;/a&gt;，粘贴 GPG 密钥。&lt;/p&gt;
-
-&lt;h3&gt;第 4 步：设置 Git&lt;/h3&gt;
-
-&lt;p&gt;最后要设置 Git，让 Git 使用指定的 GPG 密钥，并让 Git 在提交时使用 GPG 密钥签名。&lt;/p&gt;
-
-&lt;p&gt;在 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.gitconfig&lt;/code&gt; 文件中添加下述设置（如果集中管理 dotfiles，则在相应的文件中添加）：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[user]
-  ...
-  signingkey = &amp;lt;GPG-ID&amp;gt;
-...
-[commit]
-  gpgsign = true
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3&gt;第 5 步：签名提交&lt;/h3&gt;
-
-&lt;p&gt;按照常规的方式提交，Git 会询问私钥的密码，输入即可。&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;commit message&amp;gt;'&lt;/span&gt;
-
-You need a passphrase to unlock the secret key &lt;span class=&quot;k&quot;&gt;for
-&lt;/span&gt;user: &lt;span class=&quot;s2&quot;&gt;&quot;Your Name &amp;lt;your-name@gmail.com&amp;gt;&quot;&lt;/span&gt;
-4096-bit RSA key, ID 4A667092, created 2016-04-16
-
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>安道</name></author><category term="Git" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/images/figures/sougou.png&quot; alt=&quot;自定义短语&quot; /&gt;&lt;/p&gt;</content><author><name>安道</name></author><category term="Translation" /></entry></feed>
