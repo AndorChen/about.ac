@@ -185,19 +185,18 @@
   status: '未出版'
 
 - title: '流畅的 Python（第 2 版）'
-  date: 2099-12-31
+  date: 2023-04-01
   url: 'https://www.ituring.com.cn/book/2893'
   color: 'cyan'
-  status: '未出版'
 
 - title: 'TypeScript 学习手册'
   date: 2099-12-31
   url: '#'
   color: 'yellow'
-  status: '翻译中'
+  status: '未出版'
 
 - title: 'Python in a Nutshell, 4th Edition'
   date: 2099-12-31
   url: '#'
   color: 'cyan'
-  status: '待定'
+  status: '翻译中'
