@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prose :where(table):not(:where([class~="not-prose"] *)) {
+  font-size: 1em;
+}
+
+.prose :where(code):not(:where([class~="not-prose"] *)){
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.prose :where(code):not(:where([class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+  content: none;
+}
+
+.full-page {
+  max-width: 100%;
+}
