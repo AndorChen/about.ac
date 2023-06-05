@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-04-16T17:06:44+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">邮票上的物理学史（25-26）</title><link href="https://about.ac/2023/02/physics-stamps-six.html" rel="alternate" type="text/html" title="邮票上的物理学史（25-26）" /><published>2023-02-18T00:00:00+08:00</published><updated>2023-02-18T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-02-18-physics-stamps-six.md</id><content type="html" xml:base="https://about.ac/2023/02/physics-stamps-six.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.0.0">Bridgetown</generator><link href="https://about.ac/feed.xml" rel="self" type="application/atom+xml" /><link href="https://about.ac/" rel="alternate" type="text/html" /><updated>2023-06-05T12:31:43+08:00</updated><id>https://about.ac/feed.xml</id><title type="html">Andor Chen</title><subtitle>安道的个人网站</subtitle><author><name>安道</name></author><entry><title type="html">关于《Ruby on Rails教程》中文版的声明</title><link href="https://about.ac/2023/06/statements.html" rel="alternate" type="text/html" title="关于《Ruby on Rails教程》中文版的声明" /><published>2023-06-05T00:00:00+08:00</published><updated>2023-06-05T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-06-05-statements.md</id><content type="html" xml:base="https://about.ac/2023/06/statements.html">&lt;ol&gt;
+  &lt;li&gt;《Ruby on Rails教程》中文版版权已到期，不再出售电子版。以前购买过的读者均在当时提供了下载，后续不再提供下载。&lt;/li&gt;
+  &lt;li&gt;配套网站的域名（&lt;code class=&quot;highlighter-rouge&quot;&gt;railstutorial-china.org&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;railstutorial-china.com&lt;/code&gt;）于日前到期，我没有续费，现已不在我名下。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上两点，请读者辨明。&lt;/p&gt;
+
+&lt;p&gt;声明人：安道&lt;/p&gt;
+
+&lt;p&gt;二〇二三年六月五日&lt;/p&gt;</content><author><name>安道</name></author></entry><entry><title type="html">邮票上的物理学史（25-26）</title><link href="https://about.ac/2023/02/physics-stamps-six.html" rel="alternate" type="text/html" title="邮票上的物理学史（25-26）" /><published>2023-02-18T00:00:00+08:00</published><updated>2023-02-18T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2023-02-18-physics-stamps-six.md</id><content type="html" xml:base="https://about.ac/2023/02/physics-stamps-six.html">&lt;p&gt;按：最近在看《&lt;a href=&quot;https://book.douban.com/subject/1391033/&quot;&gt;邮票上的物理学史&lt;/a&gt;》（秦克诚，清华大学出版社），书中有大量邮票，大都有图示，也标注了发行年份和国家。但是，不便检索。遂决定找出每枚邮票的编号。过程中，发现书中给出的个别邮票信息有误，一道订正。&lt;/p&gt;
 
 &lt;p&gt;注：如无特殊说明，邮票编号为 Scott 目录编号。&lt;/p&gt;
 
@@ -1363,14 +1372,4 @@ Adding new certificate...Done!
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# config/environments/production.rb&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;action_mailer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;default_url_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;host: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'example.com'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;protocol: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'https'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>安道</name></author><category term="Dev" /><category term="Rails" /></entry><entry><title type="html">规范专有名词的拼写</title><link href="https://about.ac/2016/07/normalize.html" rel="alternate" type="text/html" title="规范专有名词的拼写" /><published>2016-07-23T00:00:00+08:00</published><updated>2016-07-23T00:00:00+08:00</updated><id>repo://posts.collection/_posts/2016-07-23-normalize.md</id><content type="html" xml:base="https://about.ac/2016/07/normalize.html">&lt;p&gt;最近看了一些书和网文，发现专有名词的拼写不太规范。我所说的“专有名词”是指一些网站、服务和程序的名字，如 GitHub、JavaScript、WordPress 等。这些名词经常错误地拼写成 Github、Javascript、Wordpress。&lt;/p&gt;
-
-&lt;p&gt;之所以出现这样的问题，我想主要有两方面的原因。其一，不重视，觉得无所谓，有个字母大小写别人也知道说的是什么。其二，不小心拼错了。&lt;/p&gt;
-
-&lt;p&gt;第一个原因属于态度上的问题，不管哪种拼法只要别人知道是什么就行。试想，如果别人使用同音字（毕竟中文没有大小写）写你的名字，你是什么感受。我就曾经因为这个问题和别人激烈争论过。&lt;/p&gt;
-
-&lt;p&gt;第二个原因情有可原，谁人不犯错。但是，检查时要尽量发现这种低级错误。&lt;/p&gt;
-
-&lt;p&gt;其实，我们可以利用某些输入法提供的功能避免这种低级错误。比如我使用的搜狗输入法（非利益相关）就有这样的功能。我设定了几个自定义短语，这样做可以避免不小心输入错误的大小写，还能简化输入，如果想输入 JavaScript，打出 js 再按空格键即可。不要轻视这个问题，小处见真章。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/figures/sougou.png&quot; alt=&quot;自定义短语&quot; /&gt;&lt;/p&gt;</content><author><name>安道</name></author><category term="Translation" /></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>安道</name></author><category term="Dev" /><category term="Rails" /></entry></feed>
