@@ -1,6 +1,7 @@
 ---
 layout: full_page
 title: 邮票上的物理学史
+body_class: physics-stamps-page
 ---
 
 根据《[方寸格致：邮票上的物理学史](https://book.douban.com/subject/26844869/ "豆瓣：方寸格致")》（秦克诚，高等教育出版社，2014年）编制。表中的“原”相对前一版：《[邮票上的物理学史](https://book.douban.com/subject/1391033/ "豆瓣：邮票上的物理学史")》（秦克诚，清华大学出版社，2005年）。
