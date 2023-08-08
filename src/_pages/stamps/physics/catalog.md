@@ -1,6 +1,6 @@
 ---
 layout: full_page
-title: 邮票上的物理学史
+title: 邮票上的物理学史邮票目录
 body_class: physics-stamps-page
 ---
 
