@@ -66,3 +66,15 @@ title: 2024甲辰龙年
     ![](<%= stamp_fig_url '2024-jiachen/coc-2-1.jpg' %> '“甲辰年”封中封（2-1）')
 
     ![](<%= stamp_fig_url '2024-jiachen/coc-2-2.jpg' %> '“甲辰年”封中封（2-2）')
+
+-   2024.01.19，收到韩国友人寄来龙年邮票实寄封和明信片。
+
+    ![](<%= stamp_fig_url '2024-jiachen/kr-2.jpg' %> '韩国龙年邮票实寄封')
+
+    ![](<%= stamp_fig_url '2024-jiachen/kr-postcard-1.jpg' %> '韩国龙年明信片1')
+
+    ![](<%= stamp_fig_url '2024-jiachen/kr-postcard-2.jpg' %> '韩国龙年明信片2')
+
+    ![](<%= stamp_fig_url '2024-jiachen/kr-postcard-3.jpg' %> '韩国龙年明信片3')
+
+    ![](<%= stamp_fig_url '2024-jiachen/kr-postcard-4.jpg' %> '韩国龙年明信片4')
