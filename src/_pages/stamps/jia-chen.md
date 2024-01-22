@@ -78,3 +78,7 @@ title: 2024甲辰龙年
     ![](<%= stamp_fig_url '2024-jiachen/kr-postcard-3.jpg' %> '韩国龙年明信片3')
 
     ![](<%= stamp_fig_url '2024-jiachen/kr-postcard-4.jpg' %> '韩国龙年明信片4')
+
+-   2024.01.22，取回预定的“甲辰年生肖纪念封（与澳门邮电联合发行）”。
+
+    ![](<%= stamp_fig_url '2024-jiachen/pft-6.jpg' %> '甲辰年生肖纪念封（与澳门邮电联合发行）')
